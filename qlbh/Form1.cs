@@ -21,10 +21,5 @@ namespace qlbh
         {
             Application.Exit();
         }
-
-        private void rjButton1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }
