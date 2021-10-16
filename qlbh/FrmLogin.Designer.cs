@@ -32,7 +32,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTaiKhoan = new CustomControls.RJControls.RJTextBox();
             this.txtMatKhau = new CustomControls.RJControls.RJTextBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.btnDangNhap = new CustomControls.RJControls.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -118,25 +118,26 @@
             this.txtMatKhau.Texts = "";
             this.txtMatKhau.UnderlinedStyle = false;
             // 
-            // rjButton1
+            // btnDangNhap
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Orange;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Orange;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 18;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Script MT Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(37, 356);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(238, 42);
-            this.rjButton1.TabIndex = 4;
-            this.rjButton1.Text = "Sign Up";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnDangNhap.BackColor = System.Drawing.Color.Orange;
+            this.btnDangNhap.BackgroundColor = System.Drawing.Color.Orange;
+            this.btnDangNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDangNhap.BorderRadius = 18;
+            this.btnDangNhap.BorderSize = 0;
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.Font = new System.Drawing.Font("Script MT Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.Location = new System.Drawing.Point(37, 356);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(238, 42);
+            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.Text = "Sign Up";
+            this.btnDangNhap.TextColor = System.Drawing.Color.White;
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label1
             // 
@@ -326,7 +327,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.panel3);
@@ -357,7 +358,7 @@
         private System.Windows.Forms.Panel panel3;
         private CustomControls.RJControls.RJTextBox txtTaiKhoan;
         private CustomControls.RJControls.RJTextBox txtMatKhau;
-        private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton btnDangNhap;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
