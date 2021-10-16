@@ -33,15 +33,3 @@ C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.Co
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\bin\Debug\qlbh.exe.config
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\bin\Debug\qlbh.exe
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\bin\Debug\qlbh.pdb
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.Form1.resources
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.FrmLogin.resources
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.Properties.Resources.resources
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.CopyComplete
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.exe
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.pdb
