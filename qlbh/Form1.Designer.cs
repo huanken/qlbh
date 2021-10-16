@@ -30,6 +30,7 @@ namespace qlbh
         private void InitializeComponent()
         {
             this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // rjButton1
@@ -51,11 +52,31 @@ namespace qlbh
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(234, 238);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(150, 40);
+            this.rjButton2.TabIndex = 1;
+            this.rjButton2.Text = "rjButton2";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -66,5 +87,6 @@ namespace qlbh
         #endregion
 
         private CustomControls.RJControls.RJButton rjButton1;
+        private CustomControls.RJControls.RJButton rjButton2;
     }
 }
