@@ -32,11 +32,8 @@ namespace qlbh
             this.btn1 = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
-<<<<<<< HEAD
             this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-=======
             this.rjButton3 = new CustomControls.RJControls.RJButton();
->>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab
             this.SuspendLayout();
             // 
             // btn1
@@ -96,7 +93,6 @@ namespace qlbh
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
-<<<<<<< HEAD
             // rjTextBox1
             // 
             this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
@@ -118,7 +114,7 @@ namespace qlbh
             this.rjTextBox1.TabIndex = 3;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
-=======
+            // 
             // rjButton3
             // 
             this.rjButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -129,28 +125,24 @@ namespace qlbh
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(373, 359);
+            this.rjButton3.Location = new System.Drawing.Point(175, 226);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(150, 40);
-            this.rjButton3.TabIndex = 2;
+            this.rjButton3.TabIndex = 0;
             this.rjButton3.Text = "Thu Hà";
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
-            this.rjButton3.Click += new System.EventHandler(this.rjButton2_Click);
->>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab
+            this.rjButton3.Click += new System.EventHandler(this.btn1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-<<<<<<< HEAD
             this.Controls.Add(this.rjTextBox1);
-=======
-            this.Controls.Add(this.rjButton3);
->>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.rjButton3);
             this.Controls.Add(this.btn1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -165,6 +157,7 @@ namespace qlbh
         private CustomControls.RJControls.RJButton rjButton2;
 <<<<<<< HEAD
         private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJButton rjButton3;
 =======
         private CustomControls.RJControls.RJButton rjButton3;
 >>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab
