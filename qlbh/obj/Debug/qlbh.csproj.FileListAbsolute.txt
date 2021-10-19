@@ -45,3 +45,12 @@ C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.CoreCom
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\obj\Debug\qlbh.pdb
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Form1.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Form2.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.FrmLogin.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
