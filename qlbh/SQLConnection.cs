@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace qlbh
 {
-    //Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True
     class SQLConnection
     {
         public SqlConnection cnn;
@@ -16,32 +16,31 @@ namespace qlbh
         public DataTable dta;
         public SqlDataAdapter ada;
 
-       
-        public void Ketnoi_Dulieu()
+        public void Ketnoi_DuLieu()
         {
-            string Ketnoi = @"Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
-            cnn = new SqlConnection(Ketnoi);
-            cnn.open();
+            string strKetnoi = @"Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            cnn = new SqlConnection(strKetnoi);
+            cnn.Open();
         }
-        public void HuyKetnoi()
+        public void HuyKetNoi()
         {
             if (cnn.State == ConnectionState.Open)
                 cnn.Close();
         }
-        public DataTable Lay_Dulieubang(string sql)
+        public DataTable Lay_DulieuBang(string Sql)
         {
-            Ketnoi_Dulieu();
-            ada = new SqlDataAdapter(sql, cnn);
+            Ketnoi_DuLieu();
+            ada = new SqlDataAdapter(Sql, cnn);
             dta = new DataTable();
             ada.Fill(dta);
             return dta;
         }
-        public void ThucThi(string sql)
+        public void Thucthi(string Sql)
         {
-            Ketnoi_Dulieu();
-            cmd = new SqlCommand(sql,cnn);
-            cmd.ExcuteNonQuery();
-            HuyKetnoi();
+            Ketnoi_DuLieu();
+            cmd = new SqlCommand(Sql, cnn);
+            cmd.ExecuteNonQuery();
+            HuyKetNoi();
         }
     }
 }

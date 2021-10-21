@@ -74,6 +74,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qlbanhangDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="SQLConnection.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -54,3 +54,6 @@ C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHAN
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.config
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb

@@ -155,11 +155,11 @@ namespace qlbh
         private CustomControls.RJControls.RJButton btn1;
         private CustomControls.RJControls.RJButton rjButton1;
         private CustomControls.RJControls.RJButton rjButton2;
-<<<<<<< HEAD
+//<<<<<<< HEAD
         private CustomControls.RJControls.RJTextBox rjTextBox1;
         private CustomControls.RJControls.RJButton rjButton3;
-=======
+/*=======
         private CustomControls.RJControls.RJButton rjButton3;
->>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab
+>>>>>>> 5cbe6ee419349cb802600632ed4f41d0aa7e6dab*/
     }
 }
