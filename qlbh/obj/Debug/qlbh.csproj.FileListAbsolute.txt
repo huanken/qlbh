@@ -25,7 +25,6 @@ C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.confi
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Form1.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.FrmLogin.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
@@ -57,3 +56,4 @@ C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHAN
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.config
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
 C:\Users\Admin\OneDrive - National Economics University\Desktop\BTdotNETQLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
+C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Form2.resources
