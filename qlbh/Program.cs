@@ -16,7 +16,7 @@ namespace qlbh
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmNhaCungCap());
+            Application.Run(new FrmLogin());
         }
     }
 }

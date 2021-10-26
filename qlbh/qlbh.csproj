@@ -84,7 +84,7 @@
     <Compile Include="UI\FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmNhanVien.Designer.cs">
+    <Compile Include="UI\FrmNhanVien.designer.cs">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmPhieuNhap.cs">

@@ -75,3 +75,21 @@ C:\Users\Admin\Desktop\BTDOTNET QLCHANG\qlbh\qlbh\bin\Debug\qlbh.exe
 C:\Users\Admin\Desktop\BTDOTNET QLCHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
 C:\Users\Admin\Desktop\BTDOTNET QLCHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\Admin\Desktop\BTDOTNET QLCHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\bin\Debug\qlbh.exe.config
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\bin\Debug\qlbh.exe
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\bin\Debug\qlbh.pdb
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.csprojAssemblyReference.cache
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmGiaoHang.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmHoaDonBan.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.FrmLogin.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhaCungCap.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhanVien.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmPhieuNhap.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmSanPham.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTrangChu.resources
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.exe
+C:\Users\hakoy\Desktop\BT DOTNET QLBH\qlbh\qlbh\obj\Debug\qlbh.pdb
