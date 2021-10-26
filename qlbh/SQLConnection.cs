@@ -19,8 +19,8 @@ namespace qlbh
         public void Ketnoi_DuLieu()
         {
             // Huan
-            string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
-           
+            string source = " Data Source=DESKTOP-1AMUFBN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+
             // Tham
             //string source = @"Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
             cnn = new SqlConnection(source);
