@@ -56,7 +56,7 @@ namespace qlbh.UI
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 72);
+            this.panel1.Size = new System.Drawing.Size(852, 67);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -64,7 +64,7 @@ namespace qlbh.UI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(355, 24);
+            this.label1.Location = new System.Drawing.Point(338, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(160, 25);
             this.label1.TabIndex = 0;
@@ -337,7 +337,9 @@ namespace qlbh.UI
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmNhaCungCap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmNhaCungCap";
             this.Load += new System.EventHandler(this.FrmNhaCungCap_Load);
             this.panel1.ResumeLayout(false);

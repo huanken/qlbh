@@ -37,6 +37,7 @@ namespace qlbh.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(854, 503);
             this.ControlBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPhieuNhap";
             this.Text = "FrmPhieuNhap";
             this.ResumeLayout(false);

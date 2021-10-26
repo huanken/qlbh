@@ -49,11 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="qlbanhangDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>qlbanhangDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="UI\FrmGiaoHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,17 +163,6 @@
     </None>
     <None Include="qlbanhangDataSet.xss">
       <DependentUpon>qlbanhangDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="qlbanhangDataSet1.xsc">
-      <DependentUpon>qlbanhangDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="qlbanhangDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>qlbanhangDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="qlbanhangDataSet1.xss">
-      <DependentUpon>qlbanhangDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\images.png" />
   </ItemGroup>
