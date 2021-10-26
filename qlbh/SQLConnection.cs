@@ -19,10 +19,14 @@ namespace qlbh
         public void Ketnoi_DuLieu()
         {
             // Huan
+<<<<<<< HEAD
             //string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Ha
             //string source = "Data Source=DESKTOP-UKCIEJ7\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+=======
+            string source = " Data Source=DESKTOP-1AMUFBN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+>>>>>>> c7ffcecbdc6c3eb023d6736c738021641d3e817a
 
             // Tham
             //string source = @"Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
