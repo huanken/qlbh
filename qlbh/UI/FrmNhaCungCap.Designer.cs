@@ -56,7 +56,7 @@ namespace qlbh.UI
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 67);
+            this.panel1.Size = new System.Drawing.Size(848, 67);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -220,7 +220,7 @@ namespace qlbh.UI
             // 
             // dataGridViewncc
             // 
-            this.dataGridViewncc.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.dataGridViewncc.BackgroundColor = System.Drawing.Color.Snow;
             this.dataGridViewncc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewncc.Location = new System.Drawing.Point(118, 264);
             this.dataGridViewncc.Name = "dataGridViewncc";
@@ -259,7 +259,7 @@ namespace qlbh.UI
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(225, 137);
+            this.rjTextBox2.Location = new System.Drawing.Point(224, 138);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
@@ -281,7 +281,7 @@ namespace qlbh.UI
             this.rjTextBox3.BorderSize = 2;
             this.rjTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox3.Location = new System.Drawing.Point(225, 171);
+            this.rjTextBox3.Location = new System.Drawing.Point(225, 175);
             this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox3.Multiline = false;
             this.rjTextBox3.Name = "rjTextBox3";
@@ -303,7 +303,7 @@ namespace qlbh.UI
             this.rjTextBox4.BorderSize = 2;
             this.rjTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox4.Location = new System.Drawing.Point(225, 205);
+            this.rjTextBox4.Location = new System.Drawing.Point(225, 211);
             this.rjTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox4.Multiline = false;
             this.rjTextBox4.Name = "rjTextBox4";
@@ -320,7 +320,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 508);
+            this.ClientSize = new System.Drawing.Size(848, 516);
             this.ControlBox = false;
             this.Controls.Add(this.rjTextBox4);
             this.Controls.Add(this.rjTextBox3);

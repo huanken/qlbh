@@ -76,7 +76,7 @@ namespace qlbh.UI
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(306, 600);
+            this.panel1.Size = new System.Drawing.Size(306, 619);
             this.panel1.TabIndex = 0;
             // 
             // rjTextBox1
@@ -424,7 +424,7 @@ namespace qlbh.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1056, 600);
+            this.ClientSize = new System.Drawing.Size(984, 619);
             this.ControlBox = false;
             this.Controls.Add(this.btn_Xoa);
             this.Controls.Add(this.btn_Sua);

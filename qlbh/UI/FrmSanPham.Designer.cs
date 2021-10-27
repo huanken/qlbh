@@ -500,6 +500,7 @@ namespace qlbh.UI
             this.Controls.Add(this.txt_SanPham);
             this.Controls.Add(this.panel_Menu);
             this.Controls.Add(this.btn_Timkiem);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSanPham";
             this.Text = "FrmSanPham";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).EndInit();
