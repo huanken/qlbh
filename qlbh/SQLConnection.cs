@@ -36,9 +36,16 @@ namespace qlbh
         }
         public void HuyKetNoi()
         {
+            if (cnn == null)
+            {
+                return;
+            }
             if (cnn.State == ConnectionState.Open)
+            {
                 cnn.Close();
+            }
         }
+
         public DataTable Lay_DulieuBang(string Sql)
         {
             Ketnoi_DuLieu();

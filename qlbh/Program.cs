@@ -16,7 +16,7 @@ namespace qlbh.UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTrangChu());
+            Application.Run(new FrmLogin());
         }
     }
 }

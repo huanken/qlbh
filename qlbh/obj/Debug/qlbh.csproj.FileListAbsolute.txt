@@ -25,7 +25,6 @@ C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.confi
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
-C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.FrmLogin.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
@@ -99,3 +98,4 @@ C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNha
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmPhieuNhap.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmSanPham.resources
 C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTrangChu.resources
+C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmLogin.resources

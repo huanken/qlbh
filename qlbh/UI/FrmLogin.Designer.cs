@@ -1,4 +1,4 @@
-﻿namespace qlbh
+﻿namespace qlbh.UI
 {
     partial class FrmLogin
     {
@@ -137,7 +137,7 @@
             this.btnDangNhap.Text = "Sign Up";
             this.btnDangNhap.TextColor = System.Drawing.Color.White;
             this.btnDangNhap.UseVisualStyleBackColor = false;
-            //this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label1
             // 
@@ -285,7 +285,6 @@
             this.btnThoat.Size = new System.Drawing.Size(14, 14);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "X";
-            //this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label7
             // 
