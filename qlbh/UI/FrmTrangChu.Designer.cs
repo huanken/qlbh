@@ -30,20 +30,21 @@ namespace qlbh.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTrangChu));
             this.colapse = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTrangChu = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDanhMuc = new CustomControls.RJControls.RJButton();
-            this.btnSanPham = new CustomControls.RJControls.RJButton();
-            this.btnNhaCungCap = new CustomControls.RJControls.RJButton();
-            this.btnNhanVien = new CustomControls.RJControls.RJButton();
-            this.btnHoaDon = new CustomControls.RJControls.RJButton();
             this.btnPhieuNhap = new CustomControls.RJControls.RJButton();
+            this.btnHoaDon = new CustomControls.RJControls.RJButton();
+            this.btnNhanVien = new CustomControls.RJControls.RJButton();
+            this.btnNhaCungCap = new CustomControls.RJControls.RJButton();
+            this.btnSanPham = new CustomControls.RJControls.RJButton();
+            this.btnDanhMuc = new CustomControls.RJControls.RJButton();
             this.btnTimKiem = new CustomControls.RJControls.RJButton();
-            this.btnBaoCao = new CustomControls.RJControls.RJButton();
             this.btnGiaoHang = new CustomControls.RJControls.RJButton();
+            this.btnBaoCao = new CustomControls.RJControls.RJButton();
             this.btnThoat = new CustomControls.RJControls.RJButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1.SuspendLayout();
@@ -63,8 +64,8 @@ namespace qlbh.UI
             this.flowLayoutPanel1.Controls.Add(this.btnTrangChu);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.btnTimKiem);
-            this.flowLayoutPanel1.Controls.Add(this.btnBaoCao);
             this.flowLayoutPanel1.Controls.Add(this.btnGiaoHang);
+            this.flowLayoutPanel1.Controls.Add(this.btnBaoCao);
             this.flowLayoutPanel1.Controls.Add(this.btnThoat);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -91,6 +92,8 @@ namespace qlbh.UI
             this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrangChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrangChu.ForeColor = System.Drawing.Color.White;
+            this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrangChu.Location = new System.Drawing.Point(3, 80);
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Size = new System.Drawing.Size(197, 49);
@@ -116,85 +119,27 @@ namespace qlbh.UI
             this.panel1.Size = new System.Drawing.Size(198, 50);
             this.panel1.TabIndex = 1;
             // 
-            // btnDanhMuc
+            // btnPhieuNhap
             // 
-            this.btnDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnDanhMuc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnDanhMuc.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDanhMuc.BorderRadius = 0;
-            this.btnDanhMuc.BorderSize = 0;
-            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
-            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
-            this.btnDanhMuc.Location = new System.Drawing.Point(0, 0);
-            this.btnDanhMuc.Name = "btnDanhMuc";
-            this.btnDanhMuc.Size = new System.Drawing.Size(197, 51);
-            this.btnDanhMuc.TabIndex = 2;
-            this.btnDanhMuc.Text = "Danh mục";
-            this.btnDanhMuc.TextColor = System.Drawing.Color.White;
-            this.btnDanhMuc.UseVisualStyleBackColor = false;
-            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
-            // 
-            // btnSanPham
-            // 
-            this.btnSanPham.BackColor = System.Drawing.Color.Gray;
-            this.btnSanPham.BackgroundColor = System.Drawing.Color.Gray;
-            this.btnSanPham.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSanPham.BorderRadius = 0;
-            this.btnSanPham.BorderSize = 0;
-            this.btnSanPham.FlatAppearance.BorderSize = 0;
-            this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSanPham.ForeColor = System.Drawing.Color.White;
-            this.btnSanPham.Location = new System.Drawing.Point(0, 49);
-            this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(197, 44);
-            this.btnSanPham.TabIndex = 3;
-            this.btnSanPham.Text = "Sản phẩm";
-            this.btnSanPham.TextColor = System.Drawing.Color.White;
-            this.btnSanPham.UseVisualStyleBackColor = false;
-            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
-            // 
-            // btnNhaCungCap
-            // 
-            this.btnNhaCungCap.BackColor = System.Drawing.Color.Gray;
-            this.btnNhaCungCap.BackgroundColor = System.Drawing.Color.Gray;
-            this.btnNhaCungCap.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnNhaCungCap.BorderRadius = 0;
-            this.btnNhaCungCap.BorderSize = 0;
-            this.btnNhaCungCap.FlatAppearance.BorderSize = 0;
-            this.btnNhaCungCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhaCungCap.ForeColor = System.Drawing.Color.White;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 93);
-            this.btnNhaCungCap.Name = "btnNhaCungCap";
-            this.btnNhaCungCap.Size = new System.Drawing.Size(197, 44);
-            this.btnNhaCungCap.TabIndex = 4;
-            this.btnNhaCungCap.Text = "Nhà cung cấp";
-            this.btnNhaCungCap.TextColor = System.Drawing.Color.White;
-            this.btnNhaCungCap.UseVisualStyleBackColor = false;
-            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
-            // 
-            // btnNhanVien
-            // 
-            this.btnNhanVien.BackColor = System.Drawing.Color.Gray;
-            this.btnNhanVien.BackgroundColor = System.Drawing.Color.Gray;
-            this.btnNhanVien.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnNhanVien.BorderRadius = 0;
-            this.btnNhanVien.BorderSize = 0;
-            this.btnNhanVien.FlatAppearance.BorderSize = 0;
-            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btnNhanVien.Location = new System.Drawing.Point(0, 137);
-            this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(197, 44);
-            this.btnNhanVien.TabIndex = 5;
-            this.btnNhanVien.Text = "Nhân viên";
-            this.btnNhanVien.TextColor = System.Drawing.Color.White;
-            this.btnNhanVien.UseVisualStyleBackColor = false;
-            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            this.btnPhieuNhap.BackColor = System.Drawing.Color.Gray;
+            this.btnPhieuNhap.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnPhieuNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPhieuNhap.BorderRadius = 0;
+            this.btnPhieuNhap.BorderSize = 0;
+            this.btnPhieuNhap.FlatAppearance.BorderSize = 0;
+            this.btnPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btnPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuNhap.Image")));
+            this.btnPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhieuNhap.Location = new System.Drawing.Point(0, 225);
+            this.btnPhieuNhap.Name = "btnPhieuNhap";
+            this.btnPhieuNhap.Size = new System.Drawing.Size(197, 44);
+            this.btnPhieuNhap.TabIndex = 7;
+            this.btnPhieuNhap.Text = "Phiếu nhập";
+            this.btnPhieuNhap.TextColor = System.Drawing.Color.White;
+            this.btnPhieuNhap.UseVisualStyleBackColor = false;
+            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
             // 
             // btnHoaDon
             // 
@@ -207,6 +152,8 @@ namespace qlbh.UI
             this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnHoaDon.Image")));
+            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDon.Location = new System.Drawing.Point(0, 181);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(197, 44);
@@ -216,25 +163,93 @@ namespace qlbh.UI
             this.btnHoaDon.UseVisualStyleBackColor = false;
             this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
-            // btnPhieuNhap
+            // btnNhanVien
             // 
-            this.btnPhieuNhap.BackColor = System.Drawing.Color.Gray;
-            this.btnPhieuNhap.BackgroundColor = System.Drawing.Color.Gray;
-            this.btnPhieuNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPhieuNhap.BorderRadius = 0;
-            this.btnPhieuNhap.BorderSize = 0;
-            this.btnPhieuNhap.FlatAppearance.BorderSize = 0;
-            this.btnPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.btnPhieuNhap.Location = new System.Drawing.Point(0, 225);
-            this.btnPhieuNhap.Name = "btnPhieuNhap";
-            this.btnPhieuNhap.Size = new System.Drawing.Size(197, 44);
-            this.btnPhieuNhap.TabIndex = 7;
-            this.btnPhieuNhap.Text = "Phiếu nhập";
-            this.btnPhieuNhap.TextColor = System.Drawing.Color.White;
-            this.btnPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
+            this.btnNhanVien.BackColor = System.Drawing.Color.Gray;
+            this.btnNhanVien.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnNhanVien.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNhanVien.BorderRadius = 0;
+            this.btnNhanVien.BorderSize = 0;
+            this.btnNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.Image")));
+            this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhanVien.Location = new System.Drawing.Point(0, 137);
+            this.btnNhanVien.Name = "btnNhanVien";
+            this.btnNhanVien.Size = new System.Drawing.Size(197, 44);
+            this.btnNhanVien.TabIndex = 5;
+            this.btnNhanVien.Text = "Nhân viên";
+            this.btnNhanVien.TextColor = System.Drawing.Color.White;
+            this.btnNhanVien.UseVisualStyleBackColor = false;
+            this.btnNhanVien.Click += new System.EventHandler(this.btnNhanVien_Click);
+            // 
+            // btnNhaCungCap
+            // 
+            this.btnNhaCungCap.BackColor = System.Drawing.Color.Gray;
+            this.btnNhaCungCap.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnNhaCungCap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNhaCungCap.BorderRadius = 0;
+            this.btnNhaCungCap.BorderSize = 0;
+            this.btnNhaCungCap.FlatAppearance.BorderSize = 0;
+            this.btnNhaCungCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNhaCungCap.ForeColor = System.Drawing.Color.White;
+            this.btnNhaCungCap.Image = ((System.Drawing.Image)(resources.GetObject("btnNhaCungCap.Image")));
+            this.btnNhaCungCap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 93);
+            this.btnNhaCungCap.Name = "btnNhaCungCap";
+            this.btnNhaCungCap.Size = new System.Drawing.Size(197, 44);
+            this.btnNhaCungCap.TabIndex = 4;
+            this.btnNhaCungCap.Text = "Nhà cung cấp";
+            this.btnNhaCungCap.TextColor = System.Drawing.Color.White;
+            this.btnNhaCungCap.UseVisualStyleBackColor = false;
+            this.btnNhaCungCap.Click += new System.EventHandler(this.btnNhaCungCap_Click);
+            // 
+            // btnSanPham
+            // 
+            this.btnSanPham.BackColor = System.Drawing.Color.Gray;
+            this.btnSanPham.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnSanPham.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSanPham.BorderRadius = 0;
+            this.btnSanPham.BorderSize = 0;
+            this.btnSanPham.FlatAppearance.BorderSize = 0;
+            this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
+            this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSanPham.Location = new System.Drawing.Point(0, 49);
+            this.btnSanPham.Name = "btnSanPham";
+            this.btnSanPham.Size = new System.Drawing.Size(197, 44);
+            this.btnSanPham.TabIndex = 3;
+            this.btnSanPham.Text = "Sản phẩm";
+            this.btnSanPham.TextColor = System.Drawing.Color.White;
+            this.btnSanPham.UseVisualStyleBackColor = false;
+            this.btnSanPham.Click += new System.EventHandler(this.btnSanPham_Click);
+            // 
+            // btnDanhMuc
+            // 
+            this.btnDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnDanhMuc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnDanhMuc.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDanhMuc.BorderRadius = 0;
+            this.btnDanhMuc.BorderSize = 0;
+            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
+            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
+            this.btnDanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhMuc.Image")));
+            this.btnDanhMuc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhMuc.Location = new System.Drawing.Point(0, -1);
+            this.btnDanhMuc.Name = "btnDanhMuc";
+            this.btnDanhMuc.Size = new System.Drawing.Size(197, 51);
+            this.btnDanhMuc.TabIndex = 2;
+            this.btnDanhMuc.Text = "Danh mục";
+            this.btnDanhMuc.TextColor = System.Drawing.Color.White;
+            this.btnDanhMuc.UseVisualStyleBackColor = false;
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
             // 
             // btnTimKiem
             // 
@@ -247,6 +262,8 @@ namespace qlbh.UI
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiem.Location = new System.Drawing.Point(3, 191);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(197, 49);
@@ -254,25 +271,6 @@ namespace qlbh.UI
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextColor = System.Drawing.Color.White;
             this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnBaoCao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnBaoCao.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBaoCao.BorderRadius = 0;
-            this.btnBaoCao.BorderSize = 0;
-            this.btnBaoCao.FlatAppearance.BorderSize = 0;
-            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
-            this.btnBaoCao.Location = new System.Drawing.Point(3, 246);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(197, 49);
-            this.btnBaoCao.TabIndex = 3;
-            this.btnBaoCao.Text = "Báo cáo";
-            this.btnBaoCao.TextColor = System.Drawing.Color.White;
-            this.btnBaoCao.UseVisualStyleBackColor = false;
             // 
             // btnGiaoHang
             // 
@@ -285,13 +283,36 @@ namespace qlbh.UI
             this.btnGiaoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGiaoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaoHang.ForeColor = System.Drawing.Color.White;
-            this.btnGiaoHang.Location = new System.Drawing.Point(3, 301);
+            this.btnGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoHang.Image")));
+            this.btnGiaoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGiaoHang.Location = new System.Drawing.Point(3, 246);
             this.btnGiaoHang.Name = "btnGiaoHang";
             this.btnGiaoHang.Size = new System.Drawing.Size(197, 49);
             this.btnGiaoHang.TabIndex = 4;
             this.btnGiaoHang.Text = "Giao hàng";
             this.btnGiaoHang.TextColor = System.Drawing.Color.White;
             this.btnGiaoHang.UseVisualStyleBackColor = false;
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnBaoCao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnBaoCao.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBaoCao.BorderRadius = 0;
+            this.btnBaoCao.BorderSize = 0;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.Image")));
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(3, 301);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(197, 49);
+            this.btnBaoCao.TabIndex = 3;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.TextColor = System.Drawing.Color.White;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
             // 
             // btnThoat
             // 
@@ -304,6 +325,8 @@ namespace qlbh.UI
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThoat.Location = new System.Drawing.Point(3, 356);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(197, 49);
