@@ -292,6 +292,7 @@ namespace qlbh.UI
             this.btnGiaoHang.Text = "Giao hàng";
             this.btnGiaoHang.TextColor = System.Drawing.Color.White;
             this.btnGiaoHang.UseVisualStyleBackColor = false;
+            this.btnGiaoHang.Click += new System.EventHandler(this.btnGiaoHang_Click);
             // 
             // btnBaoCao
             // 

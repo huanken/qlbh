@@ -75,26 +75,7 @@ namespace qlbh.UI
             btn_Save.Enabled = true;
         }
 
-        private void btn_Save_Click(object sender, EventArgs e)
-        {
-            String StrKtra = "Select ma_nv from nhanvien where ma_nv = '" + txt_MNV.Texts + "'";
-            SqlCommand cmd = new SqlCommand(StrKtra, cnn.cnn);
-            SqlDataReader doc_dl = cmd.ExecuteReader();
-            if (doc_dl.Read() == true)
-            {
-                MessageBox.Show("Mã Nhân viên này đã tồn tại, Nhập lại mã khác", "thông báo");
-                txt_MNV.Focus();
-                doc_dl.Close();
-                doc_dl.Dispose();
-
-            }
-            else
-            {
-                string sqlLuu = "Insert Into nhanvien Values('" + txt_MNV.Texts.Trim() + "', '" + txt_TenNV.Texts.Trim() + "', '" + txt_SĐT.Texts.Trim() + "', '" + txt_ĐChi.Texts.Trim() + "','" + txt_Email.Texts.Trim() + "', '" + txt_giơitinh.Texts.Trim() + "' );";
-                cnn.Thucthi(sqlLuu);
-                bang_Nhanvien();
-            }
-        }
+        
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
@@ -109,6 +90,27 @@ namespace qlbh.UI
             string sqlXoa = "Delete nhanvien Where ma_nv='" + txt_MNV.Texts.Trim() + "'; ";
             cnn.Thucthi(sqlXoa);
             bang_Nhanvien();
+        }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            String StrKtra = "Select ma_nv from nhanvien where ma_nv = '" + txt_MNV.Texts + "'";
+            SqlCommand cmd = new SqlCommand(StrKtra, cnn.cnn);
+            SqlDataReader doc_dl = cmd.ExecuteReader();
+            if (doc_dl.Read() == true)
+            {
+                MessageBox.Show("Mã Nhân Viên này đã tồn tại, Nhập lại mã khác", "thông báo");
+                txt_MNV.Focus();
+                doc_dl.Close();
+                doc_dl.Dispose();
+
+            }
+            else
+            {
+                string sqlLuu = "Insert Into nhanvien Values('" + txt_MNV.Texts.Trim() + "',  '" + txt_TenNV.Texts.Trim() + "', '" + txt_giơitinh.Texts.Trim() + "','" +txt_SĐT.Texts.Trim() + "', '" + txt_ĐChi.Texts.Trim() + "', '"+ txt_Email.Texts.Trim() + "' );";
+                cnn.Thucthi(sqlLuu);
+                bang_Nhanvien();
+            }
         }
     }
 }

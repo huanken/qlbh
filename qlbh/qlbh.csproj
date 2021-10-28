@@ -57,7 +57,7 @@
     <Compile Include="UI\FrmGiaoHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmGiaoHang.Designer.cs">
+    <Compile Include="UI\FrmGiaoHang.designer.cs">
       <DependentUpon>FrmGiaoHang.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmHoaDonBan.cs">

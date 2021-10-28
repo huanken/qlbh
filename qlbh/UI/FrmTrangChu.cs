@@ -101,5 +101,11 @@ namespace qlbh.UI
         {
             this.panel2.Controls.Clear();
         }
+
+        private void btnGiaoHang_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmGiaoHang();
+            AddForm(f);
+        }
     }
 }
