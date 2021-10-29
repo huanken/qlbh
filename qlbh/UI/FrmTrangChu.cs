@@ -83,7 +83,8 @@ namespace qlbh.UI
 
         private void btnPhieuNhap_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmPhieuNhap();
+            AddForm(f);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

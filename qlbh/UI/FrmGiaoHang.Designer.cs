@@ -104,7 +104,6 @@ namespace qlbh.UI
             this.txt_mavd.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_mavd.BorderRadius = 7;
             this.txt_mavd.BorderSize = 2;
-            this.txt_mavd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_mavd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mavd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_mavd.Location = new System.Drawing.Point(193, 132);
@@ -210,7 +209,7 @@ namespace qlbh.UI
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(84, 272);
+            this.label4.Location = new System.Drawing.Point(84, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 18);
             this.label4.TabIndex = 13;
@@ -222,7 +221,7 @@ namespace qlbh.UI
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(85, 225);
+            this.label5.Location = new System.Drawing.Point(85, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 18);
             this.label5.TabIndex = 12;
@@ -237,7 +236,7 @@ namespace qlbh.UI
             this.txt_dc.BorderSize = 2;
             this.txt_dc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_dc.Location = new System.Drawing.Point(193, 212);
+            this.txt_dc.Location = new System.Drawing.Point(193, 218);
             this.txt_dc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_dc.Multiline = false;
             this.txt_dc.Name = "txt_dc";
@@ -289,7 +288,7 @@ namespace qlbh.UI
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(84, 309);
+            this.label6.Location = new System.Drawing.Point(84, 310);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 18);
             this.label6.TabIndex = 13;
@@ -301,7 +300,7 @@ namespace qlbh.UI
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(84, 355);
+            this.label7.Location = new System.Drawing.Point(84, 353);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 18);
             this.label7.TabIndex = 13;
@@ -312,7 +311,7 @@ namespace qlbh.UI
             this.dp_Time.BorderColor = System.Drawing.Color.MintCream;
             this.dp_Time.BorderSize = 2;
             this.dp_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dp_Time.Location = new System.Drawing.Point(193, 170);
+            this.dp_Time.Location = new System.Drawing.Point(193, 173);
             this.dp_Time.MinimumSize = new System.Drawing.Size(4, 35);
             this.dp_Time.Name = "dp_Time";
             this.dp_Time.Size = new System.Drawing.Size(200, 35);
@@ -331,7 +330,7 @@ namespace qlbh.UI
             this.cbb_mnv.IconColor = System.Drawing.Color.MediumSeaGreen;
             this.cbb_mnv.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbb_mnv.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbb_mnv.Location = new System.Drawing.Point(193, 297);
+            this.cbb_mnv.Location = new System.Drawing.Point(193, 300);
             this.cbb_mnv.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbb_mnv.Name = "cbb_mnv";
             this.cbb_mnv.Padding = new System.Windows.Forms.Padding(2);
@@ -350,7 +349,7 @@ namespace qlbh.UI
             this.cbb_mactdb.IconColor = System.Drawing.Color.MediumSeaGreen;
             this.cbb_mactdb.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbb_mactdb.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbb_mactdb.Location = new System.Drawing.Point(193, 343);
+            this.cbb_mactdb.Location = new System.Drawing.Point(193, 340);
             this.cbb_mactdb.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbb_mactdb.Name = "cbb_mactdb";
             this.cbb_mactdb.Padding = new System.Windows.Forms.Padding(2);

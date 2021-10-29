@@ -81,7 +81,7 @@ namespace qlbh.UI
             this.lbl_TênNV.AutoSize = true;
             this.lbl_TênNV.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TênNV.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_TênNV.Location = new System.Drawing.Point(56, 201);
+            this.lbl_TênNV.Location = new System.Drawing.Point(56, 202);
             this.lbl_TênNV.Name = "lbl_TênNV";
             this.lbl_TênNV.Size = new System.Drawing.Size(121, 18);
             this.lbl_TênNV.TabIndex = 3;
@@ -92,7 +92,7 @@ namespace qlbh.UI
             this.lbl_address.AutoSize = true;
             this.lbl_address.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_address.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_address.Location = new System.Drawing.Point(56, 280);
+            this.lbl_address.Location = new System.Drawing.Point(56, 282);
             this.lbl_address.Name = "lbl_address";
             this.lbl_address.Size = new System.Drawing.Size(62, 18);
             this.lbl_address.TabIndex = 3;
@@ -103,7 +103,7 @@ namespace qlbh.UI
             this.lbl_SĐT.AutoSize = true;
             this.lbl_SĐT.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_SĐT.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_SĐT.Location = new System.Drawing.Point(56, 241);
+            this.lbl_SĐT.Location = new System.Drawing.Point(56, 242);
             this.lbl_SĐT.Name = "lbl_SĐT";
             this.lbl_SĐT.Size = new System.Drawing.Size(41, 18);
             this.lbl_SĐT.TabIndex = 3;
@@ -114,7 +114,7 @@ namespace qlbh.UI
             this.lbl_email.AutoSize = true;
             this.lbl_email.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_email.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_email.Location = new System.Drawing.Point(56, 319);
+            this.lbl_email.Location = new System.Drawing.Point(56, 322);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(53, 18);
             this.lbl_email.TabIndex = 3;
@@ -151,7 +151,7 @@ namespace qlbh.UI
             this.txt_TenNV.BorderSize = 2;
             this.txt_TenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_TenNV.Location = new System.Drawing.Point(186, 189);
+            this.txt_TenNV.Location = new System.Drawing.Point(186, 191);
             this.txt_TenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenNV.Multiline = false;
             this.txt_TenNV.Name = "txt_TenNV";
@@ -173,7 +173,7 @@ namespace qlbh.UI
             this.txt_SĐT.BorderSize = 2;
             this.txt_SĐT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SĐT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_SĐT.Location = new System.Drawing.Point(186, 228);
+            this.txt_SĐT.Location = new System.Drawing.Point(186, 232);
             this.txt_SĐT.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SĐT.Multiline = false;
             this.txt_SĐT.Name = "txt_SĐT";
@@ -195,7 +195,7 @@ namespace qlbh.UI
             this.txt_ĐChi.BorderSize = 2;
             this.txt_ĐChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ĐChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ĐChi.Location = new System.Drawing.Point(186, 267);
+            this.txt_ĐChi.Location = new System.Drawing.Point(186, 273);
             this.txt_ĐChi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ĐChi.Multiline = false;
             this.txt_ĐChi.Name = "txt_ĐChi";
@@ -217,7 +217,7 @@ namespace qlbh.UI
             this.txt_Email.BorderSize = 2;
             this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_Email.Location = new System.Drawing.Point(186, 306);
+            this.txt_Email.Location = new System.Drawing.Point(186, 314);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Multiline = false;
             this.txt_Email.Name = "txt_Email";
@@ -315,7 +315,7 @@ namespace qlbh.UI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(55, 363);
+            this.label3.Location = new System.Drawing.Point(55, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 18);
             this.label3.TabIndex = 3;
@@ -330,7 +330,7 @@ namespace qlbh.UI
             this.txt_giơitinh.BorderSize = 2;
             this.txt_giơitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_giơitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_giơitinh.Location = new System.Drawing.Point(186, 358);
+            this.txt_giơitinh.Location = new System.Drawing.Point(186, 355);
             this.txt_giơitinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_giơitinh.Multiline = false;
             this.txt_giơitinh.Name = "txt_giơitinh";
