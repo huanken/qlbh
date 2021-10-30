@@ -23,7 +23,7 @@ namespace qlbh.UI
         public void BANG_DM()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select ma_dm_sp from danhmuc");
+            dta = kn.Lay_DulieuBang("Select ma_dm_sp from dmsanpham");
             cbo_dm.DataSource = dta;
             cbo_dm.DisplayMember = "ma_dm_sp";
             cbo_dm.ValueMember = "ma_dm_sp";

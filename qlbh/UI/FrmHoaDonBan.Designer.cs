@@ -100,7 +100,7 @@ namespace qlbh.UI
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnTaomoi_Click);
+           // this.btnThem.Click += new System.EventHandler(this.btnTaomoi_Click);
             // 
             // btnLuu
             // 
@@ -120,7 +120,7 @@ namespace qlbh.UI
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+          //  this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -140,7 +140,7 @@ namespace qlbh.UI
             this.btnXoa.Text = "Xoá";
             this.btnXoa.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+           // this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThoat
             // 
@@ -533,7 +533,7 @@ namespace qlbh.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHoaDonBan";
             this.Text = "FrmHoaDonBan";
-            this.Load += new System.EventHandler(this.FrmHoaDonBan_Load);
+           // this.Load += new System.EventHandler(this.FrmHoaDonBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.hoadonbanBindingSource)).EndInit();
             this.grbhoadonban.ResumeLayout(false);
             this.grbhoadonban.PerformLayout();
@@ -554,10 +554,10 @@ namespace qlbh.UI
        // private qlbanhangDataSet2 qlbanhangDataSet2;
         private System.Windows.Forms.BindingSource hoadonbanBindingSource;
       //  private qlbanhangDataSet2TableAdapters.hoadonbanTableAdapter hoadonbanTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mahdbanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaybanDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tongtienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn manvDataGridViewTextBoxColumn;
+      //  private System.Windows.Forms.DataGridViewTextBoxColumn mahdbanDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn ngaybanDataGridViewTextBoxColumn;
+        //private System.Windows.Forms.DataGridViewTextBoxColumn tongtienDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn manvDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox grbhoadonban;
         private System.Windows.Forms.ComboBox cbomanv;
         private System.Windows.Forms.DateTimePicker datengayban;
