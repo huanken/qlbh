@@ -29,13 +29,13 @@ namespace qlbh.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSanPham));
             this.txtBox_dvt = new System.Windows.Forms.TextBox();
             this.txtBox_giasp = new System.Windows.Forms.TextBox();
             this.txtBox_tensp = new System.Windows.Forms.TextBox();
             this.txtBox_masp = new System.Windows.Forms.TextBox();
             this.txt_masp = new System.Windows.Forms.Label();
-            this.dgv_sanpham = new System.Windows.Forms.DataGridView();
             this.txt_dm = new System.Windows.Forms.Label();
             this.txt_dvt = new System.Windows.Forms.Label();
             this.btn_Luu = new CustomControls.RJControls.RJButton();
@@ -50,16 +50,23 @@ namespace qlbh.UI
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbo_dm = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet = new qlbh.qlbanhangDataSet1();
+            this.sanphamTableAdapter1 = new qlbh.qlbanhangDataSet1TableAdapters.sanphamTableAdapter();
+            this.dgv_sanpham = new System.Windows.Forms.DataGridView();
+            this.txtImagepath = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pic_B1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBox_dvt
             // 
             this.txtBox_dvt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox_dvt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_dvt.Location = new System.Drawing.Point(132, 234);
+            this.txtBox_dvt.Location = new System.Drawing.Point(132, 205);
             this.txtBox_dvt.Name = "txtBox_dvt";
             this.txtBox_dvt.Size = new System.Drawing.Size(220, 23);
             this.txtBox_dvt.TabIndex = 29;
@@ -68,7 +75,7 @@ namespace qlbh.UI
             // 
             this.txtBox_giasp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox_giasp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_giasp.Location = new System.Drawing.Point(132, 203);
+            this.txtBox_giasp.Location = new System.Drawing.Point(132, 174);
             this.txtBox_giasp.Name = "txtBox_giasp";
             this.txtBox_giasp.Size = new System.Drawing.Size(220, 23);
             this.txtBox_giasp.TabIndex = 28;
@@ -77,7 +84,7 @@ namespace qlbh.UI
             // 
             this.txtBox_tensp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox_tensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_tensp.Location = new System.Drawing.Point(132, 172);
+            this.txtBox_tensp.Location = new System.Drawing.Point(132, 143);
             this.txtBox_tensp.Name = "txtBox_tensp";
             this.txtBox_tensp.Size = new System.Drawing.Size(220, 23);
             this.txtBox_tensp.TabIndex = 27;
@@ -86,7 +93,7 @@ namespace qlbh.UI
             // 
             this.txtBox_masp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox_masp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_masp.Location = new System.Drawing.Point(132, 141);
+            this.txtBox_masp.Location = new System.Drawing.Point(132, 112);
             this.txtBox_masp.Name = "txtBox_masp";
             this.txtBox_masp.Size = new System.Drawing.Size(220, 23);
             this.txtBox_masp.TabIndex = 26;
@@ -97,26 +104,17 @@ namespace qlbh.UI
             this.txt_masp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
             this.txt_masp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_masp.ForeColor = System.Drawing.Color.White;
-            this.txt_masp.Location = new System.Drawing.Point(17, 143);
+            this.txt_masp.Location = new System.Drawing.Point(17, 114);
             this.txt_masp.Name = "txt_masp";
             this.txt_masp.Size = new System.Drawing.Size(109, 18);
             this.txt_masp.TabIndex = 25;
             this.txt_masp.Text = "Mã sản phẩm: ";
             // 
-            // dgv_sanpham
-            // 
-            this.dgv_sanpham.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgv_sanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_sanpham.Location = new System.Drawing.Point(372, 141);
-            this.dgv_sanpham.Name = "dgv_sanpham";
-            this.dgv_sanpham.Size = new System.Drawing.Size(506, 389);
-            this.dgv_sanpham.TabIndex = 24;
-            // 
             // txt_dm
             // 
             this.txt_dm.AutoSize = true;
             this.txt_dm.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dm.Location = new System.Drawing.Point(17, 267);
+            this.txt_dm.Location = new System.Drawing.Point(17, 238);
             this.txt_dm.Name = "txt_dm";
             this.txt_dm.Size = new System.Drawing.Size(83, 18);
             this.txt_dm.TabIndex = 23;
@@ -126,7 +124,7 @@ namespace qlbh.UI
             // 
             this.txt_dvt.AutoSize = true;
             this.txt_dvt.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dvt.Location = new System.Drawing.Point(17, 236);
+            this.txt_dvt.Location = new System.Drawing.Point(17, 207);
             this.txt_dvt.Name = "txt_dvt";
             this.txt_dvt.Size = new System.Drawing.Size(88, 18);
             this.txt_dvt.TabIndex = 22;
@@ -141,10 +139,11 @@ namespace qlbh.UI
             this.btn_Luu.BorderSize = 3;
             this.btn_Luu.FlatAppearance.BorderSize = 0;
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.btn_Luu.Location = new System.Drawing.Point(371, 571);
+            this.btn_Luu.Location = new System.Drawing.Point(454, 519);
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(102, 40);
+            this.btn_Luu.Size = new System.Drawing.Size(119, 45);
             this.btn_Luu.TabIndex = 21;
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.TextColor = System.Drawing.Color.White;
@@ -160,10 +159,11 @@ namespace qlbh.UI
             this.btn_Xoa.BorderSize = 3;
             this.btn_Xoa.FlatAppearance.BorderSize = 0;
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_Xoa.Location = new System.Drawing.Point(693, 571);
+            this.btn_Xoa.Location = new System.Drawing.Point(776, 519);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(102, 40);
+            this.btn_Xoa.Size = new System.Drawing.Size(119, 45);
             this.btn_Xoa.TabIndex = 20;
             this.btn_Xoa.Text = "Xoá";
             this.btn_Xoa.TextColor = System.Drawing.Color.White;
@@ -179,10 +179,11 @@ namespace qlbh.UI
             this.btn_Sua.BorderSize = 3;
             this.btn_Sua.FlatAppearance.BorderSize = 0;
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sua.ForeColor = System.Drawing.Color.White;
-            this.btn_Sua.Location = new System.Drawing.Point(532, 571);
+            this.btn_Sua.Location = new System.Drawing.Point(615, 519);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(102, 40);
+            this.btn_Sua.Size = new System.Drawing.Size(119, 45);
             this.btn_Sua.TabIndex = 19;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.TextColor = System.Drawing.Color.White;
@@ -198,10 +199,11 @@ namespace qlbh.UI
             this.btn_Them.BorderSize = 3;
             this.btn_Them.FlatAppearance.BorderSize = 0;
             this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Location = new System.Drawing.Point(210, 571);
+            this.btn_Them.Location = new System.Drawing.Point(293, 519);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(102, 40);
+            this.btn_Them.Size = new System.Drawing.Size(119, 45);
             this.btn_Them.TabIndex = 18;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.TextColor = System.Drawing.Color.White;
@@ -210,8 +212,7 @@ namespace qlbh.UI
             // 
             // pic_B1
             // 
-            this.pic_B1.Image = ((System.Drawing.Image)(resources.GetObject("pic_B1.Image")));
-            this.pic_B1.Location = new System.Drawing.Point(20, 330);
+            this.pic_B1.Location = new System.Drawing.Point(15, 271);
             this.pic_B1.Name = "pic_B1";
             this.pic_B1.Size = new System.Drawing.Size(332, 200);
             this.pic_B1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -223,7 +224,7 @@ namespace qlbh.UI
             this.txt_giaB1.AutoSize = true;
             this.txt_giaB1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_giaB1.ForeColor = System.Drawing.Color.Black;
-            this.txt_giaB1.Location = new System.Drawing.Point(17, 205);
+            this.txt_giaB1.Location = new System.Drawing.Point(17, 176);
             this.txt_giaB1.Name = "txt_giaB1";
             this.txt_giaB1.Size = new System.Drawing.Size(107, 18);
             this.txt_giaB1.TabIndex = 16;
@@ -233,7 +234,7 @@ namespace qlbh.UI
             // 
             this.txt_tenB1.AutoSize = true;
             this.txt_tenB1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tenB1.Location = new System.Drawing.Point(17, 174);
+            this.txt_tenB1.Location = new System.Drawing.Point(17, 145);
             this.txt_tenB1.Name = "txt_tenB1";
             this.txt_tenB1.Size = new System.Drawing.Size(108, 18);
             this.txt_tenB1.TabIndex = 15;
@@ -286,17 +287,51 @@ namespace qlbh.UI
             // 
             this.cbo_dm.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_dm.FormattingEnabled = true;
-            this.cbo_dm.Location = new System.Drawing.Point(132, 268);
+            this.cbo_dm.Location = new System.Drawing.Point(132, 239);
             this.cbo_dm.Name = "cbo_dm";
             this.cbo_dm.Size = new System.Drawing.Size(220, 26);
             this.cbo_dm.TabIndex = 34;
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "sanpham";
+            this.bindingSource1.DataSource = this.dataSet;
+            // 
+            // dataSet
+            // 
+            this.dataSet.DataSetName = "qlbanhangDataSet1";
+            this.dataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sanphamTableAdapter1
+            // 
+            this.sanphamTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dgv_sanpham
+            // 
+            this.dgv_sanpham.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgv_sanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_sanpham.Location = new System.Drawing.Point(358, 103);
+            this.dgv_sanpham.Name = "dgv_sanpham";
+            this.dgv_sanpham.Size = new System.Drawing.Size(522, 389);
+            this.dgv_sanpham.TabIndex = 24;
+            this.dgv_sanpham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_sanpham_CellContentClick);
+            // 
+            // txtImagepath
+            // 
+            this.txtImagepath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtImagepath.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtImagepath.Location = new System.Drawing.Point(12, 477);
+            this.txtImagepath.Name = "txtImagepath";
+            this.txtImagepath.Size = new System.Drawing.Size(340, 23);
+            this.txtImagepath.TabIndex = 36;
             // 
             // FrmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 624);
+            this.ClientSize = new System.Drawing.Size(907, 593);
             this.ControlBox = false;
+            this.Controls.Add(this.txtImagepath);
             this.Controls.Add(this.cbo_dm);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -321,9 +356,11 @@ namespace qlbh.UI
             this.Name = "FrmSanPham";
             this.Text = "FrmSanPham";
             this.Load += new System.EventHandler(this.FrmSanPham_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_B1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_sanpham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,7 +372,6 @@ namespace qlbh.UI
         private System.Windows.Forms.TextBox txtBox_tensp;
         private System.Windows.Forms.TextBox txtBox_masp;
         private System.Windows.Forms.Label txt_masp;
-        private System.Windows.Forms.DataGridView dgv_sanpham;
         private System.Windows.Forms.Label txt_dm;
         private System.Windows.Forms.Label txt_dvt;
         private CustomControls.RJControls.RJButton btn_Luu;
@@ -350,5 +386,10 @@ namespace qlbh.UI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cbo_dm;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private qlbanhangDataSet1 dataSet;
+        private qlbanhangDataSet1TableAdapters.sanphamTableAdapter sanphamTableAdapter1;
+        private System.Windows.Forms.DataGridView dgv_sanpham;
+        private System.Windows.Forms.TextBox txtImagepath;
     }
 }

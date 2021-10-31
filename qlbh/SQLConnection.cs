@@ -19,10 +19,10 @@ namespace qlbh
         public static void Ketnoi_DuLieu()
         {
             // Huan
-            //string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Binh
-            string source = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            //string source = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Ha
             //string source = "Data Source=DESKTOP-UKCIEJ7\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
@@ -122,5 +122,35 @@ namespace qlbh
             return id;
         }
 
+        public static void ExecuteCommand(string commandText)
+        {
+            Ketnoi_DuLieu();
+
+            try
+            {
+                new SqlCommand(commandText, cnn).ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                HuyKetNoi();
+            }
+        }
+
+        public static void ExecuteCommand(SqlCommand cmd)
+        {
+            Ketnoi_DuLieu();
+            cmd.Connection = cnn;
+
+   
+                cmd.ExecuteNonQuery();
+           
+  
+                HuyKetNoi();
+           
+        }
     }
 }

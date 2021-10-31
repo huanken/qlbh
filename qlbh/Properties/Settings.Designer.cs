@@ -43,5 +43,16 @@ namespace qlbh.Properties {
                 return ((string)(this["qlbanhangConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Secur" +
+            "ity=True")]
+        public string qlbanhangConnectionString2 {
+            get {
+                return ((string)(this["qlbanhangConnectionString2"]));
+            }
+        }
     }
 }
