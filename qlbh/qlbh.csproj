@@ -104,6 +104,24 @@
     <Compile Include="UI\FrmSanPham.Designer.cs">
       <DependentUpon>FrmSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FrmTimKiemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmTimKiemHoaDon.Designer.cs">
+      <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmTimKiemPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmTimKiemPhieuNhap.Designer.cs">
+      <DependentUpon>FrmTimKiemPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FrmTimKiemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmTimKiemSanPham.Designer.cs">
+      <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FrmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmSanPham.resx">
       <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmTimKiemHoaDon.resx">
+      <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmTimKiemPhieuNhap.resx">
+      <DependentUpon>FrmTimKiemPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmTimKiemSanPham.resx">
+      <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>

@@ -42,14 +42,20 @@ namespace qlbh.UI
             this.btnNhaCungCap = new CustomControls.RJControls.RJButton();
             this.btnSanPham = new CustomControls.RJControls.RJButton();
             this.btnDanhMuc = new CustomControls.RJControls.RJButton();
-            this.btnTimKiem = new CustomControls.RJControls.RJButton();
-            this.btnGiaoHang = new CustomControls.RJControls.RJButton();
-            this.btnBaoCao = new CustomControls.RJControls.RJButton();
-            this.btnThoat = new CustomControls.RJControls.RJButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnTimKiemPhieuNhap = new CustomControls.RJControls.RJButton();
+            this.btnTimKiemHoaDon = new CustomControls.RJControls.RJButton();
+            this.btnTimKiemSanPham = new CustomControls.RJControls.RJButton();
+            this.btnTimKiem = new CustomControls.RJControls.RJButton();
+            this.btnThoat = new CustomControls.RJControls.RJButton();
+            this.btnBaoCao = new CustomControls.RJControls.RJButton();
+            this.btnGiaoHang = new CustomControls.RJControls.RJButton();
+            this.colapse2 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // colapse
@@ -63,14 +69,14 @@ namespace qlbh.UI
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Controls.Add(this.btnTrangChu);
             this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.btnTimKiem);
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.btnGiaoHang);
             this.flowLayoutPanel1.Controls.Add(this.btnBaoCao);
             this.flowLayoutPanel1.Controls.Add(this.btnThoat);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 531);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 609);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -114,9 +120,9 @@ namespace qlbh.UI
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(3, 135);
             this.panel1.MaximumSize = new System.Drawing.Size(198, 271);
-            this.panel1.MinimumSize = new System.Drawing.Size(198, 50);
+            this.panel1.MinimumSize = new System.Drawing.Size(198, 49);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(198, 50);
+            this.panel1.Size = new System.Drawing.Size(198, 49);
             this.panel1.TabIndex = 1;
             // 
             // btnPhieuNhap
@@ -251,6 +257,94 @@ namespace qlbh.UI
             this.btnDanhMuc.UseVisualStyleBackColor = false;
             this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(921, 609);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnTimKiemPhieuNhap);
+            this.panel3.Controls.Add(this.btnTimKiemHoaDon);
+            this.panel3.Controls.Add(this.btnTimKiemSanPham);
+            this.panel3.Controls.Add(this.btnTimKiem);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(3, 190);
+            this.panel3.MaximumSize = new System.Drawing.Size(198, 182);
+            this.panel3.MinimumSize = new System.Drawing.Size(198, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(198, 49);
+            this.panel3.TabIndex = 6;
+            // 
+            // btnTimKiemPhieuNhap
+            // 
+            this.btnTimKiemPhieuNhap.BackColor = System.Drawing.Color.Gray;
+            this.btnTimKiemPhieuNhap.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnTimKiemPhieuNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTimKiemPhieuNhap.BorderRadius = 0;
+            this.btnTimKiemPhieuNhap.BorderSize = 0;
+            this.btnTimKiemPhieuNhap.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiemPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemPhieuNhap.Image")));
+            this.btnTimKiemPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemPhieuNhap.Location = new System.Drawing.Point(0, 137);
+            this.btnTimKiemPhieuNhap.Name = "btnTimKiemPhieuNhap";
+            this.btnTimKiemPhieuNhap.Size = new System.Drawing.Size(197, 44);
+            this.btnTimKiemPhieuNhap.TabIndex = 7;
+            this.btnTimKiemPhieuNhap.Text = "Phiếu nhập";
+            this.btnTimKiemPhieuNhap.TextColor = System.Drawing.Color.White;
+            this.btnTimKiemPhieuNhap.UseVisualStyleBackColor = false;
+            this.btnTimKiemPhieuNhap.Click += new System.EventHandler(this.btnTimKiemPhieuNhap_Click);
+            // 
+            // btnTimKiemHoaDon
+            // 
+            this.btnTimKiemHoaDon.BackColor = System.Drawing.Color.Gray;
+            this.btnTimKiemHoaDon.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnTimKiemHoaDon.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTimKiemHoaDon.BorderRadius = 0;
+            this.btnTimKiemHoaDon.BorderSize = 0;
+            this.btnTimKiemHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiemHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemHoaDon.Image")));
+            this.btnTimKiemHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemHoaDon.Location = new System.Drawing.Point(0, 93);
+            this.btnTimKiemHoaDon.Name = "btnTimKiemHoaDon";
+            this.btnTimKiemHoaDon.Size = new System.Drawing.Size(197, 44);
+            this.btnTimKiemHoaDon.TabIndex = 6;
+            this.btnTimKiemHoaDon.Text = "Hóa đơn";
+            this.btnTimKiemHoaDon.TextColor = System.Drawing.Color.White;
+            this.btnTimKiemHoaDon.UseVisualStyleBackColor = false;
+            this.btnTimKiemHoaDon.Click += new System.EventHandler(this.btnTimKiemHoaDon_Click);
+            // 
+            // btnTimKiemSanPham
+            // 
+            this.btnTimKiemSanPham.BackColor = System.Drawing.Color.Gray;
+            this.btnTimKiemSanPham.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnTimKiemSanPham.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnTimKiemSanPham.BorderRadius = 0;
+            this.btnTimKiemSanPham.BorderSize = 0;
+            this.btnTimKiemSanPham.FlatAppearance.BorderSize = 0;
+            this.btnTimKiemSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiemSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiemSanPham.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiemSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiemSanPham.Image")));
+            this.btnTimKiemSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiemSanPham.Location = new System.Drawing.Point(0, 49);
+            this.btnTimKiemSanPham.Name = "btnTimKiemSanPham";
+            this.btnTimKiemSanPham.Size = new System.Drawing.Size(197, 44);
+            this.btnTimKiemSanPham.TabIndex = 3;
+            this.btnTimKiemSanPham.Text = "Sản phẩm";
+            this.btnTimKiemSanPham.TextColor = System.Drawing.Color.White;
+            this.btnTimKiemSanPham.UseVisualStyleBackColor = false;
+            this.btnTimKiemSanPham.Click += new System.EventHandler(this.btnTimKiemSanPham_Click);
+            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
@@ -264,56 +358,14 @@ namespace qlbh.UI
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(3, 191);
+            this.btnTimKiem.Location = new System.Drawing.Point(0, 0);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(197, 49);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextColor = System.Drawing.Color.White;
             this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // btnGiaoHang
-            // 
-            this.btnGiaoHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnGiaoHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnGiaoHang.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnGiaoHang.BorderRadius = 0;
-            this.btnGiaoHang.BorderSize = 0;
-            this.btnGiaoHang.FlatAppearance.BorderSize = 0;
-            this.btnGiaoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGiaoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGiaoHang.ForeColor = System.Drawing.Color.White;
-            this.btnGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoHang.Image")));
-            this.btnGiaoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGiaoHang.Location = new System.Drawing.Point(3, 246);
-            this.btnGiaoHang.Name = "btnGiaoHang";
-            this.btnGiaoHang.Size = new System.Drawing.Size(197, 49);
-            this.btnGiaoHang.TabIndex = 4;
-            this.btnGiaoHang.Text = "Giao hàng";
-            this.btnGiaoHang.TextColor = System.Drawing.Color.White;
-            this.btnGiaoHang.UseVisualStyleBackColor = false;
-            this.btnGiaoHang.Click += new System.EventHandler(this.btnGiaoHang_Click);
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnBaoCao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btnBaoCao.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBaoCao.BorderRadius = 0;
-            this.btnBaoCao.BorderSize = 0;
-            this.btnBaoCao.FlatAppearance.BorderSize = 0;
-            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
-            this.btnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.Image")));
-            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao.Location = new System.Drawing.Point(3, 301);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(197, 49);
-            this.btnBaoCao.TabIndex = 3;
-            this.btnBaoCao.Text = "Báo cáo";
-            this.btnBaoCao.TextColor = System.Drawing.Color.White;
-            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnThoat
             // 
@@ -328,7 +380,7 @@ namespace qlbh.UI
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThoat.Location = new System.Drawing.Point(3, 356);
+            this.btnThoat.Location = new System.Drawing.Point(3, 355);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(197, 49);
             this.btnThoat.TabIndex = 5;
@@ -337,19 +389,59 @@ namespace qlbh.UI
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // panel2
+            // btnBaoCao
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(827, 531);
-            this.panel2.TabIndex = 1;
+            this.btnBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnBaoCao.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnBaoCao.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBaoCao.BorderRadius = 0;
+            this.btnBaoCao.BorderSize = 0;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.Image")));
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(3, 300);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(197, 49);
+            this.btnBaoCao.TabIndex = 3;
+            this.btnBaoCao.Text = "Báo cáo";
+            this.btnBaoCao.TextColor = System.Drawing.Color.White;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            // 
+            // btnGiaoHang
+            // 
+            this.btnGiaoHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnGiaoHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnGiaoHang.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnGiaoHang.BorderRadius = 0;
+            this.btnGiaoHang.BorderSize = 0;
+            this.btnGiaoHang.FlatAppearance.BorderSize = 0;
+            this.btnGiaoHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiaoHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaoHang.ForeColor = System.Drawing.Color.White;
+            this.btnGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("btnGiaoHang.Image")));
+            this.btnGiaoHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGiaoHang.Location = new System.Drawing.Point(3, 245);
+            this.btnGiaoHang.Name = "btnGiaoHang";
+            this.btnGiaoHang.Size = new System.Drawing.Size(197, 49);
+            this.btnGiaoHang.TabIndex = 4;
+            this.btnGiaoHang.Text = "Giao hàng";
+            this.btnGiaoHang.TextColor = System.Drawing.Color.White;
+            this.btnGiaoHang.UseVisualStyleBackColor = false;
+            this.btnGiaoHang.Click += new System.EventHandler(this.btnGiaoHang_Click);
+            // 
+            // colapse2
+            // 
+            this.colapse2.Interval = 1;
+            this.colapse2.Tick += new System.EventHandler(this.colapse2_Tick);
             // 
             // FrmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 531);
+            this.ClientSize = new System.Drawing.Size(1121, 609);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -360,6 +452,7 @@ namespace qlbh.UI
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -381,5 +474,10 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJButton btnGiaoHang;
         private CustomControls.RJControls.RJButton btnThoat;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private CustomControls.RJControls.RJButton btnTimKiemPhieuNhap;
+        private CustomControls.RJControls.RJButton btnTimKiemHoaDon;
+        private CustomControls.RJControls.RJButton btnTimKiemSanPham;
+        private System.Windows.Forms.Timer colapse2;
     }
 }

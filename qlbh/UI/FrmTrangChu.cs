@@ -13,10 +13,12 @@ namespace qlbh.UI
     public partial class FrmTrangChu : Form
     {
         private bool EsColapse;
+        private bool EsColapse2;
         public FrmTrangChu()
         {
             InitializeComponent();
             colapse.Start();
+            colapse2.Start();
         }
 
         private void colapse_Tick_1(object sender, EventArgs e)
@@ -41,10 +43,37 @@ namespace qlbh.UI
                 }
             }
         }
+        private void colapse2_Tick(object sender, EventArgs e)
+        {
+            if (EsColapse2)
+            {
+                panel3.Height += 10;
+
+                if (panel3.Size == panel3.MaximumSize)
+                {
+                    colapse2.Stop();
+                    EsColapse2 = false;
+                }
+            }
+            else
+            {
+                panel3.Height -= 10;
+                if (panel3.Size == panel3.MinimumSize)
+                {
+                    colapse2.Stop();
+                    EsColapse2 = true;
+                }
+            }
+        }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
             colapse.Start();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            colapse2.Start();
         }
 
         private void AddForm(Form f)
@@ -78,7 +107,8 @@ namespace qlbh.UI
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-           
+            Form f = new FrmHoaDonBan();
+            AddForm(f);
         }
 
         private void btnPhieuNhap_Click(object sender, EventArgs e)
@@ -108,5 +138,21 @@ namespace qlbh.UI
             Form f = new FrmGiaoHang();
             AddForm(f);
         }
+
+        private void btnTimKiemSanPham_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiemHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiemPhieuNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

@@ -17,14 +17,17 @@ namespace qlbh.UI
         {
             InitializeComponent();
         }
-          SQLConnection kn = new SQLConnection();
 
+        SQLConnection kn = new SQLConnection();
 
-          private void btnThoat_Click(object sender, EventArgs e)
-          {
-              this.Close();
-          }
+        private void cbomanv_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-      
+        }
+
+        private void cbomanv_DropDown(object sender, EventArgs e)
+        {
+
+        }
     }
 }

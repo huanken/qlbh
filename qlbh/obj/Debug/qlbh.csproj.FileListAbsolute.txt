@@ -134,3 +134,6 @@ C:\Users\hakoy\Desktop\BTL QLBH\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInput
 C:\Users\hakoy\Desktop\BTL QLBH\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\hakoy\Desktop\BTL QLBH\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\hakoy\Desktop\BTL QLBH\qlbh\qlbh\obj\Debug\qlbh.pdb
+C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemHoaDon.resources
+C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemPhieuNhap.resources
+C:\Users\LaptopK1\Desktop\BT DotNET QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemSanPham.resources
