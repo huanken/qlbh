@@ -29,7 +29,9 @@ namespace qlbh.UI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHoaDonBan));
+            this.hoadonbanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnThem = new CustomControls.RJControls.RJButton();
             this.btnLuu = new CustomControls.RJControls.RJButton();
             this.btnXoa = new CustomControls.RJControls.RJButton();
@@ -44,10 +46,10 @@ namespace qlbh.UI
             this.lblngayban = new System.Windows.Forms.Label();
             this.lblmahoadon = new System.Windows.Forms.Label();
             this.grbsanpham = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtthanhtien = new System.Windows.Forms.TextBox();
+            this.txtgiamgia = new System.Windows.Forms.TextBox();
+            this.txtsoluong = new System.Windows.Forms.TextBox();
+            this.txtgiaban = new System.Windows.Forms.TextBox();
             this.txttensp = new System.Windows.Forms.TextBox();
             this.cbomasp = new System.Windows.Forms.ComboBox();
             this.lblthanhtien = new System.Windows.Forms.Label();
@@ -66,14 +68,19 @@ namespace qlbh.UI
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblghichu = new System.Windows.Forms.Label();
             this.txtghichu = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtcongtienhang = new System.Windows.Forms.TextBox();
+            this.txtVAT = new System.Windows.Forms.TextBox();
+            this.txttongtien = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.hoadonbanBindingSource)).BeginInit();
             this.grbhoadonban.SuspendLayout();
             this.grbsanpham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvhoadonban)).BeginInit();
             this.SuspendLayout();
+            // 
+            // hoadonbanBindingSource
+            // 
+            this.hoadonbanBindingSource.DataMember = "hoadonban";
             // 
             // btnThem
             // 
@@ -150,6 +157,7 @@ namespace qlbh.UI
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // grbhoadonban
             // 
@@ -188,6 +196,7 @@ namespace qlbh.UI
             this.datengayban.Name = "datengayban";
             this.datengayban.Size = new System.Drawing.Size(153, 22);
             this.datengayban.TabIndex = 2;
+            this.datengayban.ValueChanged += new System.EventHandler(this.datengayban_ValueChanged);
             // 
             // txttennv
             // 
@@ -242,10 +251,10 @@ namespace qlbh.UI
             // 
             // grbsanpham
             // 
-            this.grbsanpham.Controls.Add(this.textBox4);
-            this.grbsanpham.Controls.Add(this.textBox3);
-            this.grbsanpham.Controls.Add(this.textBox2);
-            this.grbsanpham.Controls.Add(this.textBox1);
+            this.grbsanpham.Controls.Add(this.txtthanhtien);
+            this.grbsanpham.Controls.Add(this.txtgiamgia);
+            this.grbsanpham.Controls.Add(this.txtsoluong);
+            this.grbsanpham.Controls.Add(this.txtgiaban);
             this.grbsanpham.Controls.Add(this.txttensp);
             this.grbsanpham.Controls.Add(this.cbomasp);
             this.grbsanpham.Controls.Add(this.lblthanhtien);
@@ -263,39 +272,39 @@ namespace qlbh.UI
             this.grbsanpham.TabStop = false;
             this.grbsanpham.Text = "Thông tin sản phẩm: ";
             // 
-            // textBox4
+            // txtthanhtien
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(126, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(163, 22);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.Text = "0.00";
+            this.txtthanhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtthanhtien.Location = new System.Drawing.Point(126, 170);
+            this.txtthanhtien.Name = "txtthanhtien";
+            this.txtthanhtien.Size = new System.Drawing.Size(163, 22);
+            this.txtthanhtien.TabIndex = 2;
+            this.txtthanhtien.Text = "0.00";
             // 
-            // textBox3
+            // txtgiamgia
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(126, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 22);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "0.00";
+            this.txtgiamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgiamgia.Location = new System.Drawing.Point(126, 142);
+            this.txtgiamgia.Name = "txtgiamgia";
+            this.txtgiamgia.Size = new System.Drawing.Size(163, 22);
+            this.txtgiamgia.TabIndex = 2;
+            this.txtgiamgia.Text = "0.00";
             // 
-            // textBox2
+            // txtsoluong
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(126, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "0";
+            this.txtsoluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Location = new System.Drawing.Point(126, 114);
+            this.txtsoluong.Name = "txtsoluong";
+            this.txtsoluong.Size = new System.Drawing.Size(163, 22);
+            this.txtsoluong.TabIndex = 2;
+            this.txtsoluong.Text = "0";
             // 
-            // textBox1
+            // txtgiaban
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtgiaban.Location = new System.Drawing.Point(126, 86);
+            this.txtgiaban.Name = "txtgiaban";
+            this.txtgiaban.Size = new System.Drawing.Size(163, 22);
+            this.txtgiaban.TabIndex = 2;
             // 
             // txttensp
             // 
@@ -310,7 +319,7 @@ namespace qlbh.UI
             this.cbomasp.FormattingEnabled = true;
             this.cbomasp.Location = new System.Drawing.Point(126, 21);
             this.cbomasp.Name = "cbomasp";
-            this.cbomasp.Size = new System.Drawing.Size(170, 26);
+            this.cbomasp.Size = new System.Drawing.Size(163, 26);
             this.cbomasp.TabIndex = 1;
             // 
             // lblthanhtien
@@ -468,32 +477,32 @@ namespace qlbh.UI
             this.txtghichu.Size = new System.Drawing.Size(278, 21);
             this.txtghichu.TabIndex = 15;
             // 
-            // textBox5
+            // txtcongtienhang
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(879, 381);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(115, 22);
-            this.textBox5.TabIndex = 16;
-            this.textBox5.Text = "0.00";
+            this.txtcongtienhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcongtienhang.Location = new System.Drawing.Point(879, 381);
+            this.txtcongtienhang.Name = "txtcongtienhang";
+            this.txtcongtienhang.Size = new System.Drawing.Size(115, 22);
+            this.txtcongtienhang.TabIndex = 16;
+            this.txtcongtienhang.Text = "0.00";
             // 
-            // textBox6
+            // txtVAT
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(879, 413);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(115, 22);
-            this.textBox6.TabIndex = 16;
-            this.textBox6.Text = "0.00";
+            this.txtVAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVAT.Location = new System.Drawing.Point(879, 413);
+            this.txtVAT.Name = "txtVAT";
+            this.txtVAT.Size = new System.Drawing.Size(115, 22);
+            this.txtVAT.TabIndex = 16;
+            this.txtVAT.Text = "0.00";
             // 
-            // textBox7
+            // txttongtien
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(879, 441);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(115, 22);
-            this.textBox7.TabIndex = 16;
-            this.textBox7.Text = "0.00";
+            this.txttongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttongtien.Location = new System.Drawing.Point(879, 441);
+            this.txttongtien.Name = "txttongtien";
+            this.txttongtien.Size = new System.Drawing.Size(115, 22);
+            this.txttongtien.TabIndex = 16;
+            this.txttongtien.Text = "0.00";
             // 
             // FrmHoaDonBan
             // 
@@ -502,9 +511,9 @@ namespace qlbh.UI
             this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(1017, 577);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txttongtien);
+            this.Controls.Add(this.txtVAT);
+            this.Controls.Add(this.txtcongtienhang);
             this.Controls.Add(this.txtghichu);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dgvhoadonban);
@@ -524,6 +533,8 @@ namespace qlbh.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHoaDonBan";
             this.Text = "FrmHoaDonBan";
+            this.Load += new System.EventHandler(this.FrmHoaDonBan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.hoadonbanBindingSource)).EndInit();
             this.grbhoadonban.ResumeLayout(false);
             this.grbhoadonban.PerformLayout();
             this.grbsanpham.ResumeLayout(false);
@@ -540,6 +551,8 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJButton btnLuu;
         private CustomControls.RJControls.RJButton btnXoa;
         private CustomControls.RJControls.RJButton btnThoat;
+       // private qlbanhangDataSet2 qlbanhangDataSet2;
+        private System.Windows.Forms.BindingSource hoadonbanBindingSource;
       //  private qlbanhangDataSet2TableAdapters.hoadonbanTableAdapter hoadonbanTableAdapter;
       //  private System.Windows.Forms.DataGridViewTextBoxColumn mahdbanDataGridViewTextBoxColumn;
        // private System.Windows.Forms.DataGridViewTextBoxColumn ngaybanDataGridViewTextBoxColumn;
@@ -562,10 +575,10 @@ namespace qlbh.UI
         private System.Windows.Forms.Panel panel1;
         private CustomControls.RJControls.RJCircularPictureBox picbill;
         private System.Windows.Forms.Label lblhoadonban;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtthanhtien;
+        private System.Windows.Forms.TextBox txtgiamgia;
+        private System.Windows.Forms.TextBox txtsoluong;
+        private System.Windows.Forms.TextBox txtgiaban;
         private System.Windows.Forms.TextBox txttensp;
         private System.Windows.Forms.ComboBox cbomasp;
         private System.Windows.Forms.Label lblthanhtien;
@@ -577,8 +590,8 @@ namespace qlbh.UI
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblghichu;
         private System.Windows.Forms.TextBox txtghichu;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtcongtienhang;
+        private System.Windows.Forms.TextBox txtVAT;
+        private System.Windows.Forms.TextBox txttongtien;
     }
 }

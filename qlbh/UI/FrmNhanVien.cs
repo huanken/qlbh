@@ -20,8 +20,6 @@ namespace qlbh.UI
 
         SQLConnection cnn = new SQLConnection();
 
-        
-
         private void bang_Nhanvien()
         {
             DataTable dta = new DataTable();
@@ -95,7 +93,7 @@ namespace qlbh.UI
         private void btn_Save_Click(object sender, EventArgs e)
         {
             String StrKtra = "Select ma_nv from nhanvien where ma_nv = '" + txt_MNV.Texts + "'";
-            SqlCommand cmd = new SqlCommand(StrKtra, cnn.cnn);
+            SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
             if (doc_dl.Read() == true)
             {

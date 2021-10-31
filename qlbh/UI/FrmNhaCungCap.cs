@@ -17,7 +17,7 @@ namespace qlbh.UI
         {
             InitializeComponent();
         }
-        SQLConnection kn = new SQLConnection();
+       SQLConnection kn = new SQLConnection();
         private void FrmNhaCungCap_Load(object sender, EventArgs e)
         {
             BangNhacungcap();
@@ -57,7 +57,7 @@ namespace qlbh.UI
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string strktra = "Select ma_ncc from nhacungcap where ma_ncc='" + rjTextBox1.Texts + "'";
-            SqlCommand cmd = new SqlCommand(strktra, kn.cnn);
+            SqlCommand cmd = new SqlCommand(strktra, SQLConnection.cnn);
             SqlDataReader doc_d1 = cmd.ExecuteReader();
             if (doc_d1.Read() == true)
             {

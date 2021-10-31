@@ -5,24 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-
+using System.Windows.Forms;
 
 namespace qlbh
 {
     class SQLConnection
     {
-        public SqlConnection cnn;
-        public SqlCommand cmd;
-        public DataTable dta;
-        public SqlDataAdapter ada;
+        public static SqlConnection cnn;
+        public static SqlCommand cmd;
+        public static DataTable dta;
+        public static SqlDataAdapter ada;
 
-        public void Ketnoi_DuLieu()
+        public static void Ketnoi_DuLieu()
         {
             // Huan
-            string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            //string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Binh
-            //string source = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            string source = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Ha
             //string source = "Data Source=DESKTOP-UKCIEJ7\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
@@ -34,7 +34,7 @@ namespace qlbh
             cnn = new SqlConnection(source);
             cnn.Open();
         }
-        public void HuyKetNoi()
+        public static void HuyKetNoi()
         {
             if (cnn == null)
             {
@@ -61,5 +61,66 @@ namespace qlbh
             cmd.ExecuteNonQuery();
             HuyKetNoi();
         }
+        public static string CreateUniqueID(string prefix, DateTime dt)
+        {
+            return prefix
+                    + dt.ToString("dd/MM/yy").Replace("/", "")
+                    + "T"
+                    + dt.ToString("HH:mm:ss").Replace(":", "");
+        }
+
+        public static DataTable ExecuteDataTable(string commandText)
+        {
+            Ketnoi_DuLieu();
+
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(commandText, cnn);
+                da.Fill(dt);
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                HuyKetNoi();
+            }
+
+            return null;
+        }
+
+        public static string GetFieldValues(string commandText)
+        {
+            Ketnoi_DuLieu();
+
+            string id = "";
+
+            try
+            {
+                SqlDataReader reader = new SqlCommand(commandText, cnn).ExecuteReader();
+
+                while (reader.Read())
+                {
+                    id = reader.GetValue(0).ToString();
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                HuyKetNoi();
+            }
+
+            return id;
+        }
+
     }
 }

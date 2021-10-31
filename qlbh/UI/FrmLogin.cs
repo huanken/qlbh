@@ -18,16 +18,16 @@ namespace qlbh.UI
             InitializeComponent();
         }
 
-        SQLConnection cnn = new SQLConnection();
+       // SQLConnection cnn = new SQLConnection();
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            cnn.HuyKetNoi();
-            cnn.Ketnoi_DuLieu();
+            SQLConnection.HuyKetNoi();
+            SQLConnection.Ketnoi_DuLieu();
             string DN = txtTaiKhoan.Texts;
             string MK = txtMatKhau.Texts;
             string sql_login = "SELECT tai_khoan,mat_khau FROM LOGIN WHERE tai_khoan='" + DN + "' AND mat_khau='" + MK + "'";
-            SqlCommand cmd = new SqlCommand(sql_login, cnn.cnn);
+            SqlCommand cmd = new SqlCommand(sql_login, SQLConnection.cnn);
             SqlDataReader dataReader = cmd.ExecuteReader();
             if (dataReader.Read() == true)
             {

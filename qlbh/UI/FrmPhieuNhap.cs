@@ -84,7 +84,7 @@ namespace qlbh.UI
         private void btn_Luu_Click(object sender, EventArgs e)
         {
             String StrKtra = "Select ma_pn from phieunhap where ma_pn = '" + txtBox_MaPN.Texts + "'";
-            SqlCommand cmd = new SqlCommand(StrKtra, kn.cnn);
+            SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
             if (doc_dl.Read() == true)
             {

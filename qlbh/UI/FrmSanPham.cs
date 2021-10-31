@@ -67,7 +67,7 @@ namespace qlbh.UI
         private void btn_Luu_Click_1(object sender, EventArgs e)
         {
             String StrKtra = "Select ma_sp from sanpham where ma_sp = '" + txtBox_masp.Text + "'";
-            SqlCommand cmd = new SqlCommand(StrKtra, kn.cnn);
+            SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
             if (doc_dl.Read() == true)
             {
