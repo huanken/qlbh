@@ -57,8 +57,16 @@ namespace qlbh
         public void Thucthi(string Sql)
         {
             Ketnoi_DuLieu();
-            cmd = new SqlCommand(Sql, cnn);
-            cmd.ExecuteNonQuery();
+            try
+            {
+                cmd = new SqlCommand(Sql, cnn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
             HuyKetNoi();
         }
         public static string CreateUniqueID(string prefix, DateTime dt)

@@ -76,7 +76,7 @@ namespace qlbh.UI
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 544);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 572);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // logo
@@ -431,7 +431,7 @@ namespace qlbh.UI
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(941, 544);
+            this.panel2.Size = new System.Drawing.Size(947, 572);
             this.panel2.TabIndex = 1;
             // 
             // colapse2
@@ -443,7 +443,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1141, 544);
+            this.ClientSize = new System.Drawing.Size(1147, 572);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.flowLayoutPanel1);

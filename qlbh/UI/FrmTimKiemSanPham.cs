@@ -61,6 +61,7 @@ namespace qlbh.UI
         private void FrmTimKiemSanPham_Load(object sender, EventArgs e)
         {
             cbbTimKiem.SelectedIndex = -1;
+            cbbTimKiem.Texts = "";
             txtTimKiem.Enabled = false;
             cbbTimKiem.Enabled = false;
             string sqltk;
@@ -88,6 +89,7 @@ namespace qlbh.UI
             cbbTimKiem.Enabled = false;
             txtTimKiem.Focus();
             cbbTimKiem.SelectedIndex = -1;
+            cbbTimKiem.Texts = "";
         }
 
         private void optTenSP_CheckedChanged(object sender, EventArgs e)
@@ -96,6 +98,7 @@ namespace qlbh.UI
             cbbTimKiem.Enabled = false;
             txtTimKiem.Focus();
             cbbTimKiem.SelectedIndex = -1;
+            cbbTimKiem.Texts = "";
         }
 
         private void optDanhMuc_CheckedChanged(object sender, EventArgs e)
@@ -109,6 +112,7 @@ namespace qlbh.UI
         {
             txtTimKiem.Texts = "";
             cbbTimKiem.SelectedIndex = -1;
+            cbbTimKiem.Texts = "";
             optMaSP.Checked = false;
             optTenSP.Checked = false;
             optDanhMuc.Checked = false;
