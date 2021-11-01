@@ -64,13 +64,19 @@ namespace qlbh.UI
             this.lblcongtienhang = new System.Windows.Forms.Label();
             this.lblvat = new System.Windows.Forms.Label();
             this.lbltongtien = new System.Windows.Forms.Label();
-            this.dgvhoadonban = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblghichu = new System.Windows.Forms.Label();
             this.txtghichu = new System.Windows.Forms.TextBox();
             this.txtcongtienhang = new System.Windows.Forms.TextBox();
             this.txtVAT = new System.Windows.Forms.TextBox();
             this.txttongtien = new System.Windows.Forms.TextBox();
+            this.dgvhoadonban = new System.Windows.Forms.DataGridView();
+            this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giamgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghi_chu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.hoadonbanBindingSource)).BeginInit();
             this.grbhoadonban.SuspendLayout();
             this.grbsanpham.SuspendLayout();
@@ -93,13 +99,14 @@ namespace qlbh.UI
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnThem.Location = new System.Drawing.Point(30, 509);
+            this.btnThem.Location = new System.Drawing.Point(145, 447);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(100, 40);
             this.btnThem.TabIndex = 6;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLuu
             // 
@@ -112,18 +119,19 @@ namespace qlbh.UI
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLuu.Location = new System.Drawing.Point(168, 509);
+            this.btnLuu.Location = new System.Drawing.Point(694, 431);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(104, 40);
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Tomato;
-            this.btnXoa.BackgroundColor = System.Drawing.Color.Tomato;
+            this.btnXoa.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnXoa.BackgroundColor = System.Drawing.Color.Goldenrod;
             this.btnXoa.BorderColor = System.Drawing.Color.Black;
             this.btnXoa.BorderRadius = 20;
             this.btnXoa.BorderSize = 2;
@@ -131,13 +139,14 @@ namespace qlbh.UI
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnXoa.Location = new System.Drawing.Point(301, 509);
+            this.btnXoa.Location = new System.Drawing.Point(260, 447);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(93, 40);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThoat
             // 
@@ -150,11 +159,11 @@ namespace qlbh.UI
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnThoat.Location = new System.Drawing.Point(913, 493);
+            this.btnThoat.Location = new System.Drawing.Point(823, 431);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(92, 40);
             this.btnThoat.TabIndex = 6;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Reset";
             this.btnThoat.TextColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -171,7 +180,7 @@ namespace qlbh.UI
             this.grbhoadonban.Controls.Add(this.lblmahoadon);
             this.grbhoadonban.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbhoadonban.ForeColor = System.Drawing.Color.IndianRed;
-            this.grbhoadonban.Location = new System.Drawing.Point(152, 91);
+            this.grbhoadonban.Location = new System.Drawing.Point(117, 69);
             this.grbhoadonban.Name = "grbhoadonban";
             this.grbhoadonban.Size = new System.Drawing.Size(299, 141);
             this.grbhoadonban.TabIndex = 7;
@@ -181,7 +190,7 @@ namespace qlbh.UI
             // cbomanv
             // 
             this.cbomanv.FormattingEnabled = true;
-            this.cbomanv.Location = new System.Drawing.Point(126, 84);
+            this.cbomanv.Location = new System.Drawing.Point(131, 84);
             this.cbomanv.Name = "cbomanv";
             this.cbomanv.Size = new System.Drawing.Size(153, 24);
             this.cbomanv.TabIndex = 3;
@@ -192,7 +201,7 @@ namespace qlbh.UI
             // 
             this.datengayban.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datengayban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datengayban.Location = new System.Drawing.Point(126, 51);
+            this.datengayban.Location = new System.Drawing.Point(131, 51);
             this.datengayban.Name = "datengayban";
             this.datengayban.Size = new System.Drawing.Size(153, 22);
             this.datengayban.TabIndex = 2;
@@ -200,14 +209,14 @@ namespace qlbh.UI
             // 
             // txttennv
             // 
-            this.txttennv.Location = new System.Drawing.Point(126, 113);
+            this.txttennv.Location = new System.Drawing.Point(131, 113);
             this.txttennv.Name = "txttennv";
             this.txttennv.Size = new System.Drawing.Size(153, 22);
             this.txttennv.TabIndex = 1;
             // 
             // txtmahdon
             // 
-            this.txtmahdon.Location = new System.Drawing.Point(126, 16);
+            this.txtmahdon.Location = new System.Drawing.Point(131, 16);
             this.txtmahdon.Name = "txtmahdon";
             this.txtmahdon.Size = new System.Drawing.Size(153, 22);
             this.txtmahdon.TabIndex = 1;
@@ -265,7 +274,7 @@ namespace qlbh.UI
             this.grbsanpham.Controls.Add(this.lblmasp);
             this.grbsanpham.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbsanpham.ForeColor = System.Drawing.Color.IndianRed;
-            this.grbsanpham.Location = new System.Drawing.Point(152, 238);
+            this.grbsanpham.Location = new System.Drawing.Point(117, 216);
             this.grbsanpham.Name = "grbsanpham";
             this.grbsanpham.Size = new System.Drawing.Size(299, 215);
             this.grbsanpham.TabIndex = 8;
@@ -274,43 +283,50 @@ namespace qlbh.UI
             // 
             // txtthanhtien
             // 
-            this.txtthanhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtthanhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtthanhtien.Location = new System.Drawing.Point(126, 170);
             this.txtthanhtien.Name = "txtthanhtien";
-            this.txtthanhtien.Size = new System.Drawing.Size(163, 22);
+            this.txtthanhtien.Size = new System.Drawing.Size(163, 24);
             this.txtthanhtien.TabIndex = 2;
             this.txtthanhtien.Text = "0.00";
             // 
             // txtgiamgia
             // 
-            this.txtgiamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgiamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgiamgia.Location = new System.Drawing.Point(126, 142);
             this.txtgiamgia.Name = "txtgiamgia";
-            this.txtgiamgia.Size = new System.Drawing.Size(163, 22);
+            this.txtgiamgia.Size = new System.Drawing.Size(163, 24);
             this.txtgiamgia.TabIndex = 2;
             this.txtgiamgia.Text = "0.00";
+            this.txtgiamgia.TextChanged += new System.EventHandler(this.txtgia_giamgia_soluong_TextChanged);
+            this.txtgiamgia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtgiamgia_soluong_KeyDown);
             // 
             // txtsoluong
             // 
-            this.txtsoluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsoluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsoluong.Location = new System.Drawing.Point(126, 114);
             this.txtsoluong.Name = "txtsoluong";
-            this.txtsoluong.Size = new System.Drawing.Size(163, 22);
+            this.txtsoluong.Size = new System.Drawing.Size(163, 24);
             this.txtsoluong.TabIndex = 2;
             this.txtsoluong.Text = "0";
+            this.txtsoluong.TextChanged += new System.EventHandler(this.txtgia_giamgia_soluong_TextChanged);
+            this.txtsoluong.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtgiamgia_soluong_KeyDown);
             // 
             // txtgiaban
             // 
+            this.txtgiaban.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgiaban.Location = new System.Drawing.Point(126, 86);
             this.txtgiaban.Name = "txtgiaban";
-            this.txtgiaban.Size = new System.Drawing.Size(163, 22);
+            this.txtgiaban.Size = new System.Drawing.Size(163, 24);
             this.txtgiaban.TabIndex = 2;
+            this.txtgiaban.TextChanged += new System.EventHandler(this.txtgia_giamgia_soluong_TextChanged);
             // 
             // txttensp
             // 
+            this.txttensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttensp.Location = new System.Drawing.Point(126, 58);
             this.txttensp.Name = "txttensp";
-            this.txttensp.Size = new System.Drawing.Size(163, 22);
+            this.txttensp.Size = new System.Drawing.Size(163, 24);
             this.txttensp.TabIndex = 2;
             // 
             // cbomasp
@@ -321,6 +337,8 @@ namespace qlbh.UI
             this.cbomasp.Name = "cbomasp";
             this.cbomasp.Size = new System.Drawing.Size(163, 26);
             this.cbomasp.TabIndex = 1;
+            this.cbomasp.DropDown += new System.EventHandler(this.cbomasp_DropDown);
+            this.cbomasp.SelectedIndexChanged += new System.EventHandler(this.cbomasp_SelectedIndexChanged);
             // 
             // lblthanhtien
             // 
@@ -380,9 +398,9 @@ namespace qlbh.UI
             // 
             this.panel1.BackColor = System.Drawing.Color.Salmon;
             this.panel1.ForeColor = System.Drawing.Color.Salmon;
-            this.panel1.Location = new System.Drawing.Point(152, 55);
+            this.panel1.Location = new System.Drawing.Point(152, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(865, 10);
+            this.panel1.Size = new System.Drawing.Size(785, 10);
             this.panel1.TabIndex = 9;
             // 
             // picbill
@@ -394,7 +412,7 @@ namespace qlbh.UI
             this.picbill.BorderSize = 5;
             this.picbill.GradientAngle = 50F;
             this.picbill.Image = ((System.Drawing.Image)(resources.GetObject("picbill.Image")));
-            this.picbill.Location = new System.Drawing.Point(30, 13);
+            this.picbill.Location = new System.Drawing.Point(5, -1);
             this.picbill.Name = "picbill";
             this.picbill.Size = new System.Drawing.Size(125, 125);
             this.picbill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -406,7 +424,7 @@ namespace qlbh.UI
             this.lblhoadonban.AutoSize = true;
             this.lblhoadonban.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhoadonban.ForeColor = System.Drawing.Color.Goldenrod;
-            this.lblhoadonban.Location = new System.Drawing.Point(477, 22);
+            this.lblhoadonban.Location = new System.Drawing.Point(463, 9);
             this.lblhoadonban.Name = "lblhoadonban";
             this.lblhoadonban.Size = new System.Drawing.Size(189, 30);
             this.lblhoadonban.TabIndex = 11;
@@ -416,7 +434,8 @@ namespace qlbh.UI
             // 
             this.lblcongtienhang.AutoSize = true;
             this.lblcongtienhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcongtienhang.Location = new System.Drawing.Point(755, 385);
+            this.lblcongtienhang.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblcongtienhang.Location = new System.Drawing.Point(685, 329);
             this.lblcongtienhang.Name = "lblcongtienhang";
             this.lblcongtienhang.Size = new System.Drawing.Size(131, 18);
             this.lblcongtienhang.TabIndex = 12;
@@ -426,7 +445,8 @@ namespace qlbh.UI
             // 
             this.lblvat.AutoSize = true;
             this.lblvat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvat.Location = new System.Drawing.Point(755, 414);
+            this.lblvat.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblvat.Location = new System.Drawing.Point(685, 358);
             this.lblvat.Name = "lblvat";
             this.lblvat.Size = new System.Drawing.Size(97, 18);
             this.lblvat.TabIndex = 12;
@@ -436,80 +456,119 @@ namespace qlbh.UI
             // 
             this.lbltongtien.AutoSize = true;
             this.lbltongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltongtien.Location = new System.Drawing.Point(755, 445);
+            this.lbltongtien.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbltongtien.Location = new System.Drawing.Point(685, 389);
             this.lbltongtien.Name = "lbltongtien";
             this.lbltongtien.Size = new System.Drawing.Size(88, 18);
             this.lbltongtien.TabIndex = 12;
             this.lbltongtien.Text = "Tổng tiền: ";
             // 
-            // dgvhoadonban
-            // 
-            this.dgvhoadonban.BackgroundColor = System.Drawing.Color.White;
-            this.dgvhoadonban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvhoadonban.Location = new System.Drawing.Point(511, 107);
-            this.dgvhoadonban.Name = "dgvhoadonban";
-            this.dgvhoadonban.Size = new System.Drawing.Size(448, 252);
-            this.dgvhoadonban.TabIndex = 13;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Salmon;
-            this.panel2.Location = new System.Drawing.Point(88, 555);
+            this.panel2.Location = new System.Drawing.Point(88, 518);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(917, 10);
+            this.panel2.Size = new System.Drawing.Size(849, 10);
             this.panel2.TabIndex = 14;
             // 
             // lblghichu
             // 
             this.lblghichu.AutoSize = true;
-            this.lblghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblghichu.Location = new System.Drawing.Point(432, 482);
+            this.lblghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblghichu.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblghichu.Location = new System.Drawing.Point(462, 294);
             this.lblghichu.Name = "lblghichu";
-            this.lblghichu.Size = new System.Drawing.Size(67, 18);
+            this.lblghichu.Size = new System.Drawing.Size(76, 18);
             this.lblghichu.TabIndex = 12;
             this.lblghichu.Text = "Ghi chú: ";
             // 
             // txtghichu
             // 
-            this.txtghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtghichu.Location = new System.Drawing.Point(492, 482);
+            this.txtghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtghichu.Location = new System.Drawing.Point(535, 293);
             this.txtghichu.Name = "txtghichu";
-            this.txtghichu.Size = new System.Drawing.Size(278, 21);
+            this.txtghichu.Size = new System.Drawing.Size(198, 24);
             this.txtghichu.TabIndex = 15;
             // 
             // txtcongtienhang
             // 
-            this.txtcongtienhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcongtienhang.Location = new System.Drawing.Point(879, 381);
+            this.txtcongtienhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcongtienhang.Location = new System.Drawing.Point(809, 325);
             this.txtcongtienhang.Name = "txtcongtienhang";
-            this.txtcongtienhang.Size = new System.Drawing.Size(115, 22);
+            this.txtcongtienhang.Size = new System.Drawing.Size(115, 24);
             this.txtcongtienhang.TabIndex = 16;
             this.txtcongtienhang.Text = "0.00";
             // 
             // txtVAT
             // 
-            this.txtVAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVAT.Location = new System.Drawing.Point(879, 413);
+            this.txtVAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVAT.Location = new System.Drawing.Point(809, 357);
             this.txtVAT.Name = "txtVAT";
-            this.txtVAT.Size = new System.Drawing.Size(115, 22);
+            this.txtVAT.Size = new System.Drawing.Size(115, 24);
             this.txtVAT.TabIndex = 16;
             this.txtVAT.Text = "0.00";
             // 
             // txttongtien
             // 
-            this.txttongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttongtien.Location = new System.Drawing.Point(879, 441);
+            this.txttongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttongtien.Location = new System.Drawing.Point(809, 385);
             this.txttongtien.Name = "txttongtien";
-            this.txttongtien.Size = new System.Drawing.Size(115, 22);
+            this.txttongtien.Size = new System.Drawing.Size(115, 24);
             this.txttongtien.TabIndex = 16;
             this.txttongtien.Text = "0.00";
+            // 
+            // dgvhoadonban
+            // 
+            this.dgvhoadonban.BackgroundColor = System.Drawing.Color.White;
+            this.dgvhoadonban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvhoadonban.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.masp,
+            this.soluong,
+            this.giaban,
+            this.giamgia,
+            this.thanhtien,
+            this.ghi_chu});
+            this.dgvhoadonban.Location = new System.Drawing.Point(414, 85);
+            this.dgvhoadonban.Name = "dgvhoadonban";
+            this.dgvhoadonban.Size = new System.Drawing.Size(545, 178);
+            this.dgvhoadonban.TabIndex = 13;
+            // 
+            // masp
+            // 
+            this.masp.HeaderText = "Mã sản phẩm";
+            this.masp.Name = "masp";
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.Name = "soluong";
+            // 
+            // giaban
+            // 
+            this.giaban.HeaderText = "Giá bán";
+            this.giaban.Name = "giaban";
+            // 
+            // giamgia
+            // 
+            this.giamgia.HeaderText = "Giảm giá(%)";
+            this.giamgia.Name = "giamgia";
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.Name = "thanhtien";
+            // 
+            // ghi_chu
+            // 
+            this.ghi_chu.HeaderText = "Ghi chú";
+            this.ghi_chu.Name = "ghi_chu";
             // 
             // FrmHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(1017, 577);
+            this.ClientSize = new System.Drawing.Size(971, 542);
             this.ControlBox = false;
             this.Controls.Add(this.txttongtien);
             this.Controls.Add(this.txtVAT);
@@ -586,12 +645,18 @@ namespace qlbh.UI
         private System.Windows.Forms.Label lblcongtienhang;
         private System.Windows.Forms.Label lblvat;
         private System.Windows.Forms.Label lbltongtien;
-        private System.Windows.Forms.DataGridView dgvhoadonban;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblghichu;
         private System.Windows.Forms.TextBox txtghichu;
         private System.Windows.Forms.TextBox txtcongtienhang;
         private System.Windows.Forms.TextBox txtVAT;
         private System.Windows.Forms.TextBox txttongtien;
+        private System.Windows.Forms.DataGridView dgvhoadonban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn masp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giamgia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghi_chu;
     }
 }
