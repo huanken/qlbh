@@ -220,3 +220,24 @@ C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreC
 C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET\qlbh\qlbh\obj\Debug\qlbh.pdb
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\bin\Debug\qlbh.exe.config
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\bin\Debug\qlbh.exe
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\bin\Debug\qlbh.pdb
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmGiaoHang.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmHoaDonBan.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmLogin.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhaCungCap.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhanVien.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmPhieuNhap.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmSanPham.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemHoaDon.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemPhieuNhap.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemSanPham.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTrangChu.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.exe
+C:\Users\LaptopK1\Desktop\QLCUAHANG DOTNET new\qlbh\qlbh\obj\Debug\qlbh.pdb

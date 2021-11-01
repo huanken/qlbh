@@ -25,7 +25,7 @@ namespace qlbh.UI
         public void BANG_DM()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select ma_dm_sp from dmsanpham");
+            dta = kn.Lay_DulieuBang("select * from dmsanpham order by ma_dm_sp");
             cbo_dm.DataSource = dta;
             cbo_dm.DisplayMember = "ma_dm_sp";
             cbo_dm.ValueMember = "ma_dm_sp";
@@ -33,7 +33,7 @@ namespace qlbh.UI
         public void BANG_SANPHAM()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("select * from sanpham");
+            dta = kn.Lay_DulieuBang("select * from sanpham order by cast( ma_sp as int)");
             dgv_sanpham.DataSource = dta;
             //this.sanphamTableAdapter1.Fill(this.dataSet.sanpham);
             HIENTHI_DULIEU();
