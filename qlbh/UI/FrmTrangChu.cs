@@ -141,17 +141,20 @@ namespace qlbh.UI
 
         private void btnTimKiemSanPham_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmTimKiemSanPham();
+            AddForm(f);
         }
 
         private void btnTimKiemHoaDon_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmTimKiemHoaDon();
+            AddForm(f);
         }
 
         private void btnTimKiemPhieuNhap_Click(object sender, EventArgs e)
         {
-
+            Form f = new FrmTimKiemPhieuNhap();
+            AddForm(f);
         }
 
     }
