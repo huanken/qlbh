@@ -35,7 +35,7 @@ namespace qlbh.UI
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang("select * from sanpham");
             dgv_sanpham.DataSource = dta;
-            this.sanphamTableAdapter1.Fill(this.dataSet.sanpham);
+            //this.sanphamTableAdapter1.Fill(this.dataSet.sanpham);
             HIENTHI_DULIEU();
         }
         public void HIENTHI_DULIEU()

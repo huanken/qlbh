@@ -158,3 +158,23 @@ C:\Users\Admin\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.config
 C:\Users\Admin\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
 C:\Users\Admin\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
 C:\Users\Admin\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmGiaoHang.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.Properties.Resources.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmHoaDonBan.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmLogin.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhaCungCap.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmNhanVien.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmPhieuNhap.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmSanPham.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemHoaDon.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemPhieuNhap.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTimKiemSanPham.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTrangChu.resources
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe.config
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.exe
+C:\Users\Admin\OneDrive - National Economics University\Desktop\BTL QLCUAHANG\qlbh\qlbh\bin\Debug\qlbh.pdb
