@@ -89,7 +89,7 @@ namespace qlbh.UI
                 TBchen = MessageBox.Show("Bạn có muốn lưu không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (TBchen == DialogResult.Yes)
                 {
-                    String sql_luu = "insert into sanpham values ('" + txtBox_masp.Text + "','" + txtBox_tensp.Text + "','" + txtBox_giasp.Text + "','" + txtImagepath.Text + "','" + txtBox_dvt.Text + "','" + cbo_dm.Text + "'"+")";
+                    String sql_luu = "insert into sanpham values ('" + txtBox_masp.Text + "',N'" + txtBox_tensp.Text + "','" + txtBox_giasp.Text + "','" + txtImagepath.Text + "','" + txtBox_dvt.Text + "','" + cbo_dm.Text + "'"+")";
                     kn.Thucthi(sql_luu);
                     BANG_SANPHAM();
                 }
@@ -100,7 +100,7 @@ namespace qlbh.UI
 
         private void btn_Sua_Click_1(object sender, EventArgs e)
         {
-            string sql_sua = "update sanpham set ten_san_pham = '" + txtBox_tensp.Text + "', don_gia_ban = '" + txtBox_giasp.Text + "',don_vi_tinh = '" + txtBox_dvt.Text +"', ma_dm_sp = '" + cbo_dm.Text + "',  hinhanh='" + txtImagepath.Text + "' where ma_sp ='" + txtBox_masp.Text + "'";
+            string sql_sua = "update sanpham set ten_san_pham = N'" + txtBox_tensp.Text + "', don_gia_ban = '" + txtBox_giasp.Text + "',don_vi_tinh = '" + txtBox_dvt.Text +"', ma_dm_sp = '" + cbo_dm.Text + "',  hinhanh='" + txtImagepath.Text + "' where ma_sp ='" + txtBox_masp.Text + "'";
             kn.Thucthi(sql_sua); 
             BANG_SANPHAM();
         }

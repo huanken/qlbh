@@ -68,7 +68,7 @@ namespace qlbh.UI
             }
             else
             {
-                string sqlLuu = "Insert Into nhacungcap Values('" + rjTextBox1.Texts + "', '" + rjTextBox2.Texts + "', '" + rjTextBox3.Texts + "','" + rjTextBox4.Texts + "' ); ";
+                string sqlLuu = "Insert Into nhacungcap Values('" + rjTextBox1.Texts + "', N'" + rjTextBox2.Texts + "', N'" + rjTextBox3.Texts + "','" + rjTextBox4.Texts + "' ); ";
                 kn.Thucthi(sqlLuu);
                 BangNhacungcap();
             }
@@ -82,7 +82,7 @@ namespace qlbh.UI
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-                string sql_Sua = "Update nhacungcap Set ten_ncc = '" + rjTextBox2.Texts + "', dia_chi = '" + rjTextBox3.Texts + "', so_dt = '" + rjTextBox4.Texts + "' where ma_ncc = '" + rjTextBox1.Texts + "'";
+                string sql_Sua = "Update nhacungcap Set ten_ncc = N'" + rjTextBox2.Texts + "', dia_chi = N'" + rjTextBox3.Texts + "', so_dt = '" + rjTextBox4.Texts + "' where ma_ncc = '" + rjTextBox1.Texts + "'";
                 kn.Thucthi(sql_Sua);
                 BangNhacungcap();
             }

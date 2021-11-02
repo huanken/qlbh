@@ -136,7 +136,7 @@ namespace qlbh.UI
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            string sqlSua = "Update giaohang Set thoi_gian= '" + dp_Time.Value + "' , dia_chi_kh= '" + txt_dc.Texts + "' ,so_dt_kh= '" +txt_sđtkh.Texts + "' , ma_nv= '" + cbb_mnv.Text + "' , ";
+            string sqlSua = "Update giaohang Set thoi_gian= '" + dp_Time.Value + "' , dia_chi_kh= N'" + txt_dc.Texts + "' ,so_dt_kh= '" +txt_sđtkh.Texts + "' , ma_nv= '" + cbb_mnv.Text + "' , ";
             sqlSua += "ma_hd_ban = '" + cbb_mactdb.Text.Trim() + "'Where ma_van_don = '" + txt_mavd.Texts.Trim() + "';";
             cnn.Thucthi(sqlSua);
             bang_giaohang();

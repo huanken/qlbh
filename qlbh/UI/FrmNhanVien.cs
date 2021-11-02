@@ -77,7 +77,7 @@ namespace qlbh.UI
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            string sqlSua = "Update nhanvien Set ten_nv= '" + txt_TenNV.Texts + "' , so_dt= '" + txt_SĐT.Texts + "' ,dia_chi= '" + txt_ĐChi.Texts + "' , email= '" + txt_Email.Texts + "' , ";
+            string sqlSua = "Update nhanvien Set ten_nv= N'" + txt_TenNV.Texts + "' , so_dt= '" + txt_SĐT.Texts + "' ,dia_chi= N'" + txt_ĐChi.Texts + "' , email= '" + txt_Email.Texts + "' , ";
             sqlSua += " gioitinh = '" + txt_giơitinh.Texts.Trim() + "'Where ma_nv = '" + txt_MNV.Texts.Trim() + "';";
             cnn.Thucthi(sqlSua);
             bang_Nhanvien();
@@ -105,7 +105,7 @@ namespace qlbh.UI
             }
             else
             {
-                string sqlLuu = "Insert Into nhanvien Values('" + txt_MNV.Texts.Trim() + "',  '" + txt_TenNV.Texts.Trim() + "', '" + txt_giơitinh.Texts.Trim() + "','" +txt_SĐT.Texts.Trim() + "', '" + txt_ĐChi.Texts.Trim() + "', '"+ txt_Email.Texts.Trim() + "' );";
+                string sqlLuu = "Insert Into nhanvien Values('" + txt_MNV.Texts.Trim() + "',  N'" + txt_TenNV.Texts.Trim() + "', '" + txt_giơitinh.Texts.Trim() + "','" +txt_SĐT.Texts.Trim() + "', N'" + txt_ĐChi.Texts.Trim() + "', '"+ txt_Email.Texts.Trim() + "' );";
                 cnn.Thucthi(sqlLuu);
                 bang_Nhanvien();
             }
