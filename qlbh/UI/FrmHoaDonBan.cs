@@ -114,7 +114,7 @@ namespace qlbh.UI
             catch (Exception ex)
             {
                 txtthanhtien.Text = "0.00";
-
+                MessageBox.Show(ex.Message);
             }
         }
       

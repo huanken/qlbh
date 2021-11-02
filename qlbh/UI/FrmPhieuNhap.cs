@@ -211,6 +211,7 @@ namespace qlbh.UI
             catch (Exception ex)
             {
                 txtBox_Thanhtien.Text = "0.00";
+                MessageBox.Show(ex.Message);
             }
         }
     }
