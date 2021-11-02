@@ -122,7 +122,7 @@
     <Compile Include="UI\FrmTimKiemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTimKiemHoaDon.Designer.cs">
+    <Compile Include="UI\FrmTimKiemHoaDon.designer.cs">
       <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FrmTimKiemPhieuNhap.cs">
