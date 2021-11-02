@@ -23,9 +23,15 @@ namespace qlbh.UI
 
         private void bang_giaohang()
         {
-            DataTable dta = new DataTable();
-            dta = cnn.Lay_DulieuBang("Select * From giaohang");
-            GridView_GiaoHang.DataSource = dta;
+            GridView_GiaoHang.DataSource = SQLConnection.ExecuteDataTable(@"SELECT
+                                                                                ma_van_don AS [Mã vận đơn],
+                                                                                thoi_gian AS [Thời gian],
+                                                                                dia_chi_kh AS [Địa chỉ KH],
+                                                                                so_dt_kh AS [SĐT KH],
+                                                                                ma_nv AS [Mã nhân viên],
+                                                                                ma_hd_ban AS [Mã HĐ],
+                                                                                trang_thai AS [Trạng thái]
+                                                                                    FROM giaohang");
         }
 
         private void Bang_Nhanvien()
@@ -50,28 +56,28 @@ namespace qlbh.UI
         private void HienThiDuLieu()
         {
             txt_mavd.DataBindings.Clear();
-            txt_mavd.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "ma_van_don");
+            txt_mavd.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "Mã vận đơn");
 
             dp_Time.DataBindings.Clear();
-            dp_Time.DataBindings.Add("Value", GridView_GiaoHang.DataSource, "thoi_gian");
+            dp_Time.DataBindings.Add("Value", GridView_GiaoHang.DataSource, "Thời gian");
 
             txt_dc.DataBindings.Clear();
-            txt_dc.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "dia_chi_kh");
+            txt_dc.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "Địa chỉ KH");
 
             txt_sđtkh.DataBindings.Clear();
-            txt_sđtkh.DataBindings.Add("Texts",GridView_GiaoHang.DataSource, "so_dt_kh");
+            txt_sđtkh.DataBindings.Add("Texts",GridView_GiaoHang.DataSource, "SĐT KH");
 
             cbb_mnv.DataBindings.Clear();
-            cbb_mnv.DataBindings.Add("Text",GridView_GiaoHang.DataSource, "ma_nv");
+            cbb_mnv.DataBindings.Add("Text",GridView_GiaoHang.DataSource, "Mã nhân viên");
 
             cbb_mactdb.DataBindings.Clear();
-            cbb_mactdb.DataBindings.Add("Text",GridView_GiaoHang.DataSource, "ma_hd_ban");
+            cbb_mactdb.DataBindings.Add("Text",GridView_GiaoHang.DataSource, "Mã HĐ");
 
             cbo_TrangThai.DataBindings.Clear();
-            cbo_TrangThai.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "trang_thai");
+            cbo_TrangThai.DataBindings.Add("Texts", GridView_GiaoHang.DataSource, "Trạng thái");
 
             this.btnTrangThai.DataBindings.Clear();
-            this.btnTrangThai.DataBindings.Add("Text", GridView_GiaoHang.DataSource, "trang_thai");
+            this.btnTrangThai.DataBindings.Add("Text", GridView_GiaoHang.DataSource, "Trạng thái");
             
         }
 

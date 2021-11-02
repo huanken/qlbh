@@ -22,6 +22,21 @@ namespace qlbh.UI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            DangNhap();
+        }
+
+        private void DangNhap()
+        {
+            if (String.IsNullOrEmpty(txtTaiKhoan.Texts))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (String.IsNullOrEmpty(txtMatKhau.Texts))
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             SQLConnection.HuyKetNoi();
             SQLConnection.Ketnoi_DuLieu();
             string DN = txtTaiKhoan.Texts;
@@ -41,5 +56,33 @@ namespace qlbh.UI
                 MessageBox.Show("Hãy kiểm tra lại thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            DangNhap();
+        }
+
+        private void txtTaiKhoan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtMatKhau.Focus();
+            }
+
+        }
+
+        private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDangNhap.PerformClick();
+            }
+        }
+
     }
 }

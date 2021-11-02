@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtTaiKhoan = new CustomControls.RJControls.RJTextBox();
@@ -41,18 +42,18 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rjCircularPictureBox2 = new CustomControls.RJControls.RJCircularPictureBox();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.rjCircularPictureBox2 = new CustomControls.RJControls.RJCircularPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -75,10 +76,10 @@
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTaiKhoan.BackColor = System.Drawing.Color.MintCream;
             this.txtTaiKhoan.BorderColor = System.Drawing.Color.White;
             this.txtTaiKhoan.BorderFocusColor = System.Drawing.Color.DarkOrange;
-            this.txtTaiKhoan.BorderRadius = 0;
+            this.txtTaiKhoan.BorderRadius = 1;
             this.txtTaiKhoan.BorderSize = 2;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -90,17 +91,18 @@
             this.txtTaiKhoan.PasswordChar = false;
             this.txtTaiKhoan.PlaceholderColor = System.Drawing.Color.DarkOrange;
             this.txtTaiKhoan.PlaceholderText = "Username";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(179, 35);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(182, 35);
             this.txtTaiKhoan.TabIndex = 1;
             this.txtTaiKhoan.Texts = "";
             this.txtTaiKhoan.UnderlinedStyle = false;
+            this.txtTaiKhoan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTaiKhoan_KeyDown);
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.BackColor = System.Drawing.SystemColors.Control;
+            this.txtMatKhau.BackColor = System.Drawing.Color.MintCream;
             this.txtMatKhau.BorderColor = System.Drawing.Color.Snow;
             this.txtMatKhau.BorderFocusColor = System.Drawing.Color.DarkOrange;
-            this.txtMatKhau.BorderRadius = 0;
+            this.txtMatKhau.BorderRadius = 1;
             this.txtMatKhau.BorderSize = 2;
             this.txtMatKhau.CausesValidation = false;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,13 +112,14 @@
             this.txtMatKhau.Multiline = false;
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.txtMatKhau.PasswordChar = false;
+            this.txtMatKhau.PasswordChar = true;
             this.txtMatKhau.PlaceholderColor = System.Drawing.Color.DarkOrange;
             this.txtMatKhau.PlaceholderText = "Password";
             this.txtMatKhau.Size = new System.Drawing.Size(179, 35);
             this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.Texts = "";
             this.txtMatKhau.UnderlinedStyle = false;
+            this.txtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
             // btnDangNhap
             // 
@@ -133,7 +136,7 @@
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(238, 42);
-            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Sign Up";
             this.btnDangNhap.TextColor = System.Drawing.Color.White;
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -186,7 +189,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Californian FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(103, 402);
+            this.label6.Location = new System.Drawing.Point(103, 413);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 16);
             this.label6.TabIndex = 9;
@@ -194,7 +197,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::qlbh.Properties.Resources.g;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(175, 441);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
@@ -205,7 +208,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::qlbh.Properties.Resources.w;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(141, 441);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
@@ -217,7 +220,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::qlbh.Properties.Resources.b1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(106, 441);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -226,36 +229,19 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // rjCircularPictureBox2
-            // 
-            this.rjCircularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox2.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.rjCircularPictureBox2.BorderColor2 = System.Drawing.Color.SpringGreen;
-            this.rjCircularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox2.BorderSize = 2;
-            this.rjCircularPictureBox2.GradientAngle = 50F;
-            this.rjCircularPictureBox2.Image = global::qlbh.Properties.Resources.download__4_;
-            this.rjCircularPictureBox2.Location = new System.Drawing.Point(31, 284);
-            this.rjCircularPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
-            this.rjCircularPictureBox2.Size = new System.Drawing.Size(33, 33);
-            this.rjCircularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.rjCircularPictureBox2.TabIndex = 8;
-            this.rjCircularPictureBox2.TabStop = false;
-            // 
             // rjCircularPictureBox1
             // 
             this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.SpringGreen;
             this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.BorderSize = 0;
             this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Image = global::qlbh.Properties.Resources.download__1_1;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(34, 225);
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(34, 224);
             this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(34, 34);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 7;
             this.rjCircularPictureBox1.TabStop = false;
@@ -285,6 +271,7 @@
             this.btnThoat.Size = new System.Drawing.Size(14, 14);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "X";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label7
             // 
@@ -310,18 +297,35 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "FOOD WORLD";
             // 
+            // rjCircularPictureBox2
+            // 
+            this.rjCircularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox2.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rjCircularPictureBox2.BorderColor2 = System.Drawing.Color.SpringGreen;
+            this.rjCircularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox2.BorderSize = 0;
+            this.rjCircularPictureBox2.GradientAngle = 50F;
+            this.rjCircularPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox2.Image")));
+            this.rjCircularPictureBox2.Location = new System.Drawing.Point(31, 288);
+            this.rjCircularPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
+            this.rjCircularPictureBox2.Size = new System.Drawing.Size(34, 34);
+            this.rjCircularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox2.TabIndex = 13;
+            this.rjCircularPictureBox2.TabStop = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(329, 507);
+            this.Controls.Add(this.rjCircularPictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.rjCircularPictureBox2);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -334,17 +338,19 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Pristina", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLogin_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,7 +368,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -371,6 +376,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label btnThoat;
+        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox2;
     }
 }
 
