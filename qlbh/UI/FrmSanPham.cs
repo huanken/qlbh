@@ -32,30 +32,34 @@ namespace qlbh.UI
         }
         public void BANG_SANPHAM()
         {
-            DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("select * from sanpham order by cast( ma_sp as int)");
-            dgv_sanpham.DataSource = dta;
-            //this.sanphamTableAdapter1.Fill(this.dataSet.sanpham);
+            dgv_sanpham.DataSource = SQLConnection.ExecuteDataTable(@"SELECT
+                                                                 ma_sp AS [Mã sản phẩm],
+                                                                 ten_san_pham AS [Tên sản phẩm],
+                                                                 don_gia_ban AS [Đơn giá],  
+                                                                 hinhanh AS [Source],
+                                                                 don_vi_tinh AS [Đơn vị tính],
+                                                                 ma_dm_sp AS [Mã danh mục SP]
+                                                                 FROM sanpham order by cast( ma_sp as int) ");
             HIENTHI_DULIEU();
         }
         public void HIENTHI_DULIEU()
         {
             txtBox_masp.DataBindings.Clear();
-            txtBox_masp.DataBindings.Add("Text", dgv_sanpham.DataSource, "ma_sp");
+            txtBox_masp.DataBindings.Add("Text", dgv_sanpham.DataSource, "Mã sản phẩm");
             txtBox_tensp.DataBindings.Clear();
-            txtBox_tensp.DataBindings.Add("Text", dgv_sanpham.DataSource, "ten_san_pham");
+            txtBox_tensp.DataBindings.Add("Text", dgv_sanpham.DataSource, "Tên sản phẩm");
             txtBox_giasp.DataBindings.Clear();
-            txtBox_giasp.DataBindings.Add("Text", dgv_sanpham.DataSource, "don_gia_ban");
+            txtBox_giasp.DataBindings.Add("Text", dgv_sanpham.DataSource, "Đơn giá");
             txtImagepath.DataBindings.Clear();
-            txtImagepath.DataBindings.Add("Text", dgv_sanpham.DataSource, "hinhanh");
+            txtImagepath.DataBindings.Add("Text", dgv_sanpham.DataSource, "Source");
             txtBox_dvt.DataBindings.Clear();
-            txtBox_dvt.DataBindings.Add("Text", dgv_sanpham.DataSource, "don_vi_tinh");
+            txtBox_dvt.DataBindings.Add("Text", dgv_sanpham.DataSource, "Đơn vị tính");
             cbo_dm.DataBindings.Clear();
-            cbo_dm.DataBindings.Add("Text", dgv_sanpham.DataSource, "ma_dm_sp");
+            cbo_dm.DataBindings.Add("Text", dgv_sanpham.DataSource, "Mã danh mục SP");
             pic_B1.DataBindings.Clear();
             this.pic_B1.WaitOnLoad = false;
             this.pic_B1.DataBindings.Add(new System.Windows.Forms.Binding(
-                "ImageLocation", dgv_sanpham.DataSource , "hinhanh", true));
+                "ImageLocation", dgv_sanpham.DataSource , "Source", true));
         }
 
         private void btn_Them_Click_1(object sender, EventArgs e)

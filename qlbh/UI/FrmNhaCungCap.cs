@@ -26,22 +26,25 @@ namespace qlbh.UI
 
         private void BangNhacungcap()
         {
-            DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * From nhacungcap");
-            dataGridViewncc.DataSource = dta;
+            dataGridViewncc.DataSource = SQLConnection.ExecuteDataTable(@"SELECT
+                                                                                ma_ncc AS [Mã NCC],
+                                                                                ten_ncc AS [Tên NCC],
+                                                                                dia_chi AS [Địa chỉ],
+                                                                                so_dt AS [Số Điện Thoại]
+                                                                                    FROM nhacungcap");
             HienThiDuLieu();
         }
 
         private void HienThiDuLieu()
         {
             rjTextBox1.DataBindings.Clear();
-            rjTextBox1.DataBindings.Add("Texts", dataGridViewncc.DataSource, "ma_ncc");
+            rjTextBox1.DataBindings.Add("Texts", dataGridViewncc.DataSource, "Mã NCC");
             rjTextBox2.DataBindings.Clear();
-            rjTextBox2.DataBindings.Add("Texts", dataGridViewncc.DataSource, "ten_ncc");
+            rjTextBox2.DataBindings.Add("Texts", dataGridViewncc.DataSource, "Tên NCC");
             rjTextBox3.DataBindings.Clear();
-            rjTextBox3.DataBindings.Add("Texts", dataGridViewncc.DataSource, "dia_chi");
+            rjTextBox3.DataBindings.Add("Texts", dataGridViewncc.DataSource, "Địa chỉ");
             rjTextBox4.DataBindings.Clear();
-            rjTextBox4.DataBindings.Add("Texts", dataGridViewncc.DataSource, "so_dt");
+            rjTextBox4.DataBindings.Add("Texts", dataGridViewncc.DataSource, "Số Điện Thoại");
         }
 
 

@@ -58,7 +58,7 @@ namespace qlbh.UI
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(52, 190);
+            this.label2.Location = new System.Drawing.Point(36, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 18);
             this.label2.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace qlbh.UI
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(48, 228);
+            this.label3.Location = new System.Drawing.Point(32, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(161, 22);
             this.label3.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace qlbh.UI
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(53, 270);
+            this.label4.Location = new System.Drawing.Point(37, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 18);
             this.label4.TabIndex = 1;
@@ -94,7 +94,7 @@ namespace qlbh.UI
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(49, 306);
+            this.label5.Location = new System.Drawing.Point(33, 299);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 18);
             this.label5.TabIndex = 1;
@@ -111,7 +111,7 @@ namespace qlbh.UI
             this.btnThemmoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemmoi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemmoi.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThemmoi.Location = new System.Drawing.Point(22, 452);
+            this.btnThemmoi.Location = new System.Drawing.Point(22, 405);
             this.btnThemmoi.Name = "btnThemmoi";
             this.btnThemmoi.Size = new System.Drawing.Size(95, 40);
             this.btnThemmoi.TabIndex = 3;
@@ -131,7 +131,7 @@ namespace qlbh.UI
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLuu.Location = new System.Drawing.Point(163, 452);
+            this.btnLuu.Location = new System.Drawing.Point(163, 405);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(101, 40);
             this.btnLuu.TabIndex = 3;
@@ -151,7 +151,7 @@ namespace qlbh.UI
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSua.Location = new System.Drawing.Point(313, 452);
+            this.btnSua.Location = new System.Drawing.Point(313, 405);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(102, 40);
             this.btnSua.TabIndex = 3;
@@ -171,7 +171,7 @@ namespace qlbh.UI
             this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnxoa.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxoa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnxoa.Location = new System.Drawing.Point(462, 452);
+            this.btnxoa.Location = new System.Drawing.Point(462, 405);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(106, 40);
             this.btnxoa.TabIndex = 3;
@@ -191,7 +191,7 @@ namespace qlbh.UI
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThoat.Location = new System.Drawing.Point(777, 467);
+            this.btnThoat.Location = new System.Drawing.Point(777, 420);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(82, 40);
             this.btnThoat.TabIndex = 3;
@@ -204,9 +204,9 @@ namespace qlbh.UI
             // 
             this.dataGridViewncc.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewncc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewncc.Location = new System.Drawing.Point(450, 119);
+            this.dataGridViewncc.Location = new System.Drawing.Point(415, 117);
             this.dataGridViewncc.Name = "dataGridViewncc";
-            this.dataGridViewncc.Size = new System.Drawing.Size(433, 216);
+            this.dataGridViewncc.Size = new System.Drawing.Size(468, 270);
             this.dataGridViewncc.TabIndex = 4;
             this.dataGridViewncc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewncc_CellContentClick);
             // 
@@ -219,7 +219,7 @@ namespace qlbh.UI
             this.rjTextBox1.BorderSize = 2;
             this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(224, 180);
+            this.rjTextBox1.Location = new System.Drawing.Point(189, 177);
             this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
@@ -241,7 +241,7 @@ namespace qlbh.UI
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(223, 220);
+            this.rjTextBox2.Location = new System.Drawing.Point(188, 217);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
@@ -263,7 +263,7 @@ namespace qlbh.UI
             this.rjTextBox3.BorderSize = 2;
             this.rjTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox3.Location = new System.Drawing.Point(224, 257);
+            this.rjTextBox3.Location = new System.Drawing.Point(189, 254);
             this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox3.Multiline = false;
             this.rjTextBox3.Name = "rjTextBox3";
@@ -285,7 +285,7 @@ namespace qlbh.UI
             this.rjTextBox4.BorderSize = 2;
             this.rjTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox4.Location = new System.Drawing.Point(224, 293);
+            this.rjTextBox4.Location = new System.Drawing.Point(189, 290);
             this.rjTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox4.Multiline = false;
             this.rjTextBox4.Name = "rjTextBox4";
@@ -315,9 +315,9 @@ namespace qlbh.UI
             this.rjCircularPictureBox1.BorderSize = 5;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(-6, -4);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(16, 4);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(143, 143);
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(129, 129);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.rjCircularPictureBox1.TabIndex = 7;
             this.rjCircularPictureBox1.TabStop = false;

@@ -238,7 +238,7 @@
             this.rjCircularPictureBox1.BorderSize = 0;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(34, 224);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(34, 219);
             this.rjCircularPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(34, 34);
@@ -306,7 +306,7 @@
             this.rjCircularPictureBox2.BorderSize = 0;
             this.rjCircularPictureBox2.GradientAngle = 50F;
             this.rjCircularPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox2.Image")));
-            this.rjCircularPictureBox2.Location = new System.Drawing.Point(31, 288);
+            this.rjCircularPictureBox2.Location = new System.Drawing.Point(31, 287);
             this.rjCircularPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
             this.rjCircularPictureBox2.Size = new System.Drawing.Size(34, 34);

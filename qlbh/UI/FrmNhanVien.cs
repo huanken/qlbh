@@ -22,30 +22,35 @@ namespace qlbh.UI
 
         private void bang_Nhanvien()
         {
-            DataTable dta = new DataTable();
-            dta = cnn.Lay_DulieuBang("Select * From nhanvien");
-            GridView_NV.DataSource = dta;
+            GridView_NV.DataSource = SQLConnection.ExecuteDataTable(@"SELECT
+                                                                                ma_nv AS [Mã nhân viên],
+                                                                                ten_nv AS [Tên nhân viên],
+                                                                                so_dt AS [Số ĐT],
+                                                                                dia_chi AS [Địa chỉ],
+                                                                                email AS [Email],
+                                                                                gioitinh AS [Giới tính]
+                                                                                    FROM nhanvien");
         }
 
         private void HienThiDuLieu()
         {
             txt_MNV.DataBindings.Clear();
-            txt_MNV.DataBindings.Add("Texts", GridView_NV.DataSource, "ma_nv");
+            txt_MNV.DataBindings.Add("Texts", GridView_NV.DataSource, "Mã nhân viên");
 
             txt_TenNV.DataBindings.Clear();
-            txt_TenNV.DataBindings.Add("Texts", GridView_NV.DataSource, "ten_nv");
+            txt_TenNV.DataBindings.Add("Texts", GridView_NV.DataSource, "Tên nhân viên");
 
             txt_SĐT.DataBindings.Clear();
-            txt_SĐT.DataBindings.Add("Texts", GridView_NV.DataSource, "so_dt");
+            txt_SĐT.DataBindings.Add("Texts", GridView_NV.DataSource, "Số ĐT");
 
             txt_ĐChi.DataBindings.Clear();
-            txt_ĐChi.DataBindings.Add("Texts", GridView_NV.DataSource, "dia_chi");
+            txt_ĐChi.DataBindings.Add("Texts", GridView_NV.DataSource, "Địa chỉ");
 
             txt_Email.DataBindings.Clear();
-            txt_Email.DataBindings.Add("Texts", GridView_NV.DataSource, "email");
+            txt_Email.DataBindings.Add("Texts", GridView_NV.DataSource, "Email");
 
             txt_giơitinh.DataBindings.Clear();
-            txt_giơitinh.DataBindings.Add("Texts", GridView_NV.DataSource, "gioitinh");
+            txt_giơitinh.DataBindings.Add("Texts", GridView_NV.DataSource, "Giới tính");
 
             
         }
