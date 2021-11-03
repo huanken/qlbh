@@ -184,7 +184,6 @@ namespace qlbh.UI
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread.Sleep(5000);
             if (picBannerBurger.Visible)
             {
                 opt1.Checked = true;

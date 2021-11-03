@@ -574,18 +574,16 @@
   </data>
   <data name="btnGiaoHang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAk1JREFUSEvt
-        lk1IFVEYhm+l/aALKTQo+l0oVJvUdUFQCeHSZVEiRNCqKDBoKbiUUPCHKFpIq9q06Gcj1cqMiqJFVEh/
-        VGghRKGW1+ed+UZnjnPmXroiRD7w4JxvzjevnHvm3Jtb5v8gn89vwYa/dC9W2qOKh6ZuLJUJbLRHFgcN
-        k0Fr6XTZI4vDmrJ4jS/Dy0z67JHFYU1ZnMEKrMc7KnhY1OC3+BXH8RyWYQem0YfabC6jeMri5gnvpfIb
-        d6PCjuIXvInlOIgubvBz3Ilt+APbLTKEgo+rNiWA8Xb8iJ1YjT8xjhs8Yq3qPYBT2GQlb7B2uoJW4XX8
-        gEfwIE7jVryGcbzBgrE+qu+4Iyr46Mc94WXAXZv/CNtRSxinUPBK1OZ8iGVZwZ9wDQ6jPu9We4CW+gZq
-        BeJkBgtqNai9cjIt+DaO4Ambn4C6Tjp91jKOG/zCWhJQ15I/dYM/Y+LcZbwRL2CzjbVD03CDhV6lN45a
-        yWk3+DxuQr0+A7gNe1A8sGAtexppwV7c4F/2N0L/YfTaaGn340wwWkhJwaXwbwf/wdOojVWL97AQbrD2
-        xmazV4U4Cv4WXia4rI0UwbgK3SPSJR78BFdYu/p1eDzTDWNMxVZ0w89azxzUXoW3vMSDB61tDmo6esUY
-        tlh5HoqXMDgeIxjXoV6jXVbywpzj+B4rrKRaJeq8P2alhXBT766OtSu4D1tQv0IS31Y+mLcOH+MQHsLD
-        eB91xq+1aekwQRvqFuqUeocXcbXdLghzN6AOIC2r1BfOeru9zFKSy80C5CnBqvy54qwAAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAHkSURBVEhL7Za9SlxRFIWnsFFULCxEkyCOYqNvEOx8BwsLMSD4ACrMG4k/iFrY2UqIvaCpRBAS
+        4w+CEAjHb5+95s5MvL/EQQJ+sOCetdc+e+Zy7p2pvfNmhBAG0ISWtp6QBmRlQmYd3aOI7GLIbqA/7U12
+        Lcxfkx1hfRorGShWDNlHb0kdbDzIjrA+cTsdxYpRPiLr78G5m1Fe8VS4RH2yi/EeR1bVwUPoKQZDaMgu
+        Rg0RWZUGG0S2PBl+oF7Z+Xg+4TOa88sWimZCZNmTkVXZ+RD85flMbhTNhMyMRyPfZOdD0D5t1nDzlxTN
+        hIy9B9oZV6m7MKjf5yWUu93/CoNmfV7CtkrpEKijoxjNQfFMiDQ8mXCu0ksoTqGfMVaAWlKhPIzsMWrn
+        UeWXUNzzTCnG1NYBvh2q45jo5AF9QT2KtsC8tURJDtGoWq13EC2gM5THVzSiNgfDXhSb6DfqJt/RsMY6
+        GPabe23VLtN5yjF23Q/7aBytogszXpErNK+RDkbzn8MHWeaNuVWKc7SImk/HpLaxfeypMa5ktcBsDk5O
+        Ldcf3Qp3sgohW20fzOatPkCjyL6tnWAj/+3TBtlq+2BOo7QfCPOmFCuEbPV9KHxC28geertlO6iucmno
+        eZV93vmfqdWeAQr7XHMIdqM7AAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnBaoCao.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
