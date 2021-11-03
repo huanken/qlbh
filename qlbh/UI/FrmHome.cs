@@ -103,10 +103,26 @@ namespace qlbh.UI
             picBannerChicken.Visible = false;
             picBannerGiaoHang.Visible = false;
             timer1.Start();
-            long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where ngay_ban='"+ DateTime.Now.Date+"'"));
-            long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where ngay_nhap='" + DateTime.Now.Date + "'"));
-            label13.Text = String.Format("{0:n0}", doanhthu) + "VNĐ";
-            label15.Text = String.Format("{0:n0}", tongchi) + "VNĐ";
+            try
+            {
+                long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where ngay_ban='" + DateTime.Now.Date + "'"));
+                label13.Text = String.Format("{0:n0}", doanhthu) + " VNĐ";
+             
+            } catch (Exception ex)
+            {
+                label13.Text = "0 VNĐ";
+            }
+            try
+            {
+                long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where ngay_nhap='" + DateTime.Now.Date + "'"));
+                label15.Text = String.Format("{0:n0}", tongchi) + " VNĐ";
+            }
+            catch (Exception ex)
+            {
+                label15.Text = "0 VNĐ";
+            }
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)

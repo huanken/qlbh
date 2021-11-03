@@ -746,9 +746,9 @@
             this.label4.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(87, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 18);
+            this.label4.Size = new System.Drawing.Size(63, 18);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Chiken";
+            this.label4.Text = "Chicken";
             // 
             // panel5
             // 
