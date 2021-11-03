@@ -28,14 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.picBannerBurger = new System.Windows.Forms.PictureBox();
+            this.picBannerChicken = new System.Windows.Forms.PictureBox();
+            this.btnNext = new CustomControls.RJControls.RJButton();
+            this.btnPre = new CustomControls.RJControls.RJButton();
+            this.picBannerGiaoHang = new System.Windows.Forms.PictureBox();
+            this.btnHide = new CustomControls.RJControls.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Pbox_food = new System.Windows.Forms.PictureBox();
+            this.pictureBox_food1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_food3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_food2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Pbox_food = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,13 +87,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox_food1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_food3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_food2 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerBurger)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerChicken)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerGiaoHang)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pbox_food)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).BeginInit();
             this.panel8.SuspendLayout();
@@ -75,21 +118,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hamburger)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.pictureBox8);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.pictureBox7);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.btnHide);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel11);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.Pbox_food);
             this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel8);
@@ -97,9 +145,6 @@
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox_food1);
-            this.panel2.Controls.Add(this.pictureBox_food3);
-            this.panel2.Controls.Add(this.pictureBox_food2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -107,10 +152,358 @@
             this.panel2.Size = new System.Drawing.Size(972, 562);
             this.panel2.TabIndex = 2;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(619, 8);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 41;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(584, 8);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 40;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(550, 8);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 39;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(513, 8);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 38;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(479, 8);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 37;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label19.Location = new System.Drawing.Point(22, 535);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(472, 21);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "Địa chỉ: 207 Trần Đại Nghĩa, Phường Đồng Tâm,Quận Hai Bà Trưng, Hà Nội";
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label18.Location = new System.Drawing.Point(22, 514);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(472, 21);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Food World ";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.panel15);
+            this.panel3.Controls.Add(this.panel14);
+            this.panel3.Controls.Add(this.picBannerBurger);
+            this.panel3.Controls.Add(this.picBannerChicken);
+            this.panel3.Controls.Add(this.btnNext);
+            this.panel3.Controls.Add(this.btnPre);
+            this.panel3.Controls.Add(this.picBannerGiaoHang);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(17, 44);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(631, 461);
+            this.panel3.TabIndex = 28;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label17.Location = new System.Drawing.Point(207, 13);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(190, 37);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "WELLCOME SIR";
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Controls.Add(this.pictureBox3);
+            this.panel15.Controls.Add(this.label15);
+            this.panel15.Controls.Add(this.label16);
+            this.panel15.Location = new System.Drawing.Point(335, 64);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(221, 71);
+            this.panel15.TabIndex = 33;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(7, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(72, 62);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label15.Location = new System.Drawing.Point(99, 37);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(71, 22);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "1000VNĐ";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(89, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(119, 18);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "TotalCost Today";
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.Controls.Add(this.pictureBox2);
+            this.panel14.Controls.Add(this.label13);
+            this.panel14.Controls.Add(this.label14);
+            this.panel14.Location = new System.Drawing.Point(57, 64);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(221, 71);
+            this.panel14.TabIndex = 32;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(72, 62);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label13.Location = new System.Drawing.Point(101, 37);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 22);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "1000VNĐ";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(95, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(113, 18);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Revenue Today";
+            // 
+            // picBannerBurger
+            // 
+            this.picBannerBurger.BackColor = System.Drawing.Color.LightYellow;
+            this.picBannerBurger.Image = ((System.Drawing.Image)(resources.GetObject("picBannerBurger.Image")));
+            this.picBannerBurger.Location = new System.Drawing.Point(14, 149);
+            this.picBannerBurger.Name = "picBannerBurger";
+            this.picBannerBurger.Size = new System.Drawing.Size(610, 261);
+            this.picBannerBurger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerBurger.TabIndex = 31;
+            this.picBannerBurger.TabStop = false;
+            // 
+            // picBannerChicken
+            // 
+            this.picBannerChicken.BackColor = System.Drawing.Color.LightYellow;
+            this.picBannerChicken.Image = ((System.Drawing.Image)(resources.GetObject("picBannerChicken.Image")));
+            this.picBannerChicken.Location = new System.Drawing.Point(14, 148);
+            this.picBannerChicken.Name = "picBannerChicken";
+            this.picBannerChicken.Size = new System.Drawing.Size(610, 261);
+            this.picBannerChicken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerChicken.TabIndex = 30;
+            this.picBannerChicken.TabStop = false;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnNext.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.btnNext.BorderColor = System.Drawing.Color.Black;
+            this.btnNext.BorderRadius = 0;
+            this.btnNext.BorderSize = 0;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.Black;
+            this.btnNext.Location = new System.Drawing.Point(342, 413);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(100, 35);
+            this.btnNext.TabIndex = 29;
+            this.btnNext.Text = "Next";
+            this.btnNext.TextColor = System.Drawing.Color.Black;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPre
+            // 
+            this.btnPre.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnPre.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.btnPre.BorderColor = System.Drawing.Color.Black;
+            this.btnPre.BorderRadius = 0;
+            this.btnPre.BorderSize = 0;
+            this.btnPre.FlatAppearance.BorderSize = 0;
+            this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPre.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.ForeColor = System.Drawing.Color.Black;
+            this.btnPre.Location = new System.Drawing.Point(207, 413);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(100, 35);
+            this.btnPre.TabIndex = 28;
+            this.btnPre.Text = "Pre";
+            this.btnPre.TextColor = System.Drawing.Color.Black;
+            this.btnPre.UseVisualStyleBackColor = false;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
+            // 
+            // picBannerGiaoHang
+            // 
+            this.picBannerGiaoHang.BackColor = System.Drawing.Color.LightYellow;
+            this.picBannerGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("picBannerGiaoHang.Image")));
+            this.picBannerGiaoHang.Location = new System.Drawing.Point(14, 148);
+            this.picBannerGiaoHang.Name = "picBannerGiaoHang";
+            this.picBannerGiaoHang.Size = new System.Drawing.Size(610, 261);
+            this.picBannerGiaoHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerGiaoHang.TabIndex = 25;
+            this.picBannerGiaoHang.TabStop = false;
+            // 
+            // btnHide
+            // 
+            this.btnHide.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnHide.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.btnHide.BorderColor = System.Drawing.Color.Black;
+            this.btnHide.BorderRadius = 0;
+            this.btnHide.BorderSize = 0;
+            this.btnHide.FlatAppearance.BorderSize = 0;
+            this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHide.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHide.ForeColor = System.Drawing.Color.Black;
+            this.btnHide.Location = new System.Drawing.Point(513, 509);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.Size = new System.Drawing.Size(100, 35);
+            this.btnHide.TabIndex = 27;
+            this.btnHide.Text = "Hide";
+            this.btnHide.TextColor = System.Drawing.Color.Black;
+            this.btnHide.UseVisualStyleBackColor = false;
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.Pbox_food);
+            this.panel1.Controls.Add(this.pictureBox_food1);
+            this.panel1.Controls.Add(this.pictureBox_food3);
+            this.panel1.Controls.Add(this.pictureBox_food2);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(74, 82);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(574, 421);
+            this.panel1.TabIndex = 26;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Imprint MT Shadow", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(29, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(132, 21);
+            this.label12.TabIndex = 24;
+            this.label12.Text = "Similar product";
+            // 
+            // Pbox_food
+            // 
+            this.Pbox_food.BackColor = System.Drawing.Color.LightYellow;
+            this.Pbox_food.Location = new System.Drawing.Point(16, 130);
+            this.Pbox_food.Name = "Pbox_food";
+            this.Pbox_food.Size = new System.Drawing.Size(449, 277);
+            this.Pbox_food.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pbox_food.TabIndex = 25;
+            this.Pbox_food.TabStop = false;
+            // 
+            // pictureBox_food1
+            // 
+            this.pictureBox_food1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food1.Image")));
+            this.pictureBox_food1.Location = new System.Drawing.Point(212, 45);
+            this.pictureBox_food1.Name = "pictureBox_food1";
+            this.pictureBox_food1.Size = new System.Drawing.Size(66, 57);
+            this.pictureBox_food1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_food1.TabIndex = 22;
+            this.pictureBox_food1.TabStop = false;
+            this.pictureBox_food1.Click += new System.EventHandler(this.pictureBox_food1_Click_1);
+            // 
+            // pictureBox_food3
+            // 
+            this.pictureBox_food3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food3.Image")));
+            this.pictureBox_food3.Location = new System.Drawing.Point(29, 46);
+            this.pictureBox_food3.Name = "pictureBox_food3";
+            this.pictureBox_food3.Size = new System.Drawing.Size(62, 57);
+            this.pictureBox_food3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_food3.TabIndex = 21;
+            this.pictureBox_food3.TabStop = false;
+            this.pictureBox_food3.Click += new System.EventHandler(this.pictureBox_food3_Click_1);
+            // 
+            // pictureBox_food2
+            // 
+            this.pictureBox_food2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food2.Image")));
+            this.pictureBox_food2.Location = new System.Drawing.Point(120, 45);
+            this.pictureBox_food2.Name = "pictureBox_food2";
+            this.pictureBox_food2.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox_food2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_food2.TabIndex = 23;
+            this.pictureBox_food2.TabStop = false;
+            this.pictureBox_food2.Click += new System.EventHandler(this.pictureBox_food2_Click_1);
+            // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.Location = new System.Drawing.Point(652, 364);
+            this.panel13.Location = new System.Drawing.Point(682, 364);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(230, 2);
             this.panel13.TabIndex = 25;
@@ -118,7 +511,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Black;
-            this.panel12.Location = new System.Drawing.Point(650, 455);
+            this.panel12.Location = new System.Drawing.Point(680, 455);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(230, 2);
             this.panel12.TabIndex = 24;
@@ -126,7 +519,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Black;
-            this.panel11.Location = new System.Drawing.Point(651, 283);
+            this.panel11.Location = new System.Drawing.Point(681, 283);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(230, 2);
             this.panel11.TabIndex = 23;
@@ -134,7 +527,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.Location = new System.Drawing.Point(651, 198);
+            this.panel6.Location = new System.Drawing.Point(681, 198);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(230, 2);
             this.panel6.TabIndex = 22;
@@ -142,27 +535,17 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(714, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(741, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(101, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
-            // Pbox_food
-            // 
-            this.Pbox_food.BackColor = System.Drawing.Color.LightYellow;
-            this.Pbox_food.Location = new System.Drawing.Point(145, 212);
-            this.Pbox_food.Name = "Pbox_food";
-            this.Pbox_food.Size = new System.Drawing.Size(449, 277);
-            this.Pbox_food.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Pbox_food.TabIndex = 20;
-            this.Pbox_food.TabStop = false;
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Gold;
-            this.panel10.Location = new System.Drawing.Point(603, 111);
+            this.panel10.Location = new System.Drawing.Point(633, 111);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(330, 3);
             this.panel10.TabIndex = 19;
@@ -173,11 +556,10 @@
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.label11);
             this.panel9.Controls.Add(this.pictureBox_drink);
-            this.panel9.Location = new System.Drawing.Point(651, 373);
+            this.panel9.Location = new System.Drawing.Point(681, 373);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(219, 76);
             this.panel9.TabIndex = 18;
-            this.panel9.Click += new System.EventHandler(this.panel9_Click);
             // 
             // label7
             // 
@@ -217,11 +599,10 @@
             this.panel8.Controls.Add(this.pictureBox_Rice);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(651, 291);
+            this.panel8.Location = new System.Drawing.Point(681, 291);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(221, 67);
             this.panel8.TabIndex = 17;
-            this.panel8.Click += new System.EventHandler(this.panel8_Click);
             // 
             // pictureBox_Rice
             // 
@@ -261,11 +642,10 @@
             this.panel7.Controls.Add(this.pictureBox_chiken);
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Location = new System.Drawing.Point(649, 462);
+            this.panel7.Location = new System.Drawing.Point(679, 462);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(221, 68);
             this.panel7.TabIndex = 16;
-            this.panel7.Click += new System.EventHandler(this.panel7_Click);
             // 
             // pictureBox_chiken
             // 
@@ -305,11 +685,10 @@
             this.panel5.Controls.Add(this.pictureBox_Hamburger);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(651, 206);
+            this.panel5.Location = new System.Drawing.Point(681, 206);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(221, 71);
             this.panel5.TabIndex = 15;
-            this.panel5.Click += new System.EventHandler(this.panel5_Click);
             // 
             // pictureBox_Hamburger
             // 
@@ -349,11 +728,10 @@
             this.panel4.Controls.Add(this.pictureBox_Dessert);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(651, 123);
+            this.panel4.Location = new System.Drawing.Point(681, 123);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(221, 67);
             this.panel4.TabIndex = 14;
-            this.panel4.Click += new System.EventHandler(this.panel4_Click);
             // 
             // pictureBox_Dessert
             // 
@@ -393,54 +771,16 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(645, 46);
+            this.label1.Location = new System.Drawing.Point(672, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 62);
             this.label1.TabIndex = 12;
             this.label1.Text = "MENU\r\nFOOD WORLD \r\n";
             // 
-            // pictureBox_food1
+            // timer1
             // 
-            this.pictureBox_food1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food1.Image")));
-            this.pictureBox_food1.Location = new System.Drawing.Point(341, 127);
-            this.pictureBox_food1.Name = "pictureBox_food1";
-            this.pictureBox_food1.Size = new System.Drawing.Size(66, 57);
-            this.pictureBox_food1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_food1.TabIndex = 2;
-            this.pictureBox_food1.TabStop = false;
-            this.pictureBox_food1.Click += new System.EventHandler(this.pictureBox_food1_Click);
-            // 
-            // pictureBox_food3
-            // 
-            this.pictureBox_food3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food3.Image")));
-            this.pictureBox_food3.Location = new System.Drawing.Point(158, 128);
-            this.pictureBox_food3.Name = "pictureBox_food3";
-            this.pictureBox_food3.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox_food3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_food3.TabIndex = 1;
-            this.pictureBox_food3.TabStop = false;
-            this.pictureBox_food3.Click += new System.EventHandler(this.pictureBox_food3_Click);
-            // 
-            // pictureBox_food2
-            // 
-            this.pictureBox_food2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_food2.Image")));
-            this.pictureBox_food2.Location = new System.Drawing.Point(249, 127);
-            this.pictureBox_food2.Name = "pictureBox_food2";
-            this.pictureBox_food2.Size = new System.Drawing.Size(64, 57);
-            this.pictureBox_food2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_food2.TabIndex = 3;
-            this.pictureBox_food2.TabStop = false;
-            this.pictureBox_food2.Click += new System.EventHandler(this.pictureBox_food2_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Imprint MT Shadow", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(158, 96);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 21);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Similar product";
+            this.timer1.Interval = 2300;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmHome
             // 
@@ -451,10 +791,31 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHome";
             this.Text = "FrmHome";
+            this.Load += new System.EventHandler(this.FrmHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerBurger)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerChicken)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBannerGiaoHang)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pbox_food)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).EndInit();
@@ -470,9 +831,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -485,7 +843,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox Pbox_food;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label7;
@@ -508,9 +865,35 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private CustomControls.RJControls.RJButton btnHide;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox Pbox_food;
         private System.Windows.Forms.PictureBox pictureBox_food1;
         private System.Windows.Forms.PictureBox pictureBox_food3;
         private System.Windows.Forms.PictureBox pictureBox_food2;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel3;
+        private CustomControls.RJControls.RJButton btnNext;
+        private CustomControls.RJControls.RJButton btnPre;
+        private System.Windows.Forms.PictureBox picBannerGiaoHang;
+        private System.Windows.Forms.PictureBox picBannerBurger;
+        private System.Windows.Forms.PictureBox picBannerChicken;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

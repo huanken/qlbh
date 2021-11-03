@@ -67,12 +67,14 @@ namespace qlbh.UI
         }
 
          private void cbomasp_DropDown(object sender, EventArgs e)
-        {
-            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp FROM sanpham");
-            cbomasp.ValueMember = "ma_sp";
+         {
+            cbomasp.DisplayMember = "Sản phẩm";
+            cbomasp.ValueMember = "Sản phẩm";
             cbomasp.SelectedIndex = -1;
+           // cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp FROM sanpham") ;
+            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT cast(ma_sp as int) as [Sản phẩm] FROM sanpham order by [Sản phẩm]");
             txtgiaban.Text = "";
-        }
+         }
 
 
         private void cbomasp_SelectedIndexChanged(object sender, EventArgs e)
@@ -86,8 +88,8 @@ namespace qlbh.UI
                 txtsoluong.Enabled = txtgiamgia.Enabled = true;
             }
 
-            txttensp.Text = SQLConnection.GetFieldValues("SELECT ten_san_pham FROM sanpham WHERE ma_sp = N'" + cbomasp.Text + "'");
-            double db = Double.TryParse(SQLConnection.GetFieldValues(@"SELECT don_gia_ban FROM sanpham WHERE ma_sp = N'" +cbomasp.Text + "'"), out db) ? db : 0;
+            txttensp.Text = SQLConnection.GetFieldValues("SELECT ten_san_pham FROM sanpham WHERE ma_sp='" + cbomasp.Text + "'");
+            double db = Double.TryParse(SQLConnection.GetFieldValues(@"SELECT don_gia_ban FROM sanpham WHERE ma_sp = N'" + cbomasp.Text + "'"), out db) ? db : 0;
             txtgiaban.Text = String.Format("{0:n}", db);
         }
 
@@ -114,7 +116,6 @@ namespace qlbh.UI
             catch (Exception ex)
             {
                 txtthanhtien.Text = "0.00";
-                MessageBox.Show(ex.Message);
             }
         }
       

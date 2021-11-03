@@ -422,13 +422,13 @@ namespace qlbh.UI
             // lblhoadonban
             // 
             this.lblhoadonban.AutoSize = true;
-            this.lblhoadonban.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhoadonban.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblhoadonban.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhoadonban.ForeColor = System.Drawing.Color.IndianRed;
             this.lblhoadonban.Location = new System.Drawing.Point(463, 9);
             this.lblhoadonban.Name = "lblhoadonban";
-            this.lblhoadonban.Size = new System.Drawing.Size(189, 30);
+            this.lblhoadonban.Size = new System.Drawing.Size(183, 33);
             this.lblhoadonban.TabIndex = 11;
-            this.lblhoadonban.Text = "Hoá đơn bán";
+            this.lblhoadonban.Text = "HÓA ĐƠN BÁN";
             // 
             // lblcongtienhang
             // 

@@ -19,13 +19,13 @@ namespace qlbh
         public static void Ketnoi_DuLieu()
         {
             // Huan
-            //string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            string source = "Data Source=DESKTOP-201IC1A\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Binh
             //string source = "Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Ha
-            string source = "Data Source=DESKTOP-UKCIEJ7\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
+            //string source = "Data Source=DESKTOP-UKCIEJ7\\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
 
             // Tham
             //string source = @"Data Source=DESKTOP-1AMUFBN\SQLEXPRESS;Initial Catalog=qlbanhang;Integrated Security=True";
@@ -65,6 +65,7 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
             }
            
             HuyKetNoi();
@@ -91,7 +92,8 @@ namespace qlbh
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message + " Fail to get datatable");
+                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
@@ -114,6 +116,7 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
@@ -139,7 +142,8 @@ namespace qlbh
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message + " Fail to get field value");
+                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
