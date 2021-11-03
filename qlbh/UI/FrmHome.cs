@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Timers;
 namespace qlbh.UI
 {
     public partial class FrmHome : Form
@@ -103,24 +103,35 @@ namespace qlbh.UI
             picBannerChicken.Visible = false;
             picBannerGiaoHang.Visible = false;
             timer1.Start();
-            label13.Text = SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where ngay_ban='"+ DateTime.Now.Date+"'") + "VNĐ";
-            label15.Text = SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where ngay_nhap='" + DateTime.Now.Date + "'") + "VNĐ";
+            long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where ngay_ban='"+ DateTime.Now.Date+"'"));
+            long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where ngay_nhap='" + DateTime.Now.Date + "'"));
+            label13.Text = String.Format("{0:n0}", doanhthu) + "VNĐ";
+            label15.Text = String.Format("{0:n0}", tongchi) + "VNĐ";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (picBannerBurger.Visible)
             {
+                opt1.Checked = true;
+                opt2.Checked = false;
+                opt3.Checked = false;
                 picBannerBurger.Visible = false;
                 picBannerChicken.Visible = true;
             }
             else if (picBannerChicken.Visible)
             {
+                opt1.Checked = false;
+                opt2.Checked = true;
+                opt3.Checked = false;
                 picBannerChicken.Visible = false;
                 picBannerGiaoHang.Visible = true;
             }
             else 
             {
+                opt1.Checked = false;
+                opt2.Checked = false;
+                opt3.Checked = true;
                 picBannerGiaoHang.Visible = false;
                 picBannerBurger.Visible = true;
             }
@@ -128,18 +139,28 @@ namespace qlbh.UI
 
         private void btnPre_Click(object sender, EventArgs e)
         {
+            
             if (picBannerBurger.Visible)
             {
+                opt1.Checked = false;
+                opt2.Checked = false;
+                opt3.Checked = true;
                 picBannerBurger.Visible = false;
                 picBannerChicken.Visible = true;
             }
             else if (picBannerGiaoHang.Visible)
             {
+                opt1.Checked = false;
+                opt2.Checked = false;
+                opt3.Checked = true;
                 picBannerGiaoHang.Visible = false;
                 picBannerChicken.Visible = true;
             }
             else
             {
+                opt1.Checked = false;
+                opt2.Checked = true;
+                opt3.Checked = false;
                 picBannerChicken.Visible = false;
                 picBannerBurger.Visible = true;
             }
@@ -147,21 +168,67 @@ namespace qlbh.UI
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            System.Threading.Thread.Sleep(5000);
             if (picBannerBurger.Visible)
             {
+                opt1.Checked = true;
+                opt2.Checked = false;
+                opt3.Checked = false;
                 picBannerBurger.Visible = false;
                 picBannerChicken.Visible = true;
             }
             else if (picBannerChicken.Visible)
             {
+                opt1.Checked = false;
+                opt2.Checked = true;
+                opt3.Checked = false;
                 picBannerChicken.Visible = false;
                 picBannerGiaoHang.Visible = true;
             }
-            else 
+            else
             {
+                opt1.Checked = false;
+                opt2.Checked = false;
+                opt3.Checked = true;
                 picBannerGiaoHang.Visible = false;
                 picBannerBurger.Visible = true;
             }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.Yes)
+            {
+                //  this.Close();
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/neu.dhktqd/");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/ktqdNEU");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.neu.edu.vn/");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/channel/UCISxQDUvx_vQIZOsOWSZKKg");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.neu.edu.vn/");
         }
     }
 }

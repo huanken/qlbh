@@ -160,5 +160,6 @@ namespace qlbh.UI
             AddForm(f);
         }
 
+
     }
 }

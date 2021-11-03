@@ -22,7 +22,7 @@ namespace qlbh.UI
             cbbManv.SelectedIndex = -1;
             cbbManv.Texts = "";
             dateNgayban.Enabled = false;
-            dateNgayban.Enabled = false;
+            dateNgayBan2.Enabled = false;
             cbbManv.Enabled = false;
             txtMahdban.Enabled = false;
             string sqltk;
@@ -36,6 +36,7 @@ namespace qlbh.UI
         {
             txtMahdban.Enabled = true;
             dateNgayban.Enabled = false;
+            dateNgayBan2.Enabled = false;
             cbbManv.Enabled = false;
             txtMahdban.Focus();
             cbbManv.SelectedIndex = -1;
@@ -47,6 +48,7 @@ namespace qlbh.UI
             txtMahdban.Texts = "";
             txtMahdban.Enabled = false;
             dateNgayban.Enabled = true;
+            dateNgayBan2.Enabled = true;
             cbbManv.Enabled = false;
             cbbManv.SelectedIndex = -1;
             cbbManv.Texts = "";
@@ -57,6 +59,7 @@ namespace qlbh.UI
             txtMahdban.Texts = "";
             txtMahdban.Enabled = false;
             dateNgayban.Enabled = false;
+            dateNgayBan2.Enabled = false;
             cbbManv.Enabled = true;
             cbbManv.SelectedIndex = -1;
             cbbManv.Texts = "";
@@ -83,7 +86,7 @@ namespace qlbh.UI
             }
             if (optNgayban.Checked == true)
             {
-                sqltk = "Select * from hoadonban where ngay_ban >= '" + dateNgayban.Value.Date +  "';";
+                sqltk = "Select * from hoadonban where ngay_ban >= '" + dateNgayban.Value.Date + "' and ngay_ban <= '" + dateNgayBan2.Value.Date + "';";
                 dta = cnn.Lay_DulieuBang(sqltk);
             }
             if (optManv.Checked == true)

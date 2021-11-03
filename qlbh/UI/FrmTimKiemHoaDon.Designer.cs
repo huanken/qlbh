@@ -46,6 +46,9 @@ namespace qlbh.UI
             this.cbbManv = new CustomControls.RJControls.RJComboBox();
             this.optManv = new CustomControls.RJControls.RJRadioButton();
             this.txtTennv = new CustomControls.RJControls.RJTextBox();
+            this.lblDenNgay = new System.Windows.Forms.Label();
+            this.dateNgayBan2 = new CustomControls.RJControls.RJDatePicker();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_HDBH)).BeginInit();
             this.SuspendLayout();
@@ -228,7 +231,7 @@ namespace qlbh.UI
             this.dateNgayban.BorderSize = 2;
             this.dateNgayban.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.dateNgayban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayban.Location = new System.Drawing.Point(359, 142);
+            this.dateNgayban.Location = new System.Drawing.Point(410, 116);
             this.dateNgayban.MinimumSize = new System.Drawing.Size(4, 35);
             this.dateNgayban.Name = "dateNgayban";
             this.dateNgayban.Size = new System.Drawing.Size(187, 35);
@@ -242,7 +245,7 @@ namespace qlbh.UI
             this.optNgayban.CheckedColor = System.Drawing.Color.MediumAquamarine;
             this.optNgayban.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optNgayban.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.optNgayban.Location = new System.Drawing.Point(383, 113);
+            this.optNgayban.Location = new System.Drawing.Point(434, 87);
             this.optNgayban.MinimumSize = new System.Drawing.Size(0, 21);
             this.optNgayban.Name = "optNgayban";
             this.optNgayban.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -315,11 +318,52 @@ namespace qlbh.UI
             this.txtTennv.Texts = "";
             this.txtTennv.UnderlinedStyle = false;
             // 
+            // lblDenNgay
+            // 
+            this.lblDenNgay.AutoSize = true;
+            this.lblDenNgay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDenNgay.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDenNgay.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.lblDenNgay.Location = new System.Drawing.Point(321, 164);
+            this.lblDenNgay.Name = "lblDenNgay";
+            this.lblDenNgay.Size = new System.Drawing.Size(89, 18);
+            this.lblDenNgay.TabIndex = 69;
+            this.lblDenNgay.Text = "Đến ngày:";
+            // 
+            // dateNgayBan2
+            // 
+            this.dateNgayBan2.BorderColor = System.Drawing.Color.MintCream;
+            this.dateNgayBan2.BorderSize = 2;
+            this.dateNgayBan2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dateNgayBan2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateNgayBan2.Location = new System.Drawing.Point(410, 156);
+            this.dateNgayBan2.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dateNgayBan2.Name = "dateNgayBan2";
+            this.dateNgayBan2.Size = new System.Drawing.Size(187, 35);
+            this.dateNgayBan2.SkinColor = System.Drawing.Color.MediumAquamarine;
+            this.dateNgayBan2.TabIndex = 68;
+            this.dateNgayBan2.TextColor = System.Drawing.Color.White;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.label2.Location = new System.Drawing.Point(321, 125);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 18);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "Từ ngày:";
+            // 
             // FrmTimKiemHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 528);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblDenNgay);
+            this.Controls.Add(this.dateNgayBan2);
             this.Controls.Add(this.txtTennv);
             this.Controls.Add(this.cbbManv);
             this.Controls.Add(this.optManv);
@@ -365,5 +409,8 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJComboBox cbbManv;
         private CustomControls.RJControls.RJRadioButton optManv;
         private CustomControls.RJControls.RJTextBox txtTennv;
+        private System.Windows.Forms.Label lblDenNgay;
+        private CustomControls.RJControls.RJDatePicker dateNgayBan2;
+        private System.Windows.Forms.Label label2;
     }
 }

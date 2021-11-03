@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -39,6 +40,9 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.opt2 = new CustomControls.RJControls.RJRadioButton();
+            this.opt3 = new CustomControls.RJControls.RJRadioButton();
+            this.opt1 = new CustomControls.RJControls.RJRadioButton();
             this.label17 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -89,6 +93,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -123,6 +128,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox7);
@@ -152,6 +158,18 @@
             this.panel2.Size = new System.Drawing.Size(972, 562);
             this.panel2.TabIndex = 2;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.White;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(903, 8);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(29, 28);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 42;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.White;
@@ -162,6 +180,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 41;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox6
             // 
@@ -173,6 +192,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 40;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -184,6 +204,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 39;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox5
             // 
@@ -195,6 +216,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 38;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -206,6 +228,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 37;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label19
             // 
@@ -231,6 +254,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FloralWhite;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.opt2);
+            this.panel3.Controls.Add(this.opt3);
+            this.panel3.Controls.Add(this.opt1);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.panel15);
             this.panel3.Controls.Add(this.panel14);
@@ -244,6 +270,51 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(631, 461);
             this.panel3.TabIndex = 28;
+            // 
+            // opt2
+            // 
+            this.opt2.AutoSize = true;
+            this.opt2.CheckedColor = System.Drawing.Color.Tan;
+            this.opt2.Enabled = false;
+            this.opt2.Location = new System.Drawing.Point(313, 385);
+            this.opt2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.opt2.Name = "opt2";
+            this.opt2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.opt2.Size = new System.Drawing.Size(24, 21);
+            this.opt2.TabIndex = 37;
+            this.opt2.TabStop = true;
+            this.opt2.UnCheckedColor = System.Drawing.Color.Tan;
+            this.opt2.UseVisualStyleBackColor = true;
+            // 
+            // opt3
+            // 
+            this.opt3.AutoSize = true;
+            this.opt3.CheckedColor = System.Drawing.Color.Tan;
+            this.opt3.Enabled = false;
+            this.opt3.Location = new System.Drawing.Point(343, 385);
+            this.opt3.MinimumSize = new System.Drawing.Size(0, 21);
+            this.opt3.Name = "opt3";
+            this.opt3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.opt3.Size = new System.Drawing.Size(24, 21);
+            this.opt3.TabIndex = 36;
+            this.opt3.TabStop = true;
+            this.opt3.UnCheckedColor = System.Drawing.Color.Tan;
+            this.opt3.UseVisualStyleBackColor = true;
+            // 
+            // opt1
+            // 
+            this.opt1.AutoSize = true;
+            this.opt1.CheckedColor = System.Drawing.Color.Tan;
+            this.opt1.Enabled = false;
+            this.opt1.Location = new System.Drawing.Point(283, 385);
+            this.opt1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.opt1.Name = "opt1";
+            this.opt1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.opt1.Size = new System.Drawing.Size(24, 21);
+            this.opt1.TabIndex = 35;
+            this.opt1.TabStop = true;
+            this.opt1.UnCheckedColor = System.Drawing.Color.Tan;
+            this.opt1.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -281,7 +352,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label15.Location = new System.Drawing.Point(99, 37);
+            this.label15.Location = new System.Drawing.Point(90, 37);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(71, 22);
             this.label15.TabIndex = 5;
@@ -323,7 +394,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label13.Location = new System.Drawing.Point(101, 37);
+            this.label13.Location = new System.Drawing.Point(93, 37);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 22);
             this.label13.TabIndex = 5;
@@ -343,9 +414,9 @@
             // 
             this.picBannerBurger.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerBurger.Image = ((System.Drawing.Image)(resources.GetObject("picBannerBurger.Image")));
-            this.picBannerBurger.Location = new System.Drawing.Point(14, 149);
+            this.picBannerBurger.Location = new System.Drawing.Point(-1, 146);
             this.picBannerBurger.Name = "picBannerBurger";
-            this.picBannerBurger.Size = new System.Drawing.Size(610, 261);
+            this.picBannerBurger.Size = new System.Drawing.Size(631, 261);
             this.picBannerBurger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBannerBurger.TabIndex = 31;
             this.picBannerBurger.TabStop = false;
@@ -354,9 +425,9 @@
             // 
             this.picBannerChicken.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerChicken.Image = ((System.Drawing.Image)(resources.GetObject("picBannerChicken.Image")));
-            this.picBannerChicken.Location = new System.Drawing.Point(14, 148);
+            this.picBannerChicken.Location = new System.Drawing.Point(-1, 145);
             this.picBannerChicken.Name = "picBannerChicken";
-            this.picBannerChicken.Size = new System.Drawing.Size(610, 261);
+            this.picBannerChicken.Size = new System.Drawing.Size(631, 261);
             this.picBannerChicken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBannerChicken.TabIndex = 30;
             this.picBannerChicken.TabStop = false;
@@ -405,9 +476,9 @@
             // 
             this.picBannerGiaoHang.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("picBannerGiaoHang.Image")));
-            this.picBannerGiaoHang.Location = new System.Drawing.Point(14, 148);
+            this.picBannerGiaoHang.Location = new System.Drawing.Point(-1, 145);
             this.picBannerGiaoHang.Name = "picBannerGiaoHang";
-            this.picBannerGiaoHang.Size = new System.Drawing.Size(610, 261);
+            this.picBannerGiaoHang.Size = new System.Drawing.Size(631, 261);
             this.picBannerGiaoHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBannerGiaoHang.TabIndex = 25;
             this.picBannerGiaoHang.TabStop = false;
@@ -794,12 +865,14 @@
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -895,5 +968,9 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private CustomControls.RJControls.RJRadioButton opt2;
+        private CustomControls.RJControls.RJRadioButton opt3;
+        private CustomControls.RJControls.RJRadioButton opt1;
     }
 }
