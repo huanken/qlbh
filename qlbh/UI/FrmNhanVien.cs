@@ -90,13 +90,19 @@ namespace qlbh.UI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string sqlXoa = "Delete nhanvien Where ma_nv='" + txt_MNV.Texts.Trim() + "'; ";
-            cnn.Thucthi(sqlXoa);
-            bang_Nhanvien();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn xóa không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.Yes)
+            {
+                string sqlXoa = "Delete nhanvien Where ma_nv='" + txt_MNV.Texts.Trim() + "'; ";
+                cnn.Thucthi(sqlXoa);
+                bang_Nhanvien();
+            }  
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            SQLConnection.Ketnoi_DuLieu();
             String StrKtra = "Select ma_nv from nhanvien where ma_nv = '" + txt_MNV.Texts + "'";
             SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();

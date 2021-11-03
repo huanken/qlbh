@@ -59,6 +59,7 @@ namespace qlbh.UI
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            SQLConnection.Ketnoi_DuLieu();
             string strktra = "Select ma_ncc from nhacungcap where ma_ncc='" + rjTextBox1.Texts + "'";
             SqlCommand cmd = new SqlCommand(strktra, SQLConnection.cnn);
             SqlDataReader doc_d1 = cmd.ExecuteReader();
@@ -78,9 +79,15 @@ namespace qlbh.UI
         }
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            string sqlXoa = "Delete nhacungcap Where ma_ncc='" + rjTextBox1.Texts + "'; ";
-            kn.Thucthi(sqlXoa);
-            BangNhacungcap();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn xóa không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.Yes)
+            {
+                string sqlXoa = "Delete nhacungcap Where ma_ncc='" + rjTextBox1.Texts + "'; ";
+                kn.Thucthi(sqlXoa);
+                BangNhacungcap();
+            }
+          
         }
 
         private void btnSua_Click(object sender, EventArgs e)

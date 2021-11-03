@@ -76,6 +76,7 @@ namespace qlbh.UI
 
         private void btn_Luu_Click_1(object sender, EventArgs e)
         {
+            SQLConnection.Ketnoi_DuLieu();
             String StrKtra = "Select ma_sp from sanpham where ma_sp = '" + txtBox_masp.Text + "'";
             SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
@@ -111,9 +112,15 @@ namespace qlbh.UI
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string sql_xoa = "delete sanpham where ma_sp = '" + txtBox_masp.Text + "'";
-            kn.Thucthi(sql_xoa);
-            BANG_SANPHAM();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có muốn xóa không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (thongbao == DialogResult.Yes)
+            {
+                string sql_xoa = "delete sanpham where ma_sp = '" + txtBox_masp.Text + "'";
+                kn.Thucthi(sql_xoa);
+                BANG_SANPHAM();
+            }
+          
         }
 
         private void FrmSanPham_Load(object sender, EventArgs e)

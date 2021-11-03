@@ -332,9 +332,9 @@
             this.panel15.Controls.Add(this.pictureBox3);
             this.panel15.Controls.Add(this.label15);
             this.panel15.Controls.Add(this.label16);
-            this.panel15.Location = new System.Drawing.Point(335, 64);
+            this.panel15.Location = new System.Drawing.Point(337, 64);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(221, 71);
+            this.panel15.Size = new System.Drawing.Size(274, 71);
             this.panel15.TabIndex = 33;
             // 
             // pictureBox3
@@ -374,9 +374,9 @@
             this.panel14.Controls.Add(this.pictureBox2);
             this.panel14.Controls.Add(this.label13);
             this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(57, 64);
+            this.panel14.Location = new System.Drawing.Point(59, 64);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(221, 71);
+            this.panel14.Size = new System.Drawing.Size(265, 71);
             this.panel14.TabIndex = 32;
             // 
             // pictureBox2

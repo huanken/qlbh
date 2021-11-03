@@ -121,6 +121,7 @@ namespace qlbh.UI
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            SQLConnection.Ketnoi_DuLieu();
             String StrKtra = "Select ma_van_don from giaohang where ma_van_don = '" + txt_mavd.Texts + "'";
             SqlCommand cmd = new SqlCommand(StrKtra, SQLConnection.cnn);
             SqlDataReader doc_dl = cmd.ExecuteReader();
