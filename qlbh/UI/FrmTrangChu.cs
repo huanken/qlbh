@@ -19,6 +19,8 @@ namespace qlbh.UI
             InitializeComponent();
             colapse.Start();
             colapse2.Start();
+            Form f = new FrmHome();
+            AddForm(f);
         }
 
         private void colapse_Tick_1(object sender, EventArgs e)
@@ -130,7 +132,8 @@ namespace qlbh.UI
 
         private void btnTrangChu_Click(object sender, EventArgs e)
         {
-            this.panel2.Controls.Clear();
+            Form f = new FrmHome();
+            AddForm(f);
         }
 
         private void btnGiaoHang_Click(object sender, EventArgs e)

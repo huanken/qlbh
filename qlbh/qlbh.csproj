@@ -89,6 +89,12 @@
     <Compile Include="UI\FrmHoaDonBan.designer.cs">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmHoaDonBan.resx">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
