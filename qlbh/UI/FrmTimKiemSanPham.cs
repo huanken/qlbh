@@ -76,10 +76,17 @@ namespace qlbh.UI
         {
             if(GridView_SP.DataSource != null)
             {
-                picSP.DataBindings.Clear();
-                this.picSP.WaitOnLoad = false;
-                this.picSP.DataBindings.Add(new System.Windows.Forms.Binding(
-                    "ImageLocation", GridView_SP.DataSource, "hinhanh", true));
+                try
+                {
+                    picSP.DataBindings.Clear();
+                    this.picSP.WaitOnLoad = false;
+                    this.picSP.DataBindings.Add(new System.Windows.Forms.Binding(
+                        "ImageLocation", GridView_SP.DataSource, "hinhanh", true));
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
         }
 

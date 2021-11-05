@@ -308,7 +308,6 @@ C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\Interop.WMPLib.dll
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.ResolveComReference.cache
-C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmBaoCaoNhapXuat.resources
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmTaiKhoan.resources
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -329,3 +328,4 @@ C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\CrystalDecisions.ReportA
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\bin\Debug\stdole.dll
+C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.UI.FrmBaoCaoHoaDon.resources

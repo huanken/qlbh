@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace qlbh.UI
 {
-    public partial class FrmBaoCaoNhapXuat : Form
+    public partial class FrmBaoCaoHoaDon : Form
     {
-        public FrmBaoCaoNhapXuat()
+        public FrmBaoCaoHoaDon()
         {
             InitializeComponent();
         }

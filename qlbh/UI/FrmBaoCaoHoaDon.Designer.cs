@@ -1,7 +1,7 @@
 ﻿
 namespace qlbh.UI
 {
-    partial class FrmBaoCaoNhapXuat
+    partial class FrmBaoCaoHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace qlbh.UI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBaoCaoNhapXuat));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBaoCaoHoaDon));
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();

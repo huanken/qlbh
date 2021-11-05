@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Animation;
 using WMPLib;
 namespace qlbh.UI
 {
@@ -162,10 +163,11 @@ namespace qlbh.UI
 
         WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
         public static int sttbaihat = 0;
-        public static String strbaihat1 = "https://vnno-vn-5-tf-mp3-s1-zmp3.zadn.vn/b0c1b3a0aae143bf1af0/8702956433249017962?authen=exp=1636250325~acl=/b0c1b3a0aae143bf1af0/*~hmac=c2ea454be467d4015a8f537cb88839b6&fs=MTYzNjA3NzUyNTI3OXx3ZWJWNnwwfDExNy41LjE1My4zNA";
-        public static String strbaihat2 = "https://vnno-vn-6-tf-mp3-s1-zmp3.zadn.vn/94a965343c72d52c8c63/3337086739829767214?authen=exp=1636251187~acl=/94a965343c72d52c8c63/*~hmac=5f73e62bce3553238dfc48a92ffa6b21&fs=MTYzNjA3ODM4NzgwMnx3ZWJWNnwwfDExNy41LjE1My4zNA";
-        public static String strbaihat3 = "https://vnno-vn-6-tf-mp3-s1-zmp3.zadn.vn/6a7f4f5c9c1875462c09/6915996016203233196?authen=exp=1636250707~acl=/6a7f4f5c9c1875462c09/*~hmac=cc5d2bf93f3dac2aad3c588559956f9e&fs=MTYzNjA3NzkwNzI0MXx3ZWJWNnwxMDIwMjU3MTmUsICzfDExNy4zLjIzOC4yMDQ";
-        public static String strbaihat4 = "https://vnno-vn-6-tf-mp3-s1-zmp3.zadn.vn/c2c5eac02a87c3d99a96/6463151866451065802?authen=exp=1636250360~acl=/c2c5eac02a87c3d99a96/*~hmac=799189203dfcc8e6a043570271b911b1&fs=MTYzNjA3NzU2MDgxOHx3ZWJWNnwxMDAyNDIyMjY2fDI3LjmUsICyLjI5LjIzMQ";
+        public static String strbaihat1 = "https://nhacpro.me/stream/wk7v.mp3";
+        public static String strbaihat2 = "https://mp3-s1-zmp3.zadn.vn/d50ff48b56cfbf91e6de/5669456849702829973?authen=exp=1636280636~acl=/d50ff48b56cfbf91e6de/*~hmac=3de3a4c5c50ac07bd1ad0395ffe4ab55&fs=MTYzNjEwNzgzNjmUsICxMXx3ZWJWNnwxMDIyMjUxNzmUsICwfDE0LjE2NC4yMjIdUngMjE3";
+        public static String strbaihat3 = "https://nhacpro.me/stream/atd.mp3";
+        public static String strbaihat4 = "https://nhacpro.me/stream/wi1w.mp3";
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             sttbaihat = 1;
@@ -223,7 +225,7 @@ namespace qlbh.UI
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            Form f = new FrmBaoCaoNhapXuat();
+            Form f = new FrmBaoCaoHoaDon();
             AddForm(f);
         }
 
@@ -231,6 +233,11 @@ namespace qlbh.UI
         {
             Form f = new FrmTaiKhoan();
             AddForm(f);
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            btnTrangChu.PerformClick();
         }
     }
 }

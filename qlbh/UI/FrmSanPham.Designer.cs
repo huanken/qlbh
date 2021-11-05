@@ -31,6 +31,7 @@ namespace qlbh.UI
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSanPham));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBox_dvt = new System.Windows.Forms.TextBox();
             this.txtBox_giasp = new System.Windows.Forms.TextBox();
             this.txtBox_tensp = new System.Windows.Forms.TextBox();
@@ -318,6 +319,14 @@ namespace qlbh.UI
             // 
             this.dgv_sanpham.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv_sanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_sanpham.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_sanpham.Location = new System.Drawing.Point(358, 103);
             this.dgv_sanpham.Name = "dgv_sanpham";
             this.dgv_sanpham.Size = new System.Drawing.Size(522, 389);

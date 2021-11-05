@@ -34,22 +34,19 @@ namespace qlbh.UI
             this.colapse = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.colapse2 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.btnTrangChu = new CustomControls.RJControls.RJButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnPhieuNhap = new CustomControls.RJControls.RJButton();
             this.btnHoaDon = new CustomControls.RJControls.RJButton();
             this.btnNhanVien = new CustomControls.RJControls.RJButton();
             this.btnNhaCungCap = new CustomControls.RJControls.RJButton();
             this.btnSanPham = new CustomControls.RJControls.RJButton();
             this.btnDanhMuc = new CustomControls.RJControls.RJButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btnTimKiemPhieuNhap = new CustomControls.RJControls.RJButton();
             this.btnTimKiemHoaDon = new CustomControls.RJControls.RJButton();
             this.btnTimKiemSanPham = new CustomControls.RJControls.RJButton();
@@ -58,13 +55,16 @@ namespace qlbh.UI
             this.btnBaoCao = new CustomControls.RJControls.RJButton();
             this.btnTaiKhoan = new CustomControls.RJControls.RJButton();
             this.btnThoat = new CustomControls.RJControls.RJButton();
+            this.colapse2 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // colapse
@@ -114,54 +114,6 @@ namespace qlbh.UI
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnPhieuNhap);
-            this.panel1.Controls.Add(this.btnHoaDon);
-            this.panel1.Controls.Add(this.btnNhanVien);
-            this.panel1.Controls.Add(this.btnNhaCungCap);
-            this.panel1.Controls.Add(this.btnSanPham);
-            this.panel1.Controls.Add(this.btnDanhMuc);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(3, 169);
-            this.panel1.MaximumSize = new System.Drawing.Size(198, 271);
-            this.panel1.MinimumSize = new System.Drawing.Size(198, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(198, 49);
-            this.panel1.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnTimKiemPhieuNhap);
-            this.panel3.Controls.Add(this.btnTimKiemHoaDon);
-            this.panel3.Controls.Add(this.btnTimKiemSanPham);
-            this.panel3.Controls.Add(this.btnTimKiem);
-            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(3, 224);
-            this.panel3.MaximumSize = new System.Drawing.Size(198, 182);
-            this.panel3.MinimumSize = new System.Drawing.Size(198, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(198, 49);
-            this.panel3.TabIndex = 6;
-            // 
-            // colapse2
-            // 
-            this.colapse2.Interval = 1;
-            this.colapse2.Tick += new System.EventHandler(this.colapse2_Tick);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(947, 572);
-            this.panel2.TabIndex = 1;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(41)))));
@@ -207,6 +159,7 @@ namespace qlbh.UI
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // btnTrangChu
             // 
@@ -229,6 +182,22 @@ namespace qlbh.UI
             this.btnTrangChu.TextColor = System.Drawing.Color.White;
             this.btnTrangChu.UseVisualStyleBackColor = false;
             this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnPhieuNhap);
+            this.panel1.Controls.Add(this.btnHoaDon);
+            this.panel1.Controls.Add(this.btnNhanVien);
+            this.panel1.Controls.Add(this.btnNhaCungCap);
+            this.panel1.Controls.Add(this.btnSanPham);
+            this.panel1.Controls.Add(this.btnDanhMuc);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(3, 169);
+            this.panel1.MaximumSize = new System.Drawing.Size(198, 271);
+            this.panel1.MinimumSize = new System.Drawing.Size(198, 49);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(198, 49);
+            this.panel1.TabIndex = 1;
             // 
             // btnPhieuNhap
             // 
@@ -361,6 +330,20 @@ namespace qlbh.UI
             this.btnDanhMuc.TextColor = System.Drawing.Color.White;
             this.btnDanhMuc.UseVisualStyleBackColor = false;
             this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnTimKiemPhieuNhap);
+            this.panel3.Controls.Add(this.btnTimKiemHoaDon);
+            this.panel3.Controls.Add(this.btnTimKiemSanPham);
+            this.panel3.Controls.Add(this.btnTimKiem);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(3, 224);
+            this.panel3.MaximumSize = new System.Drawing.Size(198, 182);
+            this.panel3.MinimumSize = new System.Drawing.Size(198, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(198, 49);
+            this.panel3.TabIndex = 6;
             // 
             // btnTimKiemPhieuNhap
             // 
@@ -538,6 +521,24 @@ namespace qlbh.UI
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // colapse2
+            // 
+            this.colapse2.Interval = 1;
+            this.colapse2.Tick += new System.EventHandler(this.colapse2_Tick);
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(947, 572);
+            this.panel2.TabIndex = 1;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -554,12 +555,12 @@ namespace qlbh.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTrangChu";
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
