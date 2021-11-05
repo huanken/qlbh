@@ -372,17 +372,17 @@ namespace qlbh.UI
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.Location = new System.Drawing.Point(105, 482);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 4);
+            this.panel2.Size = new System.Drawing.Size(757, 3);
             this.panel2.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
             this.label1.Location = new System.Drawing.Point(404, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 30);
+            this.label1.Size = new System.Drawing.Size(187, 31);
             this.label1.TabIndex = 11;
             this.label1.Text = "NHÂN VIÊN";
             // 
@@ -390,7 +390,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(890, 530);
             this.ControlBox = false;
             this.Controls.Add(this.label1);

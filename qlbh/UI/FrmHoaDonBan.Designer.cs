@@ -400,7 +400,7 @@ namespace qlbh.UI
             this.panel1.ForeColor = System.Drawing.Color.Salmon;
             this.panel1.Location = new System.Drawing.Point(152, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(785, 10);
+            this.panel1.Size = new System.Drawing.Size(785, 3);
             this.panel1.TabIndex = 9;
             // 
             // picbill
@@ -422,11 +422,11 @@ namespace qlbh.UI
             // lblhoadonban
             // 
             this.lblhoadonban.AutoSize = true;
-            this.lblhoadonban.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhoadonban.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhoadonban.ForeColor = System.Drawing.Color.IndianRed;
             this.lblhoadonban.Location = new System.Drawing.Point(463, 9);
             this.lblhoadonban.Name = "lblhoadonban";
-            this.lblhoadonban.Size = new System.Drawing.Size(183, 33);
+            this.lblhoadonban.Size = new System.Drawing.Size(226, 31);
             this.lblhoadonban.TabIndex = 11;
             this.lblhoadonban.Text = "HÓA ĐƠN BÁN";
             // 
@@ -468,7 +468,7 @@ namespace qlbh.UI
             this.panel2.BackColor = System.Drawing.Color.Salmon;
             this.panel2.Location = new System.Drawing.Point(88, 518);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(849, 10);
+            this.panel2.Size = new System.Drawing.Size(849, 3);
             this.panel2.TabIndex = 14;
             // 
             // lblghichu
@@ -567,7 +567,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(971, 542);
             this.ControlBox = false;
             this.Controls.Add(this.txttongtien);

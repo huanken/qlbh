@@ -306,3 +306,5 @@ C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CoreCompileI
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComplete
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.pdb
+C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\Interop.WMPLib.dll
+C:\Users\LaptopK1\Desktop\QLCUAHANG\qlbh\qlbh\obj\Debug\qlbh.csproj.ResolveComReference.cache

@@ -56,13 +56,13 @@ namespace qlbh.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(284, 27);
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(318, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 30);
+            this.label1.Size = new System.Drawing.Size(309, 31);
             this.label1.TabIndex = 49;
-            this.label1.Text = "TÌM KIẾM HOÁ ĐƠN BÁN HÀNG";
+            this.label1.Text = "TÌM KIẾM HOÁ ĐƠN";
             // 
             // panel1
             // 
@@ -133,7 +133,7 @@ namespace qlbh.UI
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.Location = new System.Drawing.Point(105, 507);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 4);
+            this.panel2.Size = new System.Drawing.Size(757, 3);
             this.panel2.TabIndex = 58;
             // 
             // btnReset

@@ -33,7 +33,6 @@ namespace qlbh.UI
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_Phieunhap = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.txt_maphieunhap = new System.Windows.Forms.Label();
             this.txt_Ngaynhap = new System.Windows.Forms.Label();
             this.txt_Manv = new System.Windows.Forms.Label();
@@ -42,37 +41,38 @@ namespace qlbh.UI
             this.txt_MaNcc = new System.Windows.Forms.Label();
             this.date_nhap = new CustomControls.RJControls.RJDatePicker();
             this.dgv_phieunhap = new System.Windows.Forms.DataGridView();
-            this.btn_Them = new CustomControls.RJControls.RJButton();
-            this.btn_Xoa = new CustomControls.RJControls.RJButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_Tennv = new System.Windows.Forms.Label();
-            this.txt_TenNCC = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txt_Tensp = new System.Windows.Forms.Label();
-            this.txt_Masp = new System.Windows.Forms.Label();
-            this.txt_Soluong = new System.Windows.Forms.Label();
-            this.txt_Thanhtien = new System.Windows.Forms.Label();
             this.ma_sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.so_luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.don_gia_ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanh_tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Them = new CustomControls.RJControls.RJButton();
+            this.btn_Xoa = new CustomControls.RJControls.RJButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBox_TenNCC = new System.Windows.Forms.TextBox();
+            this.txtBox_Trangthai = new System.Windows.Forms.TextBox();
+            this.txtBox_TenNV = new System.Windows.Forms.TextBox();
+            this.txtBox_MaPN = new System.Windows.Forms.TextBox();
+            this.cbo_NCC = new System.Windows.Forms.ComboBox();
+            this.cbo_manv = new System.Windows.Forms.ComboBox();
+            this.txt_Tennv = new System.Windows.Forms.Label();
+            this.txt_TenNCC = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbo_masp = new System.Windows.Forms.ComboBox();
             this.txt_gianhap = new System.Windows.Forms.Label();
+            this.txtBox_Thanhtien = new System.Windows.Forms.TextBox();
+            this.txtBox_Gianhap = new System.Windows.Forms.TextBox();
+            this.txtBox_Soluong = new System.Windows.Forms.TextBox();
+            this.txtBox_Tensp = new System.Windows.Forms.TextBox();
+            this.txt_Thanhtien = new System.Windows.Forms.Label();
+            this.txt_Soluong = new System.Windows.Forms.Label();
+            this.txt_Tensp = new System.Windows.Forms.Label();
+            this.txt_Masp = new System.Windows.Forms.Label();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
             this.txt_Ghichu = new System.Windows.Forms.Label();
             this.btn_Luu = new CustomControls.RJControls.RJButton();
-            this.cbo_masp = new System.Windows.Forms.ComboBox();
-            this.cbo_manv = new System.Windows.Forms.ComboBox();
-            this.cbo_NCC = new System.Windows.Forms.ComboBox();
-            this.txtBox_MaPN = new System.Windows.Forms.TextBox();
-            this.txtBox_TenNV = new System.Windows.Forms.TextBox();
-            this.txtBox_Trangthai = new System.Windows.Forms.TextBox();
-            this.txtBox_TenNCC = new System.Windows.Forms.TextBox();
-            this.txtBox_Tensp = new System.Windows.Forms.TextBox();
-            this.txtBox_Soluong = new System.Windows.Forms.TextBox();
-            this.txtBox_Gianhap = new System.Windows.Forms.TextBox();
-            this.txtBox_Thanhtien = new System.Windows.Forms.TextBox();
             this.txtBox_Ghichu = new System.Windows.Forms.TextBox();
             this.txtBox_Tongtien = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phieunhap)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -97,7 +97,7 @@ namespace qlbh.UI
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Location = new System.Drawing.Point(160, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(718, 3);
@@ -107,26 +107,18 @@ namespace qlbh.UI
             // 
             this.txt_Phieunhap.AutoSize = true;
             this.txt_Phieunhap.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Phieunhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Phieunhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Phieunhap.Location = new System.Drawing.Point(387, 18);
             this.txt_Phieunhap.Name = "txt_Phieunhap";
             this.txt_Phieunhap.Size = new System.Drawing.Size(173, 31);
             this.txt_Phieunhap.TabIndex = 2;
             this.txt_Phieunhap.Text = "Phiếu nhập";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.panel2.Location = new System.Drawing.Point(86, 666);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 3);
-            this.panel2.TabIndex = 1;
-            // 
             // txt_maphieunhap
             // 
             this.txt_maphieunhap.AutoSize = true;
             this.txt_maphieunhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maphieunhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_maphieunhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_maphieunhap.Location = new System.Drawing.Point(17, 32);
             this.txt_maphieunhap.Name = "txt_maphieunhap";
             this.txt_maphieunhap.Size = new System.Drawing.Size(110, 15);
@@ -137,7 +129,7 @@ namespace qlbh.UI
             // 
             this.txt_Ngaynhap.AutoSize = true;
             this.txt_Ngaynhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Ngaynhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Ngaynhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Ngaynhap.Location = new System.Drawing.Point(17, 64);
             this.txt_Ngaynhap.Name = "txt_Ngaynhap";
             this.txt_Ngaynhap.Size = new System.Drawing.Size(81, 15);
@@ -148,7 +140,7 @@ namespace qlbh.UI
             // 
             this.txt_Manv.AutoSize = true;
             this.txt_Manv.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Manv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Manv.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Manv.Location = new System.Drawing.Point(17, 96);
             this.txt_Manv.Name = "txt_Manv";
             this.txt_Manv.Size = new System.Drawing.Size(101, 15);
@@ -159,7 +151,7 @@ namespace qlbh.UI
             // 
             this.txt_Trangthai.AutoSize = true;
             this.txt_Trangthai.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Trangthai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Trangthai.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Trangthai.Location = new System.Drawing.Point(435, 32);
             this.txt_Trangthai.Name = "txt_Trangthai";
             this.txt_Trangthai.Size = new System.Drawing.Size(82, 15);
@@ -170,7 +162,7 @@ namespace qlbh.UI
             // 
             this.txt_Tongtien.AutoSize = true;
             this.txt_Tongtien.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Tongtien.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Tongtien.Location = new System.Drawing.Point(490, 604);
             this.txt_Tongtien.Name = "txt_Tongtien";
             this.txt_Tongtien.Size = new System.Drawing.Size(87, 18);
@@ -181,7 +173,7 @@ namespace qlbh.UI
             // 
             this.txt_MaNcc.AutoSize = true;
             this.txt_MaNcc.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaNcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_MaNcc.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_MaNcc.Location = new System.Drawing.Point(435, 64);
             this.txt_MaNcc.Name = "txt_MaNcc";
             this.txt_MaNcc.Size = new System.Drawing.Size(73, 15);
@@ -217,10 +209,30 @@ namespace qlbh.UI
             this.dgv_phieunhap.Size = new System.Drawing.Size(441, 216);
             this.dgv_phieunhap.TabIndex = 7;
             // 
+            // ma_sp
+            // 
+            this.ma_sp.HeaderText = "Mã sản phẩm";
+            this.ma_sp.Name = "ma_sp";
+            // 
+            // so_luong
+            // 
+            this.so_luong.HeaderText = "Số lượng";
+            this.so_luong.Name = "so_luong";
+            // 
+            // don_gia_ban
+            // 
+            this.don_gia_ban.HeaderText = "Đơn giá";
+            this.don_gia_ban.Name = "don_gia_ban";
+            // 
+            // thanh_tien
+            // 
+            this.thanh_tien.HeaderText = "Thành tiền";
+            this.thanh_tien.Name = "thanh_tien";
+            // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Them.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Them.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Them.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Them.BorderColor = System.Drawing.Color.White;
             this.btn_Them.BorderRadius = 20;
             this.btn_Them.BorderSize = 2;
@@ -239,8 +251,8 @@ namespace qlbh.UI
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Xoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Xoa.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Xoa.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Xoa.BorderColor = System.Drawing.Color.White;
             this.btn_Xoa.BorderRadius = 20;
             this.btn_Xoa.BorderSize = 2;
@@ -274,7 +286,7 @@ namespace qlbh.UI
             this.groupBox1.Controls.Add(this.txt_TenNCC);
             this.groupBox1.Controls.Add(this.txt_MaNcc);
             this.groupBox1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.groupBox1.ForeColor = System.Drawing.Color.IndianRed;
             this.groupBox1.Location = new System.Drawing.Point(100, 124);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(747, 155);
@@ -282,11 +294,61 @@ namespace qlbh.UI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
             // 
+            // txtBox_TenNCC
+            // 
+            this.txtBox_TenNCC.Location = new System.Drawing.Point(554, 90);
+            this.txtBox_TenNCC.Name = "txtBox_TenNCC";
+            this.txtBox_TenNCC.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_TenNCC.TabIndex = 8;
+            // 
+            // txtBox_Trangthai
+            // 
+            this.txtBox_Trangthai.Location = new System.Drawing.Point(554, 24);
+            this.txtBox_Trangthai.Name = "txtBox_Trangthai";
+            this.txtBox_Trangthai.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Trangthai.TabIndex = 8;
+            // 
+            // txtBox_TenNV
+            // 
+            this.txtBox_TenNV.Location = new System.Drawing.Point(136, 120);
+            this.txtBox_TenNV.Name = "txtBox_TenNV";
+            this.txtBox_TenNV.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_TenNV.TabIndex = 8;
+            // 
+            // txtBox_MaPN
+            // 
+            this.txtBox_MaPN.Location = new System.Drawing.Point(136, 26);
+            this.txtBox_MaPN.Name = "txtBox_MaPN";
+            this.txtBox_MaPN.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_MaPN.TabIndex = 8;
+            // 
+            // cbo_NCC
+            // 
+            this.cbo_NCC.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_NCC.ForeColor = System.Drawing.Color.Black;
+            this.cbo_NCC.FormattingEnabled = true;
+            this.cbo_NCC.Location = new System.Drawing.Point(554, 57);
+            this.cbo_NCC.Name = "cbo_NCC";
+            this.cbo_NCC.Size = new System.Drawing.Size(153, 26);
+            this.cbo_NCC.TabIndex = 7;
+            this.cbo_NCC.SelectedIndexChanged += new System.EventHandler(this.cbo_NCC_SelectedIndexChanged);
+            // 
+            // cbo_manv
+            // 
+            this.cbo_manv.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_manv.ForeColor = System.Drawing.Color.Black;
+            this.cbo_manv.FormattingEnabled = true;
+            this.cbo_manv.Location = new System.Drawing.Point(136, 88);
+            this.cbo_manv.Name = "cbo_manv";
+            this.cbo_manv.Size = new System.Drawing.Size(153, 26);
+            this.cbo_manv.TabIndex = 7;
+            this.cbo_manv.SelectedIndexChanged += new System.EventHandler(this.cbo_manv_SelectedIndexChanged);
+            // 
             // txt_Tennv
             // 
             this.txt_Tennv.AutoSize = true;
             this.txt_Tennv.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tennv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Tennv.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Tennv.Location = new System.Drawing.Point(17, 128);
             this.txt_Tennv.Name = "txt_Tennv";
             this.txt_Tennv.Size = new System.Drawing.Size(106, 15);
@@ -297,7 +359,7 @@ namespace qlbh.UI
             // 
             this.txt_TenNCC.AutoSize = true;
             this.txt_TenNCC.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_TenNCC.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_TenNCC.Location = new System.Drawing.Point(435, 96);
             this.txt_TenNCC.Name = "txt_TenNCC";
             this.txt_TenNCC.Size = new System.Drawing.Size(68, 15);
@@ -317,7 +379,7 @@ namespace qlbh.UI
             this.groupBox2.Controls.Add(this.txt_Tensp);
             this.groupBox2.Controls.Add(this.txt_Masp);
             this.groupBox2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.groupBox2.ForeColor = System.Drawing.Color.IndianRed;
             this.groupBox2.Location = new System.Drawing.Point(100, 298);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(289, 216);
@@ -325,11 +387,89 @@ namespace qlbh.UI
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
             // 
+            // cbo_masp
+            // 
+            this.cbo_masp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_masp.ForeColor = System.Drawing.Color.Black;
+            this.cbo_masp.FormattingEnabled = true;
+            this.cbo_masp.Location = new System.Drawing.Point(130, 16);
+            this.cbo_masp.Name = "cbo_masp";
+            this.cbo_masp.Size = new System.Drawing.Size(153, 26);
+            this.cbo_masp.TabIndex = 7;
+            this.cbo_masp.DropDown += new System.EventHandler(this.cbo_masp_DropDown);
+            this.cbo_masp.SelectedIndexChanged += new System.EventHandler(this.cbo_masp_SelectedIndexChanged);
+            // 
+            // txt_gianhap
+            // 
+            this.txt_gianhap.AutoSize = true;
+            this.txt_gianhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gianhap.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_gianhap.Location = new System.Drawing.Point(11, 116);
+            this.txt_gianhap.Name = "txt_gianhap";
+            this.txt_gianhap.Size = new System.Drawing.Size(34, 15);
+            this.txt_gianhap.TabIndex = 3;
+            this.txt_gianhap.Text = "Giá:";
+            // 
+            // txtBox_Thanhtien
+            // 
+            this.txtBox_Thanhtien.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Thanhtien.Location = new System.Drawing.Point(130, 140);
+            this.txtBox_Thanhtien.Name = "txtBox_Thanhtien";
+            this.txtBox_Thanhtien.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Thanhtien.TabIndex = 8;
+            this.txtBox_Thanhtien.TextChanged += new System.EventHandler(this.txtBox_Thanhtien_TextChanged);
+            // 
+            // txtBox_Gianhap
+            // 
+            this.txtBox_Gianhap.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Gianhap.Location = new System.Drawing.Point(130, 110);
+            this.txtBox_Gianhap.Name = "txtBox_Gianhap";
+            this.txtBox_Gianhap.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Gianhap.TabIndex = 8;
+            // 
+            // txtBox_Soluong
+            // 
+            this.txtBox_Soluong.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Soluong.Location = new System.Drawing.Point(130, 79);
+            this.txtBox_Soluong.Name = "txtBox_Soluong";
+            this.txtBox_Soluong.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Soluong.TabIndex = 8;
+            // 
+            // txtBox_Tensp
+            // 
+            this.txtBox_Tensp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Tensp.Location = new System.Drawing.Point(130, 48);
+            this.txtBox_Tensp.Name = "txtBox_Tensp";
+            this.txtBox_Tensp.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Tensp.TabIndex = 8;
+            // 
+            // txt_Thanhtien
+            // 
+            this.txt_Thanhtien.AutoSize = true;
+            this.txt_Thanhtien.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Thanhtien.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_Thanhtien.Location = new System.Drawing.Point(11, 146);
+            this.txt_Thanhtien.Name = "txt_Thanhtien";
+            this.txt_Thanhtien.Size = new System.Drawing.Size(86, 15);
+            this.txt_Thanhtien.TabIndex = 3;
+            this.txt_Thanhtien.Text = "Thành tiền:";
+            // 
+            // txt_Soluong
+            // 
+            this.txt_Soluong.AutoSize = true;
+            this.txt_Soluong.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Soluong.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_Soluong.Location = new System.Drawing.Point(11, 86);
+            this.txt_Soluong.Name = "txt_Soluong";
+            this.txt_Soluong.Size = new System.Drawing.Size(67, 15);
+            this.txt_Soluong.TabIndex = 3;
+            this.txt_Soluong.Text = "Số lượng:";
+            // 
             // txt_Tensp
             // 
             this.txt_Tensp.AutoSize = true;
             this.txt_Tensp.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tensp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Tensp.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Tensp.Location = new System.Drawing.Point(11, 56);
             this.txt_Tensp.Name = "txt_Tensp";
             this.txt_Tensp.Size = new System.Drawing.Size(103, 15);
@@ -340,65 +480,12 @@ namespace qlbh.UI
             // 
             this.txt_Masp.AutoSize = true;
             this.txt_Masp.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Masp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Masp.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Masp.Location = new System.Drawing.Point(11, 27);
             this.txt_Masp.Name = "txt_Masp";
             this.txt_Masp.Size = new System.Drawing.Size(98, 15);
             this.txt_Masp.TabIndex = 3;
             this.txt_Masp.Text = "Mã sản phẩm:";
-            // 
-            // txt_Soluong
-            // 
-            this.txt_Soluong.AutoSize = true;
-            this.txt_Soluong.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Soluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_Soluong.Location = new System.Drawing.Point(11, 86);
-            this.txt_Soluong.Name = "txt_Soluong";
-            this.txt_Soluong.Size = new System.Drawing.Size(67, 15);
-            this.txt_Soluong.TabIndex = 3;
-            this.txt_Soluong.Text = "Số lượng:";
-            // 
-            // txt_Thanhtien
-            // 
-            this.txt_Thanhtien.AutoSize = true;
-            this.txt_Thanhtien.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Thanhtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_Thanhtien.Location = new System.Drawing.Point(11, 146);
-            this.txt_Thanhtien.Name = "txt_Thanhtien";
-            this.txt_Thanhtien.Size = new System.Drawing.Size(86, 15);
-            this.txt_Thanhtien.TabIndex = 3;
-            this.txt_Thanhtien.Text = "Thành tiền:";
-            // 
-            // ma_sp
-            // 
-            this.ma_sp.HeaderText = "Mã sản phẩm";
-            this.ma_sp.Name = "ma_sp";
-            // 
-            // so_luong
-            // 
-            this.so_luong.HeaderText = "Số lượng";
-            this.so_luong.Name = "so_luong";
-            // 
-            // don_gia_ban
-            // 
-            this.don_gia_ban.HeaderText = "Đơn giá";
-            this.don_gia_ban.Name = "don_gia_ban";
-            // 
-            // thanh_tien
-            // 
-            this.thanh_tien.HeaderText = "Thành tiền";
-            this.thanh_tien.Name = "thanh_tien";
-            // 
-            // txt_gianhap
-            // 
-            this.txt_gianhap.AutoSize = true;
-            this.txt_gianhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gianhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_gianhap.Location = new System.Drawing.Point(11, 116);
-            this.txt_gianhap.Name = "txt_gianhap";
-            this.txt_gianhap.Size = new System.Drawing.Size(34, 15);
-            this.txt_gianhap.TabIndex = 3;
-            this.txt_gianhap.Text = "Giá:";
             // 
             // rjTextBox2
             // 
@@ -428,7 +515,7 @@ namespace qlbh.UI
             // 
             this.txt_Ghichu.AutoSize = true;
             this.txt_Ghichu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Ghichu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Ghichu.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Ghichu.Location = new System.Drawing.Point(179, 543);
             this.txt_Ghichu.Name = "txt_Ghichu";
             this.txt_Ghichu.Size = new System.Drawing.Size(73, 18);
@@ -437,8 +524,8 @@ namespace qlbh.UI
             // 
             // btn_Luu
             // 
-            this.btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Luu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Luu.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Luu.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Luu.BorderColor = System.Drawing.Color.White;
             this.btn_Luu.BorderRadius = 20;
             this.btn_Luu.BorderSize = 2;
@@ -454,101 +541,6 @@ namespace qlbh.UI
             this.btn_Luu.TextColor = System.Drawing.Color.White;
             this.btn_Luu.UseVisualStyleBackColor = false;
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
-            // 
-            // cbo_masp
-            // 
-            this.cbo_masp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_masp.ForeColor = System.Drawing.Color.Black;
-            this.cbo_masp.FormattingEnabled = true;
-            this.cbo_masp.Location = new System.Drawing.Point(130, 16);
-            this.cbo_masp.Name = "cbo_masp";
-            this.cbo_masp.Size = new System.Drawing.Size(153, 26);
-            this.cbo_masp.TabIndex = 7;
-            this.cbo_masp.DropDown += new System.EventHandler(this.cbo_masp_DropDown);
-            this.cbo_masp.SelectedIndexChanged += new System.EventHandler(this.cbo_masp_SelectedIndexChanged);
-            // 
-            // cbo_manv
-            // 
-            this.cbo_manv.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_manv.ForeColor = System.Drawing.Color.Black;
-            this.cbo_manv.FormattingEnabled = true;
-            this.cbo_manv.Location = new System.Drawing.Point(136, 88);
-            this.cbo_manv.Name = "cbo_manv";
-            this.cbo_manv.Size = new System.Drawing.Size(153, 26);
-            this.cbo_manv.TabIndex = 7;
-            this.cbo_manv.SelectedIndexChanged += new System.EventHandler(this.cbo_manv_SelectedIndexChanged);
-            // 
-            // cbo_NCC
-            // 
-            this.cbo_NCC.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_NCC.ForeColor = System.Drawing.Color.Black;
-            this.cbo_NCC.FormattingEnabled = true;
-            this.cbo_NCC.Location = new System.Drawing.Point(554, 57);
-            this.cbo_NCC.Name = "cbo_NCC";
-            this.cbo_NCC.Size = new System.Drawing.Size(153, 26);
-            this.cbo_NCC.TabIndex = 7;
-            this.cbo_NCC.SelectedIndexChanged += new System.EventHandler(this.cbo_NCC_SelectedIndexChanged);
-            // 
-            // txtBox_MaPN
-            // 
-            this.txtBox_MaPN.Location = new System.Drawing.Point(136, 26);
-            this.txtBox_MaPN.Name = "txtBox_MaPN";
-            this.txtBox_MaPN.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_MaPN.TabIndex = 8;
-            // 
-            // txtBox_TenNV
-            // 
-            this.txtBox_TenNV.Location = new System.Drawing.Point(136, 120);
-            this.txtBox_TenNV.Name = "txtBox_TenNV";
-            this.txtBox_TenNV.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_TenNV.TabIndex = 8;
-            // 
-            // txtBox_Trangthai
-            // 
-            this.txtBox_Trangthai.Location = new System.Drawing.Point(554, 24);
-            this.txtBox_Trangthai.Name = "txtBox_Trangthai";
-            this.txtBox_Trangthai.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_Trangthai.TabIndex = 8;
-            // 
-            // txtBox_TenNCC
-            // 
-            this.txtBox_TenNCC.Location = new System.Drawing.Point(554, 90);
-            this.txtBox_TenNCC.Name = "txtBox_TenNCC";
-            this.txtBox_TenNCC.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_TenNCC.TabIndex = 8;
-            // 
-            // txtBox_Tensp
-            // 
-            this.txtBox_Tensp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Tensp.Location = new System.Drawing.Point(130, 48);
-            this.txtBox_Tensp.Name = "txtBox_Tensp";
-            this.txtBox_Tensp.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_Tensp.TabIndex = 8;
-            // 
-            // txtBox_Soluong
-            // 
-            this.txtBox_Soluong.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Soluong.Location = new System.Drawing.Point(130, 79);
-            this.txtBox_Soluong.Name = "txtBox_Soluong";
-            this.txtBox_Soluong.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_Soluong.TabIndex = 8;
-            // 
-            // txtBox_Gianhap
-            // 
-            this.txtBox_Gianhap.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Gianhap.Location = new System.Drawing.Point(130, 110);
-            this.txtBox_Gianhap.Name = "txtBox_Gianhap";
-            this.txtBox_Gianhap.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_Gianhap.TabIndex = 8;
-            // 
-            // txtBox_Thanhtien
-            // 
-            this.txtBox_Thanhtien.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Thanhtien.Location = new System.Drawing.Point(130, 140);
-            this.txtBox_Thanhtien.Name = "txtBox_Thanhtien";
-            this.txtBox_Thanhtien.Size = new System.Drawing.Size(153, 25);
-            this.txtBox_Thanhtien.TabIndex = 8;
-            this.txtBox_Thanhtien.TextChanged += new System.EventHandler(this.txtBox_Thanhtien_TextChanged);
             // 
             // txtBox_Ghichu
             // 
@@ -566,13 +558,22 @@ namespace qlbh.UI
             this.txtBox_Tongtien.Size = new System.Drawing.Size(224, 25);
             this.txtBox_Tongtien.TabIndex = 11;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.IndianRed;
+            this.panel3.Location = new System.Drawing.Point(83, 683);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(756, 3);
+            this.panel3.TabIndex = 12;
+            // 
             // FrmPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(890, 722);
             this.ControlBox = false;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtBox_Tongtien);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txt_Ghichu);
@@ -584,7 +585,6 @@ namespace qlbh.UI
             this.Controls.Add(this.rjTextBox2);
             this.Controls.Add(this.txt_Tongtien);
             this.Controls.Add(this.txt_Phieunhap);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.dgv_phieunhap);
@@ -608,7 +608,6 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label txt_Phieunhap;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label txt_maphieunhap;
         private System.Windows.Forms.Label txt_Ngaynhap;
         private System.Windows.Forms.Label txt_Manv;
@@ -648,5 +647,6 @@ namespace qlbh.UI
         private System.Windows.Forms.TextBox txtBox_Soluong;
         private System.Windows.Forms.TextBox txtBox_Ghichu;
         private System.Windows.Forms.TextBox txtBox_Tongtien;
+        private System.Windows.Forms.Panel panel3;
     }
 }

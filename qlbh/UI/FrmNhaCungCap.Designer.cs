@@ -68,11 +68,11 @@ namespace qlbh.UI
             // 
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(32, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 22);
+            this.label3.Size = new System.Drawing.Size(163, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tên nhà cung cấp: ";
             // 
@@ -303,7 +303,7 @@ namespace qlbh.UI
             this.panel1.BackColor = System.Drawing.Color.Salmon;
             this.panel1.Location = new System.Drawing.Point(146, 49);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(737, 10);
+            this.panel1.Size = new System.Drawing.Size(737, 3);
             this.panel1.TabIndex = 6;
             // 
             // rjCircularPictureBox1
@@ -326,11 +326,11 @@ namespace qlbh.UI
             // 
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Goldenrod;
+            this.label6.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.IndianRed;
             this.label6.Location = new System.Drawing.Point(406, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(207, 30);
+            this.label6.Size = new System.Drawing.Size(240, 31);
             this.label6.TabIndex = 1;
             this.label6.Text = "NHÀ CUNG CẤP";
             // 
@@ -339,14 +339,14 @@ namespace qlbh.UI
             this.panel2.BackColor = System.Drawing.Color.Salmon;
             this.panel2.Location = new System.Drawing.Point(71, 513);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(803, 10);
+            this.panel2.Size = new System.Drawing.Size(803, 3);
             this.panel2.TabIndex = 6;
             // 
             // FrmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(933, 536);
             this.ControlBox = false;
             this.Controls.Add(this.rjCircularPictureBox1);

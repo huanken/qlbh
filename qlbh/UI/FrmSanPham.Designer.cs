@@ -55,6 +55,7 @@ namespace qlbh.UI
             this.sanphamTableAdapter1 = new qlbh.qlbanhangDataSet1TableAdapters.sanphamTableAdapter();
             this.dgv_sanpham = new System.Windows.Forms.DataGridView();
             this.txtImagepath = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pic_B1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -101,9 +102,9 @@ namespace qlbh.UI
             // txt_masp
             // 
             this.txt_masp.AutoSize = true;
-            this.txt_masp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_masp.BackColor = System.Drawing.Color.Transparent;
             this.txt_masp.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_masp.ForeColor = System.Drawing.Color.White;
+            this.txt_masp.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_masp.Location = new System.Drawing.Point(17, 114);
             this.txt_masp.Name = "txt_masp";
             this.txt_masp.Size = new System.Drawing.Size(109, 18);
@@ -113,7 +114,9 @@ namespace qlbh.UI
             // txt_dm
             // 
             this.txt_dm.AutoSize = true;
+            this.txt_dm.BackColor = System.Drawing.SystemColors.Control;
             this.txt_dm.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dm.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_dm.Location = new System.Drawing.Point(17, 238);
             this.txt_dm.Name = "txt_dm";
             this.txt_dm.Size = new System.Drawing.Size(83, 18);
@@ -123,7 +126,9 @@ namespace qlbh.UI
             // txt_dvt
             // 
             this.txt_dvt.AutoSize = true;
+            this.txt_dvt.BackColor = System.Drawing.SystemColors.Control;
             this.txt_dvt.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dvt.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_dvt.Location = new System.Drawing.Point(17, 207);
             this.txt_dvt.Name = "txt_dvt";
             this.txt_dvt.Size = new System.Drawing.Size(88, 18);
@@ -132,8 +137,8 @@ namespace qlbh.UI
             // 
             // btn_Luu
             // 
-            this.btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Luu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Luu.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Luu.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Luu.BorderColor = System.Drawing.Color.White;
             this.btn_Luu.BorderRadius = 20;
             this.btn_Luu.BorderSize = 3;
@@ -141,7 +146,7 @@ namespace qlbh.UI
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.btn_Luu.Location = new System.Drawing.Point(454, 519);
+            this.btn_Luu.Location = new System.Drawing.Point(445, 519);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(119, 45);
             this.btn_Luu.TabIndex = 21;
@@ -152,8 +157,8 @@ namespace qlbh.UI
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Xoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Xoa.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Xoa.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Xoa.BorderColor = System.Drawing.Color.White;
             this.btn_Xoa.BorderRadius = 20;
             this.btn_Xoa.BorderSize = 3;
@@ -161,7 +166,7 @@ namespace qlbh.UI
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_Xoa.Location = new System.Drawing.Point(776, 519);
+            this.btn_Xoa.Location = new System.Drawing.Point(749, 519);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(119, 45);
             this.btn_Xoa.TabIndex = 20;
@@ -172,8 +177,8 @@ namespace qlbh.UI
             // 
             // btn_Sua
             // 
-            this.btn_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Sua.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Sua.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Sua.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Sua.BorderColor = System.Drawing.Color.White;
             this.btn_Sua.BorderRadius = 20;
             this.btn_Sua.BorderSize = 3;
@@ -181,7 +186,7 @@ namespace qlbh.UI
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Sua.ForeColor = System.Drawing.Color.White;
-            this.btn_Sua.Location = new System.Drawing.Point(615, 519);
+            this.btn_Sua.Location = new System.Drawing.Point(595, 519);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(119, 45);
             this.btn_Sua.TabIndex = 19;
@@ -192,8 +197,8 @@ namespace qlbh.UI
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Them.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.btn_Them.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Them.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Them.BorderColor = System.Drawing.Color.White;
             this.btn_Them.BorderRadius = 20;
             this.btn_Them.BorderSize = 3;
@@ -222,8 +227,9 @@ namespace qlbh.UI
             // txt_giaB1
             // 
             this.txt_giaB1.AutoSize = true;
+            this.txt_giaB1.BackColor = System.Drawing.SystemColors.Control;
             this.txt_giaB1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_giaB1.ForeColor = System.Drawing.Color.Black;
+            this.txt_giaB1.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_giaB1.Location = new System.Drawing.Point(17, 176);
             this.txt_giaB1.Name = "txt_giaB1";
             this.txt_giaB1.Size = new System.Drawing.Size(107, 18);
@@ -233,7 +239,9 @@ namespace qlbh.UI
             // txt_tenB1
             // 
             this.txt_tenB1.AutoSize = true;
+            this.txt_tenB1.BackColor = System.Drawing.SystemColors.Control;
             this.txt_tenB1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tenB1.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_tenB1.Location = new System.Drawing.Point(17, 145);
             this.txt_tenB1.Name = "txt_tenB1";
             this.txt_tenB1.Size = new System.Drawing.Size(108, 18);
@@ -244,7 +252,7 @@ namespace qlbh.UI
             // 
             this.txt_SanPham.AutoSize = true;
             this.txt_SanPham.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_SanPham.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_SanPham.Location = new System.Drawing.Point(420, 14);
             this.txt_SanPham.Name = "txt_SanPham";
             this.txt_SanPham.Size = new System.Drawing.Size(144, 31);
@@ -269,7 +277,7 @@ namespace qlbh.UI
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Location = new System.Drawing.Point(160, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(718, 3);
@@ -325,12 +333,22 @@ namespace qlbh.UI
             this.txtImagepath.Size = new System.Drawing.Size(340, 23);
             this.txtImagepath.TabIndex = 36;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.IndianRed;
+            this.panel3.Location = new System.Drawing.Point(132, 578);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(718, 3);
+            this.panel3.TabIndex = 37;
+            // 
             // FrmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(907, 593);
             this.ControlBox = false;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtImagepath);
             this.Controls.Add(this.cbo_dm);
             this.Controls.Add(this.panel2);
@@ -391,5 +409,6 @@ namespace qlbh.UI
         private qlbanhangDataSet1TableAdapters.sanphamTableAdapter sanphamTableAdapter1;
         private System.Windows.Forms.DataGridView dgv_sanpham;
         private System.Windows.Forms.TextBox txtImagepath;
+        private System.Windows.Forms.Panel panel3;
     }
 }

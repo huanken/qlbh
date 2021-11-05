@@ -51,11 +51,11 @@ namespace qlbh.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(346, 39);
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(324, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 30);
+            this.label1.Size = new System.Drawing.Size(325, 31);
             this.label1.TabIndex = 32;
             this.label1.Text = "TÌM KIẾM SẢN PHẨM";
             // 
@@ -64,7 +64,7 @@ namespace qlbh.UI
             this.panel2.BackColor = System.Drawing.Color.Firebrick;
             this.panel2.Location = new System.Drawing.Point(94, 500);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(757, 4);
+            this.panel2.Size = new System.Drawing.Size(757, 3);
             this.panel2.TabIndex = 31;
             // 
             // panel1
@@ -165,8 +165,9 @@ namespace qlbh.UI
             // optMaSP
             // 
             this.optMaSP.AutoSize = true;
-            this.optMaSP.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optMaSP.CheckedColor = System.Drawing.Color.IndianRed;
             this.optMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optMaSP.ForeColor = System.Drawing.Color.IndianRed;
             this.optMaSP.Location = new System.Drawing.Point(32, 169);
             this.optMaSP.MinimumSize = new System.Drawing.Size(0, 21);
             this.optMaSP.Name = "optMaSP";
@@ -191,8 +192,9 @@ namespace qlbh.UI
             // optTenSP
             // 
             this.optTenSP.AutoSize = true;
-            this.optTenSP.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.optTenSP.CheckedColor = System.Drawing.Color.IndianRed;
             this.optTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optTenSP.ForeColor = System.Drawing.Color.IndianRed;
             this.optTenSP.Location = new System.Drawing.Point(32, 209);
             this.optTenSP.MinimumSize = new System.Drawing.Size(0, 21);
             this.optTenSP.Name = "optTenSP";
@@ -210,6 +212,7 @@ namespace qlbh.UI
             this.optDanhMuc.AutoSize = true;
             this.optDanhMuc.CheckedColor = System.Drawing.Color.MediumSlateBlue;
             this.optDanhMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optDanhMuc.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.optDanhMuc.Location = new System.Drawing.Point(193, 209);
             this.optDanhMuc.MinimumSize = new System.Drawing.Size(0, 21);
             this.optDanhMuc.Name = "optDanhMuc";
@@ -260,6 +263,7 @@ namespace qlbh.UI
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.GridView_SP);
+            this.ForeColor = System.Drawing.Color.IndianRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTimKiemSanPham";
             this.Text = "FrmTimKiemSanPham";

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtDateTime = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -93,7 +94,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtDateTime = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -162,6 +162,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(972, 562);
             this.panel2.TabIndex = 2;
+            // 
+            // txtDateTime
+            // 
+            this.txtDateTime.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDateTime.Enabled = false;
+            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(41)))));
+            this.txtDateTime.Location = new System.Drawing.Point(21, 20);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.Size = new System.Drawing.Size(140, 16);
+            this.txtDateTime.TabIndex = 44;
             // 
             // pictureBox10
             // 
@@ -867,18 +879,6 @@
             // 
             this.timer1.Interval = 2300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // txtDateTime
-            // 
-            this.txtDateTime.BackColor = System.Drawing.Color.FloralWhite;
-            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDateTime.Enabled = false;
-            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(41)))));
-            this.txtDateTime.Location = new System.Drawing.Point(21, 20);
-            this.txtDateTime.Name = "txtDateTime";
-            this.txtDateTime.Size = new System.Drawing.Size(140, 16);
-            this.txtDateTime.TabIndex = 44;
             // 
             // FrmHome
             // 

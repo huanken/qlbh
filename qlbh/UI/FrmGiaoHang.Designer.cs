@@ -64,7 +64,7 @@ namespace qlbh.UI
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.ForeColor = System.Drawing.Color.Coral;
             this.panel1.Location = new System.Drawing.Point(162, 64);
@@ -86,21 +86,21 @@ namespace qlbh.UI
             // 
             // btn_TaoMoi
             // 
-            this.btn_TaoMoi.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_TaoMoi.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.btn_TaoMoi.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_TaoMoi.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_TaoMoi.BorderColor = System.Drawing.Color.Black;
             this.btn_TaoMoi.BorderRadius = 15;
-            this.btn_TaoMoi.BorderSize = 2;
+            this.btn_TaoMoi.BorderSize = 0;
             this.btn_TaoMoi.FlatAppearance.BorderSize = 0;
             this.btn_TaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TaoMoi.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TaoMoi.ForeColor = System.Drawing.Color.Black;
+            this.btn_TaoMoi.ForeColor = System.Drawing.Color.Transparent;
             this.btn_TaoMoi.Location = new System.Drawing.Point(199, 426);
             this.btn_TaoMoi.Name = "btn_TaoMoi";
             this.btn_TaoMoi.Size = new System.Drawing.Size(100, 35);
             this.btn_TaoMoi.TabIndex = 2;
             this.btn_TaoMoi.Text = "Tạo mới";
-            this.btn_TaoMoi.TextColor = System.Drawing.Color.Black;
+            this.btn_TaoMoi.TextColor = System.Drawing.Color.Transparent;
             this.btn_TaoMoi.UseVisualStyleBackColor = false;
             this.btn_TaoMoi.Click += new System.EventHandler(this.btn_TaoMoi_Click);
             // 
@@ -152,61 +152,61 @@ namespace qlbh.UI
             // 
             // btn_Luu
             // 
-            this.btn_Luu.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_Luu.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.btn_Luu.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_Luu.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_Luu.BorderColor = System.Drawing.Color.Black;
             this.btn_Luu.BorderRadius = 15;
-            this.btn_Luu.BorderSize = 2;
+            this.btn_Luu.BorderSize = 0;
             this.btn_Luu.FlatAppearance.BorderSize = 0;
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Luu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Luu.ForeColor = System.Drawing.Color.Black;
+            this.btn_Luu.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Luu.Location = new System.Drawing.Point(329, 426);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(100, 35);
             this.btn_Luu.TabIndex = 7;
             this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.TextColor = System.Drawing.Color.Black;
+            this.btn_Luu.TextColor = System.Drawing.Color.Transparent;
             this.btn_Luu.UseVisualStyleBackColor = false;
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // btn_sua
             // 
-            this.btn_sua.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_sua.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.btn_sua.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_sua.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_sua.BorderColor = System.Drawing.Color.Black;
             this.btn_sua.BorderRadius = 15;
-            this.btn_sua.BorderSize = 2;
+            this.btn_sua.BorderSize = 0;
             this.btn_sua.FlatAppearance.BorderSize = 0;
             this.btn_sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sua.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua.ForeColor = System.Drawing.Color.Black;
+            this.btn_sua.ForeColor = System.Drawing.Color.Transparent;
             this.btn_sua.Location = new System.Drawing.Point(463, 426);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(100, 35);
             this.btn_sua.TabIndex = 8;
             this.btn_sua.Text = "Sửa";
-            this.btn_sua.TextColor = System.Drawing.Color.Black;
+            this.btn_sua.TextColor = System.Drawing.Color.Transparent;
             this.btn_sua.UseVisualStyleBackColor = false;
             this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_xoa
             // 
-            this.btn_xoa.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_xoa.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.btn_xoa.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_xoa.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_xoa.BorderColor = System.Drawing.Color.Black;
             this.btn_xoa.BorderRadius = 15;
-            this.btn_xoa.BorderSize = 2;
+            this.btn_xoa.BorderSize = 0;
             this.btn_xoa.FlatAppearance.BorderSize = 0;
             this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_xoa.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.ForeColor = System.Drawing.Color.Black;
+            this.btn_xoa.ForeColor = System.Drawing.Color.Transparent;
             this.btn_xoa.Location = new System.Drawing.Point(586, 426);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(100, 35);
             this.btn_xoa.TabIndex = 9;
             this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.TextColor = System.Drawing.Color.Black;
+            this.btn_xoa.TextColor = System.Drawing.Color.Transparent;
             this.btn_xoa.UseVisualStyleBackColor = false;
             this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
@@ -281,11 +281,11 @@ namespace qlbh.UI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Algerian", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(397, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 30);
+            this.label1.Size = new System.Drawing.Size(162, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Giao Hàng";
             // 
@@ -316,7 +316,7 @@ namespace qlbh.UI
             // dp_Time
             // 
             this.dp_Time.BorderColor = System.Drawing.Color.MintCream;
-            this.dp_Time.BorderSize = 2;
+            this.dp_Time.BorderSize = 0;
             this.dp_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.dp_Time.Location = new System.Drawing.Point(177, 202);
             this.dp_Time.MinimumSize = new System.Drawing.Size(4, 35);
@@ -364,21 +364,21 @@ namespace qlbh.UI
             // 
             // btn_CapNhat
             // 
-            this.btn_CapNhat.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_CapNhat.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.btn_CapNhat.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_CapNhat.BackgroundColor = System.Drawing.Color.IndianRed;
             this.btn_CapNhat.BorderColor = System.Drawing.Color.Black;
             this.btn_CapNhat.BorderRadius = 15;
-            this.btn_CapNhat.BorderSize = 2;
+            this.btn_CapNhat.BorderSize = 0;
             this.btn_CapNhat.FlatAppearance.BorderSize = 0;
             this.btn_CapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CapNhat.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CapNhat.ForeColor = System.Drawing.Color.Black;
+            this.btn_CapNhat.ForeColor = System.Drawing.Color.Transparent;
             this.btn_CapNhat.Location = new System.Drawing.Point(767, 93);
             this.btn_CapNhat.Name = "btn_CapNhat";
             this.btn_CapNhat.Size = new System.Drawing.Size(110, 41);
             this.btn_CapNhat.TabIndex = 24;
             this.btn_CapNhat.Text = "Cập nhật";
-            this.btn_CapNhat.TextColor = System.Drawing.Color.Black;
+            this.btn_CapNhat.TextColor = System.Drawing.Color.Transparent;
             this.btn_CapNhat.UseVisualStyleBackColor = false;
             this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
@@ -468,7 +468,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(890, 530);
             this.ControlBox = false;
