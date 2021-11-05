@@ -94,6 +94,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label20 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -131,6 +132,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.txtDateTime);
             this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.pictureBox9);
@@ -273,9 +275,9 @@
             this.label18.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label18.Location = new System.Drawing.Point(22, 514);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(472, 21);
+            this.label18.Size = new System.Drawing.Size(92, 21);
             this.label18.TabIndex = 35;
-            this.label18.Text = "Food World ";
+            this.label18.Text = "Food World   ";
             // 
             // panel3
             // 
@@ -470,7 +472,7 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.Black;
-            this.btnNext.Location = new System.Drawing.Point(342, 422);
+            this.btnNext.Location = new System.Drawing.Point(342, 421);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(100, 35);
             this.btnNext.TabIndex = 29;
@@ -490,7 +492,7 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.Black;
-            this.btnPre.Location = new System.Drawing.Point(207, 422);
+            this.btnPre.Location = new System.Drawing.Point(207, 421);
             this.btnPre.Name = "btnPre";
             this.btnPre.Size = new System.Drawing.Size(100, 35);
             this.btnPre.TabIndex = 28;
@@ -521,7 +523,7 @@
             this.btnHide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHide.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHide.ForeColor = System.Drawing.Color.Black;
-            this.btnHide.Location = new System.Drawing.Point(513, 509);
+            this.btnHide.Location = new System.Drawing.Point(547, 514);
             this.btnHide.Name = "btnHide";
             this.btnHide.Size = new System.Drawing.Size(100, 35);
             this.btnHide.TabIndex = 27;
@@ -880,6 +882,16 @@
             this.timer1.Interval = 2300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label20.Location = new System.Drawing.Point(352, 514);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(156, 21);
+            this.label20.TabIndex = 45;
+            this.label20.Text = "Hotline: 0333.065.598";
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1002,5 +1014,6 @@
         private CustomControls.RJControls.RJRadioButton opt1;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox txtDateTime;
+        private System.Windows.Forms.Label label20;
     }
 }

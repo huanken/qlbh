@@ -176,17 +176,17 @@ namespace qlbh.UI
             this.btnReset.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnReset.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnReset.BorderRadius = 20;
-            this.btnReset.BorderSize = 3;
+            this.btnReset.BorderSize = 1;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.Black;
+            this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(736, 293);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(128, 40);
             this.btnReset.TabIndex = 42;
             this.btnReset.Text = "Reset";
-            this.btnReset.TextColor = System.Drawing.Color.Black;
+            this.btnReset.TextColor = System.Drawing.Color.White;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -196,17 +196,17 @@ namespace qlbh.UI
             this.btnTimKiem.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnTimKiem.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnTimKiem.BorderRadius = 20;
-            this.btnTimKiem.BorderSize = 3;
+            this.btnTimKiem.BorderSize = 1;
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(736, 239);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(127, 40);
             this.btnTimKiem.TabIndex = 41;
             this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.TextColor = System.Drawing.Color.Black;
+            this.btnTimKiem.TextColor = System.Drawing.Color.White;
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -216,7 +216,7 @@ namespace qlbh.UI
             this.txtMaPN.BorderColor = System.Drawing.Color.Salmon;
             this.txtMaPN.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtMaPN.BorderRadius = 7;
-            this.txtMaPN.BorderSize = 2;
+            this.txtMaPN.BorderSize = 1;
             this.txtMaPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaPN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMaPN.Location = new System.Drawing.Point(133, 159);
@@ -261,17 +261,17 @@ namespace qlbh.UI
             this.btnChiTiet.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnChiTiet.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnChiTiet.BorderRadius = 20;
-            this.btnChiTiet.BorderSize = 3;
+            this.btnChiTiet.BorderSize = 1;
             this.btnChiTiet.FlatAppearance.BorderSize = 0;
             this.btnChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChiTiet.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChiTiet.ForeColor = System.Drawing.Color.Black;
+            this.btnChiTiet.ForeColor = System.Drawing.Color.White;
             this.btnChiTiet.Location = new System.Drawing.Point(736, 349);
             this.btnChiTiet.Name = "btnChiTiet";
             this.btnChiTiet.Size = new System.Drawing.Size(128, 40);
             this.btnChiTiet.TabIndex = 53;
             this.btnChiTiet.Text = "Chi tiết";
-            this.btnChiTiet.TextColor = System.Drawing.Color.Black;
+            this.btnChiTiet.TextColor = System.Drawing.Color.White;
             this.btnChiTiet.UseVisualStyleBackColor = false;
             this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
@@ -281,17 +281,17 @@ namespace qlbh.UI
             this.btnXoa.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnXoa.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnXoa.BorderRadius = 20;
-            this.btnXoa.BorderSize = 3;
+            this.btnXoa.BorderSize = 1;
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(736, 403);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(128, 40);
             this.btnXoa.TabIndex = 54;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextColor = System.Drawing.Color.Black;
+            this.btnXoa.TextColor = System.Drawing.Color.White;
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
@@ -360,6 +360,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(923, 538);
             this.ControlBox = false;
             this.Controls.Add(this.lblDenNgay);

@@ -97,17 +97,17 @@ namespace qlbh.UI
             this.btnReset.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnReset.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnReset.BorderRadius = 20;
-            this.btnReset.BorderSize = 3;
+            this.btnReset.BorderSize = 1;
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(677, 437);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(683, 432);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(128, 40);
+            this.btnReset.Size = new System.Drawing.Size(128, 44);
             this.btnReset.TabIndex = 28;
             this.btnReset.Text = "Reset";
-            this.btnReset.TextColor = System.Drawing.Color.Black;
+            this.btnReset.TextColor = System.Drawing.Color.White;
             this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -117,17 +117,17 @@ namespace qlbh.UI
             this.btnTimKiem.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnTimKiem.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btnTimKiem.BorderRadius = 20;
-            this.btnTimKiem.BorderSize = 3;
+            this.btnTimKiem.BorderSize = 1;
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
-            this.btnTimKiem.Location = new System.Drawing.Point(472, 437);
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Location = new System.Drawing.Point(478, 432);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(127, 40);
+            this.btnTimKiem.Size = new System.Drawing.Size(127, 44);
             this.btnTimKiem.TabIndex = 27;
             this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.TextColor = System.Drawing.Color.Black;
+            this.btnTimKiem.TextColor = System.Drawing.Color.White;
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
@@ -137,7 +137,7 @@ namespace qlbh.UI
             this.txtTimKiem.BorderColor = System.Drawing.Color.Salmon;
             this.txtTimKiem.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txtTimKiem.BorderRadius = 7;
-            this.txtTimKiem.BorderSize = 2;
+            this.txtTimKiem.BorderSize = 1;
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtTimKiem.Location = new System.Drawing.Point(13, 249);
@@ -168,7 +168,7 @@ namespace qlbh.UI
             this.optMaSP.CheckedColor = System.Drawing.Color.IndianRed;
             this.optMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optMaSP.ForeColor = System.Drawing.Color.IndianRed;
-            this.optMaSP.Location = new System.Drawing.Point(32, 169);
+            this.optMaSP.Location = new System.Drawing.Point(22, 169);
             this.optMaSP.MinimumSize = new System.Drawing.Size(0, 21);
             this.optMaSP.Name = "optMaSP";
             this.optMaSP.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -195,7 +195,7 @@ namespace qlbh.UI
             this.optTenSP.CheckedColor = System.Drawing.Color.IndianRed;
             this.optTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optTenSP.ForeColor = System.Drawing.Color.IndianRed;
-            this.optTenSP.Location = new System.Drawing.Point(32, 209);
+            this.optTenSP.Location = new System.Drawing.Point(22, 209);
             this.optTenSP.MinimumSize = new System.Drawing.Size(0, 21);
             this.optTenSP.Name = "optTenSP";
             this.optTenSP.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -248,6 +248,7 @@ namespace qlbh.UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(906, 548);
             this.ControlBox = false;
             this.Controls.Add(this.cbbTimKiem);

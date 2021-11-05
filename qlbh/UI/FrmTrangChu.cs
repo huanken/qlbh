@@ -220,5 +220,17 @@ namespace qlbh.UI
                 rjButton1.PerformClick();
             }
         }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmBaoCaoNhapXuat();
+            AddForm(f);
+        }
+
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmTaiKhoan();
+            AddForm(f);
+        }
     }
 }

@@ -68,57 +68,57 @@ namespace qlbh.UI
             // lbl_MNV
             // 
             this.lbl_MNV.AutoSize = true;
-            this.lbl_MNV.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_MNV.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_MNV.Location = new System.Drawing.Point(55, 162);
+            this.lbl_MNV.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MNV.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbl_MNV.Location = new System.Drawing.Point(55, 161);
             this.lbl_MNV.Name = "lbl_MNV";
-            this.lbl_MNV.Size = new System.Drawing.Size(116, 18);
+            this.lbl_MNV.Size = new System.Drawing.Size(111, 18);
             this.lbl_MNV.TabIndex = 3;
-            this.lbl_MNV.Text = "Mã Nhân Viên";
+            this.lbl_MNV.Text = "Mã Nhân Viên:";
             // 
             // lbl_TênNV
             // 
             this.lbl_TênNV.AutoSize = true;
-            this.lbl_TênNV.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_TênNV.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_TênNV.Location = new System.Drawing.Point(56, 202);
+            this.lbl_TênNV.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TênNV.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbl_TênNV.Location = new System.Drawing.Point(56, 201);
             this.lbl_TênNV.Name = "lbl_TênNV";
-            this.lbl_TênNV.Size = new System.Drawing.Size(121, 18);
+            this.lbl_TênNV.Size = new System.Drawing.Size(114, 18);
             this.lbl_TênNV.TabIndex = 3;
-            this.lbl_TênNV.Text = "Tên Nhân Viên";
+            this.lbl_TênNV.Text = "Tên Nhân Viên:";
             // 
             // lbl_address
             // 
             this.lbl_address.AutoSize = true;
-            this.lbl_address.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_address.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_address.Location = new System.Drawing.Point(56, 282);
+            this.lbl_address.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_address.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbl_address.Location = new System.Drawing.Point(56, 281);
             this.lbl_address.Name = "lbl_address";
-            this.lbl_address.Size = new System.Drawing.Size(62, 18);
+            this.lbl_address.Size = new System.Drawing.Size(61, 18);
             this.lbl_address.TabIndex = 3;
-            this.lbl_address.Text = "Địa Chỉ";
+            this.lbl_address.Text = "Địa Chỉ:";
             // 
             // lbl_SĐT
             // 
             this.lbl_SĐT.AutoSize = true;
-            this.lbl_SĐT.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_SĐT.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbl_SĐT.Location = new System.Drawing.Point(56, 242);
+            this.lbl_SĐT.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_SĐT.ForeColor = System.Drawing.Color.IndianRed;
+            this.lbl_SĐT.Location = new System.Drawing.Point(56, 241);
             this.lbl_SĐT.Name = "lbl_SĐT";
             this.lbl_SĐT.Size = new System.Drawing.Size(41, 18);
             this.lbl_SĐT.TabIndex = 3;
-            this.lbl_SĐT.Text = "SĐT";
+            this.lbl_SĐT.Text = "SĐT:";
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbl_email.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.ForeColor = System.Drawing.Color.IndianRed;
             this.lbl_email.Location = new System.Drawing.Point(56, 322);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(53, 18);
             this.lbl_email.TabIndex = 3;
-            this.lbl_email.Text = "Email";
+            this.lbl_email.Text = "Email:";
             // 
             // txt_MNV
             // 
@@ -126,10 +126,10 @@ namespace qlbh.UI
             this.txt_MNV.BorderColor = System.Drawing.Color.Salmon;
             this.txt_MNV.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_MNV.BorderRadius = 7;
-            this.txt_MNV.BorderSize = 2;
+            this.txt_MNV.BorderSize = 1;
             this.txt_MNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_MNV.Location = new System.Drawing.Point(186, 150);
+            this.txt_MNV.Location = new System.Drawing.Point(176, 150);
             this.txt_MNV.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MNV.Multiline = false;
             this.txt_MNV.Name = "txt_MNV";
@@ -148,10 +148,10 @@ namespace qlbh.UI
             this.txt_TenNV.BorderColor = System.Drawing.Color.Salmon;
             this.txt_TenNV.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_TenNV.BorderRadius = 7;
-            this.txt_TenNV.BorderSize = 2;
+            this.txt_TenNV.BorderSize = 1;
             this.txt_TenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_TenNV.Location = new System.Drawing.Point(186, 191);
+            this.txt_TenNV.Location = new System.Drawing.Point(176, 191);
             this.txt_TenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenNV.Multiline = false;
             this.txt_TenNV.Name = "txt_TenNV";
@@ -170,10 +170,10 @@ namespace qlbh.UI
             this.txt_SĐT.BorderColor = System.Drawing.Color.Salmon;
             this.txt_SĐT.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_SĐT.BorderRadius = 7;
-            this.txt_SĐT.BorderSize = 2;
+            this.txt_SĐT.BorderSize = 1;
             this.txt_SĐT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SĐT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_SĐT.Location = new System.Drawing.Point(186, 232);
+            this.txt_SĐT.Location = new System.Drawing.Point(176, 232);
             this.txt_SĐT.Margin = new System.Windows.Forms.Padding(4);
             this.txt_SĐT.Multiline = false;
             this.txt_SĐT.Name = "txt_SĐT";
@@ -192,10 +192,10 @@ namespace qlbh.UI
             this.txt_ĐChi.BorderColor = System.Drawing.Color.Salmon;
             this.txt_ĐChi.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_ĐChi.BorderRadius = 7;
-            this.txt_ĐChi.BorderSize = 2;
+            this.txt_ĐChi.BorderSize = 1;
             this.txt_ĐChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ĐChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ĐChi.Location = new System.Drawing.Point(186, 273);
+            this.txt_ĐChi.Location = new System.Drawing.Point(176, 273);
             this.txt_ĐChi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ĐChi.Multiline = false;
             this.txt_ĐChi.Name = "txt_ĐChi";
@@ -214,10 +214,10 @@ namespace qlbh.UI
             this.txt_Email.BorderColor = System.Drawing.Color.Salmon;
             this.txt_Email.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_Email.BorderRadius = 7;
-            this.txt_Email.BorderSize = 2;
+            this.txt_Email.BorderSize = 1;
             this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_Email.Location = new System.Drawing.Point(186, 314);
+            this.txt_Email.Location = new System.Drawing.Point(176, 314);
             this.txt_Email.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Email.Multiline = false;
             this.txt_Email.Name = "txt_Email";
@@ -236,17 +236,17 @@ namespace qlbh.UI
             this.btn_Add.BackgroundColor = System.Drawing.Color.Tomato;
             this.btn_Add.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btn_Add.BorderRadius = 20;
-            this.btn_Add.BorderSize = 3;
+            this.btn_Add.BorderSize = 1;
             this.btn_Add.FlatAppearance.BorderSize = 0;
             this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Add.ForeColor = System.Drawing.Color.Black;
-            this.btn_Add.Location = new System.Drawing.Point(233, 420);
+            this.btn_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_Add.Location = new System.Drawing.Point(173, 415);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(102, 40);
+            this.btn_Add.Size = new System.Drawing.Size(117, 41);
             this.btn_Add.TabIndex = 6;
             this.btn_Add.Text = "Tạo Mới";
-            this.btn_Add.TextColor = System.Drawing.Color.Black;
+            this.btn_Add.TextColor = System.Drawing.Color.White;
             this.btn_Add.UseVisualStyleBackColor = false;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
@@ -256,17 +256,17 @@ namespace qlbh.UI
             this.btn_Save.BackgroundColor = System.Drawing.Color.Tomato;
             this.btn_Save.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btn_Save.BorderRadius = 20;
-            this.btn_Save.BorderSize = 3;
+            this.btn_Save.BorderSize = 1;
             this.btn_Save.FlatAppearance.BorderSize = 0;
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Save.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.ForeColor = System.Drawing.Color.Black;
-            this.btn_Save.Location = new System.Drawing.Point(388, 420);
+            this.btn_Save.ForeColor = System.Drawing.Color.White;
+            this.btn_Save.Location = new System.Drawing.Point(337, 415);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(102, 40);
+            this.btn_Save.Size = new System.Drawing.Size(102, 41);
             this.btn_Save.TabIndex = 6;
             this.btn_Save.Text = "Lưu";
-            this.btn_Save.TextColor = System.Drawing.Color.Black;
+            this.btn_Save.TextColor = System.Drawing.Color.White;
             this.btn_Save.UseVisualStyleBackColor = false;
             this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
@@ -276,17 +276,17 @@ namespace qlbh.UI
             this.btn_Sua.BackgroundColor = System.Drawing.Color.Tomato;
             this.btn_Sua.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btn_Sua.BorderRadius = 20;
-            this.btn_Sua.BorderSize = 3;
+            this.btn_Sua.BorderSize = 1;
             this.btn_Sua.FlatAppearance.BorderSize = 0;
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Sua.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sua.ForeColor = System.Drawing.Color.Black;
-            this.btn_Sua.Location = new System.Drawing.Point(544, 420);
+            this.btn_Sua.ForeColor = System.Drawing.Color.White;
+            this.btn_Sua.Location = new System.Drawing.Point(493, 415);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(102, 40);
+            this.btn_Sua.Size = new System.Drawing.Size(102, 41);
             this.btn_Sua.TabIndex = 6;
             this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.TextColor = System.Drawing.Color.Black;
+            this.btn_Sua.TextColor = System.Drawing.Color.White;
             this.btn_Sua.UseVisualStyleBackColor = false;
             this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
@@ -296,30 +296,30 @@ namespace qlbh.UI
             this.btn_Xoa.BackgroundColor = System.Drawing.Color.Tomato;
             this.btn_Xoa.BorderColor = System.Drawing.SystemColors.WindowText;
             this.btn_Xoa.BorderRadius = 20;
-            this.btn_Xoa.BorderSize = 3;
+            this.btn_Xoa.BorderSize = 1;
             this.btn_Xoa.FlatAppearance.BorderSize = 0;
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xoa.ForeColor = System.Drawing.Color.Black;
-            this.btn_Xoa.Location = new System.Drawing.Point(703, 420);
+            this.btn_Xoa.ForeColor = System.Drawing.Color.White;
+            this.btn_Xoa.Location = new System.Drawing.Point(652, 415);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(102, 40);
+            this.btn_Xoa.Size = new System.Drawing.Size(102, 41);
             this.btn_Xoa.TabIndex = 6;
             this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.TextColor = System.Drawing.Color.Black;
+            this.btn_Xoa.TextColor = System.Drawing.Color.White;
             this.btn_Xoa.UseVisualStyleBackColor = false;
             this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label3.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
             this.label3.Location = new System.Drawing.Point(55, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 18);
+            this.label3.Size = new System.Drawing.Size(77, 18);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Giới Tính";
+            this.label3.Text = "Giới Tính:";
             // 
             // txt_giơitinh
             // 
@@ -327,10 +327,10 @@ namespace qlbh.UI
             this.txt_giơitinh.BorderColor = System.Drawing.Color.Salmon;
             this.txt_giơitinh.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_giơitinh.BorderRadius = 7;
-            this.txt_giơitinh.BorderSize = 2;
+            this.txt_giơitinh.BorderSize = 1;
             this.txt_giơitinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_giơitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_giơitinh.Location = new System.Drawing.Point(186, 355);
+            this.txt_giơitinh.Location = new System.Drawing.Point(176, 355);
             this.txt_giơitinh.Margin = new System.Windows.Forms.Padding(4);
             this.txt_giơitinh.Multiline = false;
             this.txt_giơitinh.Name = "txt_giơitinh";

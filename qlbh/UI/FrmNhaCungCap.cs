@@ -95,7 +95,7 @@ namespace qlbh.UI
                 string sql_Sua = "Update nhacungcap Set ten_ncc = N'" + rjTextBox2.Texts + "', dia_chi = N'" + rjTextBox3.Texts + "', so_dt = '" + rjTextBox4.Texts + "' where ma_ncc = '" + rjTextBox1.Texts + "'";
                 kn.Thucthi(sql_Sua);
                 BangNhacungcap();
-            }
+        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

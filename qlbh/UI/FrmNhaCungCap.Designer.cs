@@ -38,7 +38,6 @@ namespace qlbh.UI
             this.btnLuu = new CustomControls.RJControls.RJButton();
             this.btnSua = new CustomControls.RJControls.RJButton();
             this.btnxoa = new CustomControls.RJControls.RJButton();
-            this.btnThoat = new CustomControls.RJControls.RJButton();
             this.dataGridViewncc = new System.Windows.Forms.DataGridView();
             this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
             this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
@@ -56,11 +55,11 @@ namespace qlbh.UI
             // 
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.IndianRed;
             this.label2.Location = new System.Drawing.Point(36, 183);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 18);
+            this.label2.Size = new System.Drawing.Size(135, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã nhà cung cấp: ";
             // 
@@ -68,11 +67,11 @@ namespace qlbh.UI
             // 
             this.label3.AutoSize = true;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
             this.label3.Location = new System.Drawing.Point(32, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 18);
+            this.label3.Size = new System.Drawing.Size(140, 18);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tên nhà cung cấp: ";
             // 
@@ -80,11 +79,11 @@ namespace qlbh.UI
             // 
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(37, 263);
+            this.label4.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.IndianRed;
+            this.label4.Location = new System.Drawing.Point(34, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 18);
+            this.label4.Size = new System.Drawing.Size(62, 18);
             this.label4.TabIndex = 1;
             this.label4.Text = "Địa chỉ: ";
             // 
@@ -92,11 +91,11 @@ namespace qlbh.UI
             // 
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.IndianRed;
             this.label5.Location = new System.Drawing.Point(33, 299);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 18);
+            this.label5.Size = new System.Drawing.Size(107, 18);
             this.label5.TabIndex = 1;
             this.label5.Text = "Số điện thoại: ";
             // 
@@ -106,14 +105,14 @@ namespace qlbh.UI
             this.btnThemmoi.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnThemmoi.BorderColor = System.Drawing.Color.Black;
             this.btnThemmoi.BorderRadius = 20;
-            this.btnThemmoi.BorderSize = 2;
+            this.btnThemmoi.BorderSize = 1;
             this.btnThemmoi.FlatAppearance.BorderSize = 0;
             this.btnThemmoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemmoi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemmoi.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThemmoi.Location = new System.Drawing.Point(22, 405);
+            this.btnThemmoi.Location = new System.Drawing.Point(205, 416);
             this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(95, 40);
+            this.btnThemmoi.Size = new System.Drawing.Size(115, 40);
             this.btnThemmoi.TabIndex = 3;
             this.btnThemmoi.Text = "Thêm mới";
             this.btnThemmoi.TextColor = System.Drawing.SystemColors.Control;
@@ -126,14 +125,14 @@ namespace qlbh.UI
             this.btnLuu.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnLuu.BorderColor = System.Drawing.Color.Black;
             this.btnLuu.BorderRadius = 20;
-            this.btnLuu.BorderSize = 2;
+            this.btnLuu.BorderSize = 1;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLuu.Location = new System.Drawing.Point(163, 405);
+            this.btnLuu.Location = new System.Drawing.Point(352, 416);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(101, 40);
+            this.btnLuu.Size = new System.Drawing.Size(108, 40);
             this.btnLuu.TabIndex = 3;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextColor = System.Drawing.SystemColors.Control;
@@ -146,14 +145,14 @@ namespace qlbh.UI
             this.btnSua.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnSua.BorderColor = System.Drawing.Color.Black;
             this.btnSua.BorderRadius = 20;
-            this.btnSua.BorderSize = 2;
+            this.btnSua.BorderSize = 1;
             this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnSua.Location = new System.Drawing.Point(313, 405);
+            this.btnSua.Location = new System.Drawing.Point(496, 416);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(102, 40);
+            this.btnSua.Size = new System.Drawing.Size(109, 40);
             this.btnSua.TabIndex = 3;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextColor = System.Drawing.SystemColors.Control;
@@ -166,39 +165,19 @@ namespace qlbh.UI
             this.btnxoa.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnxoa.BorderColor = System.Drawing.Color.Black;
             this.btnxoa.BorderRadius = 20;
-            this.btnxoa.BorderSize = 2;
+            this.btnxoa.BorderSize = 1;
             this.btnxoa.FlatAppearance.BorderSize = 0;
             this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnxoa.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxoa.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnxoa.Location = new System.Drawing.Point(462, 405);
+            this.btnxoa.Location = new System.Drawing.Point(645, 416);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(106, 40);
+            this.btnxoa.Size = new System.Drawing.Size(113, 40);
             this.btnxoa.TabIndex = 3;
             this.btnxoa.Text = "Xoá";
             this.btnxoa.TextColor = System.Drawing.SystemColors.Control;
             this.btnxoa.UseVisualStyleBackColor = false;
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThoat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnThoat.BorderColor = System.Drawing.Color.Black;
-            this.btnThoat.BorderRadius = 20;
-            this.btnThoat.BorderSize = 2;
-            this.btnThoat.FlatAppearance.BorderSize = 0;
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThoat.Location = new System.Drawing.Point(777, 420);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(82, 40);
-            this.btnThoat.TabIndex = 3;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.TextColor = System.Drawing.SystemColors.Control;
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // dataGridViewncc
             // 
@@ -216,10 +195,10 @@ namespace qlbh.UI
             this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
             this.rjTextBox1.BorderRadius = 10;
-            this.rjTextBox1.BorderSize = 2;
+            this.rjTextBox1.BorderSize = 1;
             this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(189, 177);
+            this.rjTextBox1.Location = new System.Drawing.Point(169, 177);
             this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
@@ -227,7 +206,7 @@ namespace qlbh.UI
             this.rjTextBox1.PasswordChar = false;
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox1.PlaceholderText = "";
-            this.rjTextBox1.Size = new System.Drawing.Size(202, 31);
+            this.rjTextBox1.Size = new System.Drawing.Size(227, 31);
             this.rjTextBox1.TabIndex = 5;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
@@ -238,10 +217,10 @@ namespace qlbh.UI
             this.rjTextBox2.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
             this.rjTextBox2.BorderRadius = 10;
-            this.rjTextBox2.BorderSize = 2;
+            this.rjTextBox2.BorderSize = 1;
             this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(188, 217);
+            this.rjTextBox2.Location = new System.Drawing.Point(168, 217);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
@@ -249,7 +228,7 @@ namespace qlbh.UI
             this.rjTextBox2.PasswordChar = false;
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(202, 31);
+            this.rjTextBox2.Size = new System.Drawing.Size(227, 31);
             this.rjTextBox2.TabIndex = 5;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
@@ -260,10 +239,10 @@ namespace qlbh.UI
             this.rjTextBox3.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.rjTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
             this.rjTextBox3.BorderRadius = 10;
-            this.rjTextBox3.BorderSize = 2;
+            this.rjTextBox3.BorderSize = 1;
             this.rjTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox3.Location = new System.Drawing.Point(189, 254);
+            this.rjTextBox3.Location = new System.Drawing.Point(169, 254);
             this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox3.Multiline = false;
             this.rjTextBox3.Name = "rjTextBox3";
@@ -271,7 +250,7 @@ namespace qlbh.UI
             this.rjTextBox3.PasswordChar = false;
             this.rjTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox3.PlaceholderText = "";
-            this.rjTextBox3.Size = new System.Drawing.Size(202, 31);
+            this.rjTextBox3.Size = new System.Drawing.Size(227, 31);
             this.rjTextBox3.TabIndex = 5;
             this.rjTextBox3.Texts = "";
             this.rjTextBox3.UnderlinedStyle = false;
@@ -282,10 +261,10 @@ namespace qlbh.UI
             this.rjTextBox4.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.rjTextBox4.BorderFocusColor = System.Drawing.Color.HotPink;
             this.rjTextBox4.BorderRadius = 10;
-            this.rjTextBox4.BorderSize = 2;
+            this.rjTextBox4.BorderSize = 1;
             this.rjTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox4.Location = new System.Drawing.Point(189, 290);
+            this.rjTextBox4.Location = new System.Drawing.Point(169, 290);
             this.rjTextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox4.Multiline = false;
             this.rjTextBox4.Name = "rjTextBox4";
@@ -293,7 +272,7 @@ namespace qlbh.UI
             this.rjTextBox4.PasswordChar = false;
             this.rjTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox4.PlaceholderText = "";
-            this.rjTextBox4.Size = new System.Drawing.Size(202, 31);
+            this.rjTextBox4.Size = new System.Drawing.Size(227, 31);
             this.rjTextBox4.TabIndex = 5;
             this.rjTextBox4.Texts = "";
             this.rjTextBox4.UnderlinedStyle = false;
@@ -311,8 +290,8 @@ namespace qlbh.UI
             this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.rjCircularPictureBox1.BorderSize = 5;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 3;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
             this.rjCircularPictureBox1.Location = new System.Drawing.Point(16, 4);
@@ -357,7 +336,6 @@ namespace qlbh.UI
             this.Controls.Add(this.rjTextBox2);
             this.Controls.Add(this.rjTextBox1);
             this.Controls.Add(this.dataGridViewncc);
-            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
@@ -388,7 +366,6 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJButton btnLuu;
         private CustomControls.RJControls.RJButton btnSua;
         private CustomControls.RJControls.RJButton btnxoa;
-        private CustomControls.RJControls.RJButton btnThoat;
         private System.Windows.Forms.DataGridView dataGridViewncc;
         private CustomControls.RJControls.RJTextBox rjTextBox1;
         private CustomControls.RJControls.RJTextBox rjTextBox2;

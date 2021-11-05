@@ -94,7 +94,7 @@ namespace qlbh.UI
             this.btnThem.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnThem.BorderColor = System.Drawing.Color.Black;
             this.btnThem.BorderRadius = 20;
-            this.btnThem.BorderSize = 2;
+            this.btnThem.BorderSize = 1;
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,7 +114,7 @@ namespace qlbh.UI
             this.btnLuu.BackgroundColor = System.Drawing.Color.Tomato;
             this.btnLuu.BorderColor = System.Drawing.Color.Black;
             this.btnLuu.BorderRadius = 20;
-            this.btnLuu.BorderSize = 2;
+            this.btnLuu.BorderSize = 1;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,11 +130,11 @@ namespace qlbh.UI
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnXoa.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnXoa.BackColor = System.Drawing.Color.Orange;
+            this.btnXoa.BackgroundColor = System.Drawing.Color.Orange;
             this.btnXoa.BorderColor = System.Drawing.Color.Black;
             this.btnXoa.BorderRadius = 20;
-            this.btnXoa.BorderSize = 2;
+            this.btnXoa.BorderSize = 1;
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,11 +150,11 @@ namespace qlbh.UI
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnThoat.BackgroundColor = System.Drawing.Color.Goldenrod;
+            this.btnThoat.BackColor = System.Drawing.Color.Orange;
+            this.btnThoat.BackgroundColor = System.Drawing.Color.Orange;
             this.btnThoat.BorderColor = System.Drawing.Color.Black;
             this.btnThoat.BorderRadius = 20;
-            this.btnThoat.BorderSize = 2;
+            this.btnThoat.BorderSize = 1;
             this.btnThoat.FlatAppearance.BorderSize = 0;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,37 +224,41 @@ namespace qlbh.UI
             // lbltennv
             // 
             this.lbltennv.AutoSize = true;
+            this.lbltennv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltennv.Location = new System.Drawing.Point(13, 113);
             this.lbltennv.Name = "lbltennv";
-            this.lbltennv.Size = new System.Drawing.Size(109, 16);
+            this.lbltennv.Size = new System.Drawing.Size(95, 16);
             this.lbltennv.TabIndex = 0;
             this.lbltennv.Text = "Tên nhân viên:";
             // 
             // lblmanv
             // 
             this.lblmanv.AutoSize = true;
+            this.lblmanv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmanv.Location = new System.Drawing.Point(13, 84);
             this.lblmanv.Name = "lblmanv";
-            this.lblmanv.Size = new System.Drawing.Size(107, 16);
+            this.lblmanv.Size = new System.Drawing.Size(93, 16);
             this.lblmanv.TabIndex = 0;
             this.lblmanv.Text = "Mã nhân viên: ";
             // 
             // lblngayban
             // 
             this.lblngayban.AutoSize = true;
+            this.lblngayban.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblngayban.Location = new System.Drawing.Point(13, 51);
             this.lblngayban.Name = "lblngayban";
-            this.lblngayban.Size = new System.Drawing.Size(79, 16);
+            this.lblngayban.Size = new System.Drawing.Size(70, 16);
             this.lblngayban.TabIndex = 0;
             this.lblngayban.Text = "Ngày bán:";
             // 
             // lblmahoadon
             // 
             this.lblmahoadon.AutoSize = true;
+            this.lblmahoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmahoadon.ForeColor = System.Drawing.Color.IndianRed;
             this.lblmahoadon.Location = new System.Drawing.Point(13, 22);
             this.lblmahoadon.Name = "lblmahoadon";
-            this.lblmahoadon.Size = new System.Drawing.Size(97, 16);
+            this.lblmahoadon.Size = new System.Drawing.Size(85, 16);
             this.lblmahoadon.TabIndex = 0;
             this.lblmahoadon.Text = "Mã hoá đơn: ";
             // 
@@ -343,54 +347,60 @@ namespace qlbh.UI
             // lblthanhtien
             // 
             this.lblthanhtien.AutoSize = true;
+            this.lblthanhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblthanhtien.Location = new System.Drawing.Point(7, 178);
             this.lblthanhtien.Name = "lblthanhtien";
-            this.lblthanhtien.Size = new System.Drawing.Size(88, 16);
+            this.lblthanhtien.Size = new System.Drawing.Size(76, 16);
             this.lblthanhtien.TabIndex = 0;
             this.lblthanhtien.Text = "Thành tiền: ";
             // 
             // lblgiamgia
             // 
             this.lblgiamgia.AutoSize = true;
+            this.lblgiamgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgiamgia.Location = new System.Drawing.Point(12, 149);
             this.lblgiamgia.Name = "lblgiamgia";
-            this.lblgiamgia.Size = new System.Drawing.Size(105, 16);
+            this.lblgiamgia.Size = new System.Drawing.Size(91, 16);
             this.lblgiamgia.TabIndex = 0;
             this.lblgiamgia.Text = "Giảm giá (%): ";
             // 
             // lblgiaban
             // 
             this.lblgiaban.AutoSize = true;
+            this.lblgiaban.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblgiaban.Location = new System.Drawing.Point(12, 91);
             this.lblgiaban.Name = "lblgiaban";
-            this.lblgiaban.Size = new System.Drawing.Size(70, 16);
+            this.lblgiaban.Size = new System.Drawing.Size(61, 16);
             this.lblgiaban.TabIndex = 0;
             this.lblgiaban.Text = "Giá bán: ";
             // 
             // lblSoluong
             // 
             this.lblSoluong.AutoSize = true;
+            this.lblSoluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoluong.Location = new System.Drawing.Point(13, 121);
             this.lblSoluong.Name = "lblSoluong";
-            this.lblSoluong.Size = new System.Drawing.Size(77, 16);
+            this.lblSoluong.Size = new System.Drawing.Size(67, 16);
             this.lblSoluong.TabIndex = 0;
             this.lblSoluong.Text = "Số lượng: ";
             // 
             // lbltensp
             // 
             this.lbltensp.AutoSize = true;
+            this.lbltensp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltensp.Location = new System.Drawing.Point(12, 63);
             this.lbltensp.Name = "lbltensp";
-            this.lbltensp.Size = new System.Drawing.Size(114, 16);
+            this.lbltensp.Size = new System.Drawing.Size(100, 16);
             this.lbltensp.TabIndex = 0;
             this.lbltensp.Text = "Tên sản phẩm: ";
             // 
             // lblmasp
             // 
             this.lblmasp.AutoSize = true;
+            this.lblmasp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmasp.Location = new System.Drawing.Point(12, 31);
             this.lblmasp.Name = "lblmasp";
-            this.lblmasp.Size = new System.Drawing.Size(108, 16);
+            this.lblmasp.Size = new System.Drawing.Size(95, 16);
             this.lblmasp.TabIndex = 0;
             this.lblmasp.Text = "Mã sản phẩm: ";
             // 
@@ -474,11 +484,11 @@ namespace qlbh.UI
             // lblghichu
             // 
             this.lblghichu.AutoSize = true;
-            this.lblghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblghichu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblghichu.ForeColor = System.Drawing.Color.IndianRed;
             this.lblghichu.Location = new System.Drawing.Point(462, 294);
             this.lblghichu.Name = "lblghichu";
-            this.lblghichu.Size = new System.Drawing.Size(76, 18);
+            this.lblghichu.Size = new System.Drawing.Size(67, 18);
             this.lblghichu.TabIndex = 12;
             this.lblghichu.Text = "Ghi chú: ";
             // 
