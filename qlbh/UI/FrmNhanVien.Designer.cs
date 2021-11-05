@@ -379,12 +379,12 @@ namespace qlbh.UI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(404, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 31);
+            this.label1.Size = new System.Drawing.Size(162, 31);
             this.label1.TabIndex = 11;
-            this.label1.Text = "NHÂN VIÊN";
+            this.label1.Text = "Nhân Viên";
             // 
             // FrmNhanVien
             // 

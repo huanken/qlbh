@@ -255,9 +255,9 @@ namespace qlbh.UI
             this.txt_SanPham.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_SanPham.Location = new System.Drawing.Point(420, 14);
             this.txt_SanPham.Name = "txt_SanPham";
-            this.txt_SanPham.Size = new System.Drawing.Size(144, 31);
+            this.txt_SanPham.Size = new System.Drawing.Size(145, 31);
             this.txt_SanPham.TabIndex = 14;
-            this.txt_SanPham.Text = "Sản phẩm ";
+            this.txt_SanPham.Text = "Sản Phẩm ";
             // 
             // rjCircularPictureBox1
             // 

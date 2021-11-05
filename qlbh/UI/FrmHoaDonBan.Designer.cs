@@ -426,9 +426,9 @@ namespace qlbh.UI
             this.lblhoadonban.ForeColor = System.Drawing.Color.IndianRed;
             this.lblhoadonban.Location = new System.Drawing.Point(463, 9);
             this.lblhoadonban.Name = "lblhoadonban";
-            this.lblhoadonban.Size = new System.Drawing.Size(226, 31);
+            this.lblhoadonban.Size = new System.Drawing.Size(199, 31);
             this.lblhoadonban.TabIndex = 11;
-            this.lblhoadonban.Text = "HÓA ĐƠN BÁN";
+            this.lblhoadonban.Text = "Hóa Đơn Bán";
             // 
             // lblcongtienhang
             // 

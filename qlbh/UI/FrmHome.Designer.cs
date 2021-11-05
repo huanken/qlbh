@@ -303,7 +303,7 @@
             this.opt2.AutoSize = true;
             this.opt2.CheckedColor = System.Drawing.Color.Tan;
             this.opt2.Enabled = false;
-            this.opt2.Location = new System.Drawing.Point(313, 385);
+            this.opt2.Location = new System.Drawing.Point(313, 396);
             this.opt2.MinimumSize = new System.Drawing.Size(0, 21);
             this.opt2.Name = "opt2";
             this.opt2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -318,7 +318,7 @@
             this.opt3.AutoSize = true;
             this.opt3.CheckedColor = System.Drawing.Color.Tan;
             this.opt3.Enabled = false;
-            this.opt3.Location = new System.Drawing.Point(343, 385);
+            this.opt3.Location = new System.Drawing.Point(343, 396);
             this.opt3.MinimumSize = new System.Drawing.Size(0, 21);
             this.opt3.Name = "opt3";
             this.opt3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -333,7 +333,7 @@
             this.opt1.AutoSize = true;
             this.opt1.CheckedColor = System.Drawing.Color.Tan;
             this.opt1.Enabled = false;
-            this.opt1.Location = new System.Drawing.Point(283, 385);
+            this.opt1.Location = new System.Drawing.Point(283, 396);
             this.opt1.MinimumSize = new System.Drawing.Size(0, 21);
             this.opt1.Name = "opt1";
             this.opt1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -347,7 +347,7 @@
             // 
             this.label17.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label17.Location = new System.Drawing.Point(207, 13);
+            this.label17.Location = new System.Drawing.Point(207, 1);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(190, 37);
             this.label17.TabIndex = 34;
@@ -359,7 +359,7 @@
             this.panel15.Controls.Add(this.pictureBox3);
             this.panel15.Controls.Add(this.label15);
             this.panel15.Controls.Add(this.label16);
-            this.panel15.Location = new System.Drawing.Point(337, 64);
+            this.panel15.Location = new System.Drawing.Point(337, 52);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(274, 71);
             this.panel15.TabIndex = 33;
@@ -401,7 +401,7 @@
             this.panel14.Controls.Add(this.pictureBox2);
             this.panel14.Controls.Add(this.label13);
             this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(59, 64);
+            this.panel14.Location = new System.Drawing.Point(59, 52);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(265, 71);
             this.panel14.TabIndex = 32;
@@ -441,10 +441,10 @@
             // 
             this.picBannerBurger.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerBurger.Image = ((System.Drawing.Image)(resources.GetObject("picBannerBurger.Image")));
-            this.picBannerBurger.Location = new System.Drawing.Point(-1, 146);
+            this.picBannerBurger.Location = new System.Drawing.Point(-1, 134);
             this.picBannerBurger.Name = "picBannerBurger";
             this.picBannerBurger.Size = new System.Drawing.Size(631, 261);
-            this.picBannerBurger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerBurger.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBannerBurger.TabIndex = 31;
             this.picBannerBurger.TabStop = false;
             // 
@@ -452,10 +452,10 @@
             // 
             this.picBannerChicken.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerChicken.Image = ((System.Drawing.Image)(resources.GetObject("picBannerChicken.Image")));
-            this.picBannerChicken.Location = new System.Drawing.Point(-1, 145);
+            this.picBannerChicken.Location = new System.Drawing.Point(-1, 133);
             this.picBannerChicken.Name = "picBannerChicken";
             this.picBannerChicken.Size = new System.Drawing.Size(631, 261);
-            this.picBannerChicken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerChicken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBannerChicken.TabIndex = 30;
             this.picBannerChicken.TabStop = false;
             // 
@@ -470,7 +470,7 @@
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNext.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.Black;
-            this.btnNext.Location = new System.Drawing.Point(342, 413);
+            this.btnNext.Location = new System.Drawing.Point(342, 422);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(100, 35);
             this.btnNext.TabIndex = 29;
@@ -490,7 +490,7 @@
             this.btnPre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPre.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPre.ForeColor = System.Drawing.Color.Black;
-            this.btnPre.Location = new System.Drawing.Point(207, 413);
+            this.btnPre.Location = new System.Drawing.Point(207, 422);
             this.btnPre.Name = "btnPre";
             this.btnPre.Size = new System.Drawing.Size(100, 35);
             this.btnPre.TabIndex = 28;
@@ -503,10 +503,10 @@
             // 
             this.picBannerGiaoHang.BackColor = System.Drawing.Color.LightYellow;
             this.picBannerGiaoHang.Image = ((System.Drawing.Image)(resources.GetObject("picBannerGiaoHang.Image")));
-            this.picBannerGiaoHang.Location = new System.Drawing.Point(-1, 145);
+            this.picBannerGiaoHang.Location = new System.Drawing.Point(-1, 133);
             this.picBannerGiaoHang.Name = "picBannerGiaoHang";
             this.picBannerGiaoHang.Size = new System.Drawing.Size(631, 261);
-            this.picBannerGiaoHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBannerGiaoHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBannerGiaoHang.TabIndex = 25;
             this.picBannerGiaoHang.TabStop = false;
             // 

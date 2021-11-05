@@ -110,9 +110,9 @@ namespace qlbh.UI
             this.txt_Phieunhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Phieunhap.Location = new System.Drawing.Point(387, 18);
             this.txt_Phieunhap.Name = "txt_Phieunhap";
-            this.txt_Phieunhap.Size = new System.Drawing.Size(173, 31);
+            this.txt_Phieunhap.Size = new System.Drawing.Size(177, 31);
             this.txt_Phieunhap.TabIndex = 2;
-            this.txt_Phieunhap.Text = "Phiếu nhập";
+            this.txt_Phieunhap.Text = "Phiếu Nhập";
             // 
             // txt_maphieunhap
             // 

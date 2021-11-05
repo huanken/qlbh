@@ -55,9 +55,9 @@ namespace qlbh.UI
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(324, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 31);
+            this.label1.Size = new System.Drawing.Size(298, 31);
             this.label1.TabIndex = 32;
-            this.label1.Text = "TÌM KIẾM SẢN PHẨM";
+            this.label1.Text = "Tìm Kiếm Sản Phẩm";
             // 
             // panel2
             // 
