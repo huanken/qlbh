@@ -109,7 +109,7 @@ namespace qlbh.UI
             catch (Exception ex)
             {
                 txtBox_Thanhtien.Text = "0.00";
-                MessageBox.Show(ex.Message);
+            //    MessageBox.Show(ex.Message);
             }
         }
         internal void calculatetongtien(TextBox a, DataGridView dgv)
@@ -249,5 +249,9 @@ namespace qlbh.UI
             btn_Luu.Enabled = false;
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            Reload();
+        }
     }
 }

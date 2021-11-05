@@ -58,6 +58,10 @@ namespace qlbh.UI
             this.colapse2 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnBaoCaoHoaDon = new CustomControls.RJControls.RJButton();
+            this.btnBaoCaoPhieuNhap = new CustomControls.RJControls.RJButton();
+            this.colapse3 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,6 +69,7 @@ namespace qlbh.UI
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // colapse
@@ -84,7 +89,7 @@ namespace qlbh.UI
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.btnGiaoHang);
-            this.flowLayoutPanel1.Controls.Add(this.btnBaoCao);
+            this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Controls.Add(this.btnTaiKhoan);
             this.flowLayoutPanel1.Controls.Add(this.btnThoat);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -468,7 +473,7 @@ namespace qlbh.UI
             this.btnBaoCao.ForeColor = System.Drawing.Color.White;
             this.btnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCao.Image")));
             this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao.Location = new System.Drawing.Point(3, 334);
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 0);
             this.btnBaoCao.Name = "btnBaoCao";
             this.btnBaoCao.Size = new System.Drawing.Size(197, 49);
             this.btnBaoCao.TabIndex = 3;
@@ -539,6 +544,68 @@ namespace qlbh.UI
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnBaoCaoPhieuNhap);
+            this.panel4.Controls.Add(this.btnBaoCaoHoaDon);
+            this.panel4.Controls.Add(this.btnBaoCao);
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(3, 334);
+            this.panel4.MaximumSize = new System.Drawing.Size(198, 138);
+            this.panel4.MinimumSize = new System.Drawing.Size(198, 49);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(198, 49);
+            this.panel4.TabIndex = 7;
+            // 
+            // btnBaoCaoHoaDon
+            // 
+            this.btnBaoCaoHoaDon.BackColor = System.Drawing.Color.Gray;
+            this.btnBaoCaoHoaDon.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnBaoCaoHoaDon.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBaoCaoHoaDon.BorderRadius = 0;
+            this.btnBaoCaoHoaDon.BorderSize = 0;
+            this.btnBaoCaoHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoHoaDon.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoHoaDon.Image")));
+            this.btnBaoCaoHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoHoaDon.Location = new System.Drawing.Point(0, 49);
+            this.btnBaoCaoHoaDon.Name = "btnBaoCaoHoaDon";
+            this.btnBaoCaoHoaDon.Size = new System.Drawing.Size(197, 44);
+            this.btnBaoCaoHoaDon.TabIndex = 6;
+            this.btnBaoCaoHoaDon.Text = "Hóa đơn";
+            this.btnBaoCaoHoaDon.TextColor = System.Drawing.Color.White;
+            this.btnBaoCaoHoaDon.UseVisualStyleBackColor = false;
+            this.btnBaoCaoHoaDon.Click += new System.EventHandler(this.btnBaoCaoHoaDon_Click);
+            // 
+            // btnBaoCaoPhieuNhap
+            // 
+            this.btnBaoCaoPhieuNhap.BackColor = System.Drawing.Color.Gray;
+            this.btnBaoCaoPhieuNhap.BackgroundColor = System.Drawing.Color.Gray;
+            this.btnBaoCaoPhieuNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBaoCaoPhieuNhap.BorderRadius = 0;
+            this.btnBaoCaoPhieuNhap.BorderSize = 0;
+            this.btnBaoCaoPhieuNhap.FlatAppearance.BorderSize = 0;
+            this.btnBaoCaoPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCaoPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCaoPhieuNhap.Image = ((System.Drawing.Image)(resources.GetObject("btnBaoCaoPhieuNhap.Image")));
+            this.btnBaoCaoPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCaoPhieuNhap.Location = new System.Drawing.Point(0, 93);
+            this.btnBaoCaoPhieuNhap.Name = "btnBaoCaoPhieuNhap";
+            this.btnBaoCaoPhieuNhap.Size = new System.Drawing.Size(197, 44);
+            this.btnBaoCaoPhieuNhap.TabIndex = 7;
+            this.btnBaoCaoPhieuNhap.Text = "Phiếu nhập";
+            this.btnBaoCaoPhieuNhap.TextColor = System.Drawing.Color.White;
+            this.btnBaoCaoPhieuNhap.UseVisualStyleBackColor = false;
+            this.btnBaoCaoPhieuNhap.Click += new System.EventHandler(this.btnBaoCaoPhieuNhap_Click);
+            // 
+            // colapse3
+            // 
+            this.colapse3.Interval = 1;
+            this.colapse3.Tick += new System.EventHandler(this.colapse3_Tick);
+            // 
             // FrmTrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,6 +628,7 @@ namespace qlbh.UI
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -593,5 +661,9 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.Timer timer1;
         private CustomControls.RJControls.RJButton btnTaiKhoan;
+        private System.Windows.Forms.Panel panel4;
+        private CustomControls.RJControls.RJButton btnBaoCaoPhieuNhap;
+        private CustomControls.RJControls.RJButton btnBaoCaoHoaDon;
+        private System.Windows.Forms.Timer colapse3;
     }
 }

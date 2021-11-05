@@ -42,6 +42,11 @@ namespace qlbh.UI
             this.txt_MaNcc = new System.Windows.Forms.Label();
             this.date_nhap = new CustomControls.RJControls.RJDatePicker();
             this.dgv_phieunhap = new System.Windows.Forms.DataGridView();
+            this.ma_sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ten_sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.so_luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.don_gia_ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanh_tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Them = new CustomControls.RJControls.RJButton();
             this.btn_Xoa = new CustomControls.RJControls.RJButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -72,11 +77,7 @@ namespace qlbh.UI
             this.txtBox_congtienhang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ma_sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ten_sp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.so_luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.don_gia_ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thanh_tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnReset = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phieunhap)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -101,7 +102,7 @@ namespace qlbh.UI
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.IndianRed;
             this.panel1.Location = new System.Drawing.Point(160, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(718, 3);
@@ -111,7 +112,7 @@ namespace qlbh.UI
             // 
             this.txt_Phieunhap.AutoSize = true;
             this.txt_Phieunhap.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Phieunhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Phieunhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Phieunhap.Location = new System.Drawing.Point(387, 18);
             this.txt_Phieunhap.Name = "txt_Phieunhap";
             this.txt_Phieunhap.Size = new System.Drawing.Size(173, 31);
@@ -120,53 +121,53 @@ namespace qlbh.UI
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.panel2.Location = new System.Drawing.Point(86, 666);
+            this.panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.panel2.Location = new System.Drawing.Point(89, 551);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 3);
+            this.panel2.Size = new System.Drawing.Size(814, 3);
             this.panel2.TabIndex = 1;
             // 
             // txt_maphieunhap
             // 
             this.txt_maphieunhap.AutoSize = true;
-            this.txt_maphieunhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maphieunhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_maphieunhap.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_maphieunhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_maphieunhap.Location = new System.Drawing.Point(17, 32);
             this.txt_maphieunhap.Name = "txt_maphieunhap";
-            this.txt_maphieunhap.Size = new System.Drawing.Size(110, 15);
+            this.txt_maphieunhap.Size = new System.Drawing.Size(105, 16);
             this.txt_maphieunhap.TabIndex = 3;
             this.txt_maphieunhap.Text = "Mã phiếu nhập:";
             // 
             // txt_Ngaynhap
             // 
             this.txt_Ngaynhap.AutoSize = true;
-            this.txt_Ngaynhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Ngaynhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Ngaynhap.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Ngaynhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Ngaynhap.Location = new System.Drawing.Point(17, 64);
             this.txt_Ngaynhap.Name = "txt_Ngaynhap";
-            this.txt_Ngaynhap.Size = new System.Drawing.Size(81, 15);
+            this.txt_Ngaynhap.Size = new System.Drawing.Size(79, 16);
             this.txt_Ngaynhap.TabIndex = 3;
             this.txt_Ngaynhap.Text = "Ngày nhập:";
             // 
             // txt_Manv
             // 
             this.txt_Manv.AutoSize = true;
-            this.txt_Manv.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Manv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Manv.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Manv.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Manv.Location = new System.Drawing.Point(17, 96);
             this.txt_Manv.Name = "txt_Manv";
-            this.txt_Manv.Size = new System.Drawing.Size(101, 15);
+            this.txt_Manv.Size = new System.Drawing.Size(95, 16);
             this.txt_Manv.TabIndex = 3;
             this.txt_Manv.Text = "Mã nhân viên:";
             // 
             // txt_Trangthai
             // 
             this.txt_Trangthai.AutoSize = true;
-            this.txt_Trangthai.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Trangthai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_Trangthai.Location = new System.Drawing.Point(435, 32);
+            this.txt_Trangthai.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Trangthai.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_Trangthai.Location = new System.Drawing.Point(299, 32);
             this.txt_Trangthai.Name = "txt_Trangthai";
-            this.txt_Trangthai.Size = new System.Drawing.Size(82, 15);
+            this.txt_Trangthai.Size = new System.Drawing.Size(76, 16);
             this.txt_Trangthai.TabIndex = 3;
             this.txt_Trangthai.Text = "Trạng thái:";
             // 
@@ -174,8 +175,8 @@ namespace qlbh.UI
             // 
             this.txt_Tongtien.AutoSize = true;
             this.txt_Tongtien.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tongtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_Tongtien.Location = new System.Drawing.Point(528, 608);
+            this.txt_Tongtien.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_Tongtien.Location = new System.Drawing.Point(622, 487);
             this.txt_Tongtien.Name = "txt_Tongtien";
             this.txt_Tongtien.Size = new System.Drawing.Size(87, 18);
             this.txt_Tongtien.TabIndex = 3;
@@ -184,13 +185,13 @@ namespace qlbh.UI
             // txt_MaNcc
             // 
             this.txt_MaNcc.AutoSize = true;
-            this.txt_MaNcc.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaNcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_MaNcc.Location = new System.Drawing.Point(435, 64);
+            this.txt_MaNcc.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaNcc.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_MaNcc.Location = new System.Drawing.Point(299, 64);
             this.txt_MaNcc.Name = "txt_MaNcc";
-            this.txt_MaNcc.Size = new System.Drawing.Size(73, 15);
+            this.txt_MaNcc.Size = new System.Drawing.Size(63, 16);
             this.txt_MaNcc.TabIndex = 3;
-            this.txt_MaNcc.Text = "Mã _ NCC:";
+            this.txt_MaNcc.Text = "Mã  NCC:";
             // 
             // date_nhap
             // 
@@ -217,23 +218,48 @@ namespace qlbh.UI
             this.so_luong,
             this.don_gia_ban,
             this.thanh_tien});
-            this.dgv_phieunhap.Location = new System.Drawing.Point(406, 298);
+            this.dgv_phieunhap.Location = new System.Drawing.Point(26, 285);
             this.dgv_phieunhap.Name = "dgv_phieunhap";
-            this.dgv_phieunhap.Size = new System.Drawing.Size(441, 216);
+            this.dgv_phieunhap.Size = new System.Drawing.Size(553, 216);
             this.dgv_phieunhap.TabIndex = 7;
+            // 
+            // ma_sp
+            // 
+            this.ma_sp.HeaderText = "Mã sản phẩm";
+            this.ma_sp.Name = "ma_sp";
+            // 
+            // ten_sp
+            // 
+            this.ten_sp.HeaderText = "Tên sản phẩm";
+            this.ten_sp.Name = "ten_sp";
+            // 
+            // so_luong
+            // 
+            this.so_luong.HeaderText = "Số lượng";
+            this.so_luong.Name = "so_luong";
+            // 
+            // don_gia_ban
+            // 
+            this.don_gia_ban.HeaderText = "Đơn giá bán";
+            this.don_gia_ban.Name = "don_gia_ban";
+            // 
+            // thanh_tien
+            // 
+            this.thanh_tien.HeaderText = "Thành tiền";
+            this.thanh_tien.Name = "thanh_tien";
             // 
             // btn_Them
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Them.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Them.BorderColor = System.Drawing.Color.White;
+            this.btn_Them.BackColor = System.Drawing.Color.Tomato;
+            this.btn_Them.BackgroundColor = System.Drawing.Color.Tomato;
+            this.btn_Them.BorderColor = System.Drawing.Color.Black;
             this.btn_Them.BorderRadius = 20;
-            this.btn_Them.BorderSize = 2;
+            this.btn_Them.BorderSize = 1;
             this.btn_Them.FlatAppearance.BorderSize = 0;
             this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Them.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Them.ForeColor = System.Drawing.Color.White;
-            this.btn_Them.Location = new System.Drawing.Point(100, 597);
+            this.btn_Them.Location = new System.Drawing.Point(643, 309);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(102, 40);
             this.btn_Them.TabIndex = 8;
@@ -244,16 +270,16 @@ namespace qlbh.UI
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Xoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Xoa.BorderColor = System.Drawing.Color.White;
+            this.btn_Xoa.BackColor = System.Drawing.Color.Orange;
+            this.btn_Xoa.BackgroundColor = System.Drawing.Color.Orange;
+            this.btn_Xoa.BorderColor = System.Drawing.Color.Black;
             this.btn_Xoa.BorderRadius = 20;
-            this.btn_Xoa.BorderSize = 2;
+            this.btn_Xoa.BorderSize = 1;
             this.btn_Xoa.FlatAppearance.BorderSize = 0;
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Xoa.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_Xoa.Location = new System.Drawing.Point(350, 597);
+            this.btn_Xoa.Location = new System.Drawing.Point(776, 309);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(102, 40);
             this.btn_Xoa.TabIndex = 8;
@@ -278,41 +304,45 @@ namespace qlbh.UI
             this.groupBox1.Controls.Add(this.txt_Trangthai);
             this.groupBox1.Controls.Add(this.txt_TenNCC);
             this.groupBox1.Controls.Add(this.txt_MaNcc);
-            this.groupBox1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.groupBox1.Location = new System.Drawing.Point(100, 124);
+            this.groupBox1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.IndianRed;
+            this.groupBox1.Location = new System.Drawing.Point(26, 124);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(747, 155);
+            this.groupBox1.Size = new System.Drawing.Size(545, 155);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chung";
             // 
             // txtBox_TenNCC
             // 
-            this.txtBox_TenNCC.Location = new System.Drawing.Point(554, 90);
+            this.txtBox_TenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_TenNCC.Location = new System.Drawing.Point(302, 120);
             this.txtBox_TenNCC.Name = "txtBox_TenNCC";
-            this.txtBox_TenNCC.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_TenNCC.Size = new System.Drawing.Size(236, 22);
             this.txtBox_TenNCC.TabIndex = 8;
             // 
             // txtBox_Trangthai
             // 
-            this.txtBox_Trangthai.Location = new System.Drawing.Point(554, 24);
+            this.txtBox_Trangthai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_Trangthai.Location = new System.Drawing.Point(385, 24);
             this.txtBox_Trangthai.Name = "txtBox_Trangthai";
-            this.txtBox_Trangthai.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_Trangthai.Size = new System.Drawing.Size(153, 22);
             this.txtBox_Trangthai.TabIndex = 8;
             // 
             // txtBox_TenNV
             // 
+            this.txtBox_TenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_TenNV.Location = new System.Drawing.Point(136, 120);
             this.txtBox_TenNV.Name = "txtBox_TenNV";
-            this.txtBox_TenNV.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_TenNV.Size = new System.Drawing.Size(153, 22);
             this.txtBox_TenNV.TabIndex = 8;
             // 
             // txtBox_MaPN
             // 
+            this.txtBox_MaPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox_MaPN.Location = new System.Drawing.Point(136, 26);
             this.txtBox_MaPN.Name = "txtBox_MaPN";
-            this.txtBox_MaPN.Size = new System.Drawing.Size(153, 25);
+            this.txtBox_MaPN.Size = new System.Drawing.Size(153, 22);
             this.txtBox_MaPN.TabIndex = 8;
             // 
             // cbo_NCC
@@ -320,7 +350,7 @@ namespace qlbh.UI
             this.cbo_NCC.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_NCC.ForeColor = System.Drawing.Color.Black;
             this.cbo_NCC.FormattingEnabled = true;
-            this.cbo_NCC.Location = new System.Drawing.Point(554, 57);
+            this.cbo_NCC.Location = new System.Drawing.Point(385, 57);
             this.cbo_NCC.Name = "cbo_NCC";
             this.cbo_NCC.Size = new System.Drawing.Size(153, 26);
             this.cbo_NCC.TabIndex = 7;
@@ -342,24 +372,24 @@ namespace qlbh.UI
             // txt_Tennv
             // 
             this.txt_Tennv.AutoSize = true;
-            this.txt_Tennv.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tennv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Tennv.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Tennv.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Tennv.Location = new System.Drawing.Point(17, 128);
             this.txt_Tennv.Name = "txt_Tennv";
-            this.txt_Tennv.Size = new System.Drawing.Size(106, 15);
+            this.txt_Tennv.Size = new System.Drawing.Size(99, 16);
             this.txt_Tennv.TabIndex = 3;
             this.txt_Tennv.Text = "Tên nhân viên:";
             // 
             // txt_TenNCC
             // 
             this.txt_TenNCC.AutoSize = true;
-            this.txt_TenNCC.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenNCC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_TenNCC.Location = new System.Drawing.Point(435, 96);
+            this.txt_TenNCC.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TenNCC.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_TenNCC.Location = new System.Drawing.Point(299, 96);
             this.txt_TenNCC.Name = "txt_TenNCC";
-            this.txt_TenNCC.Size = new System.Drawing.Size(68, 15);
+            this.txt_TenNCC.Size = new System.Drawing.Size(64, 16);
             this.txt_TenNCC.TabIndex = 3;
-            this.txt_TenNCC.Text = "Tên_NCC";
+            this.txt_TenNCC.Text = "Tên NCC:";
             // 
             // groupBox2
             // 
@@ -373,11 +403,11 @@ namespace qlbh.UI
             this.groupBox2.Controls.Add(this.txt_Soluong);
             this.groupBox2.Controls.Add(this.txt_Tensp);
             this.groupBox2.Controls.Add(this.txt_Masp);
-            this.groupBox2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.groupBox2.Location = new System.Drawing.Point(100, 298);
+            this.groupBox2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.IndianRed;
+            this.groupBox2.Location = new System.Drawing.Point(598, 126);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(289, 216);
+            this.groupBox2.Size = new System.Drawing.Size(289, 177);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm";
@@ -397,11 +427,11 @@ namespace qlbh.UI
             // txt_gianhap
             // 
             this.txt_gianhap.AutoSize = true;
-            this.txt_gianhap.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_gianhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_gianhap.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_gianhap.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_gianhap.Location = new System.Drawing.Point(11, 116);
             this.txt_gianhap.Name = "txt_gianhap";
-            this.txt_gianhap.Size = new System.Drawing.Size(34, 15);
+            this.txt_gianhap.Size = new System.Drawing.Size(32, 16);
             this.txt_gianhap.TabIndex = 3;
             this.txt_gianhap.Text = "Giá:";
             // 
@@ -442,59 +472,59 @@ namespace qlbh.UI
             // txt_Thanhtien
             // 
             this.txt_Thanhtien.AutoSize = true;
-            this.txt_Thanhtien.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Thanhtien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Thanhtien.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Thanhtien.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Thanhtien.Location = new System.Drawing.Point(11, 146);
             this.txt_Thanhtien.Name = "txt_Thanhtien";
-            this.txt_Thanhtien.Size = new System.Drawing.Size(86, 15);
+            this.txt_Thanhtien.Size = new System.Drawing.Size(79, 16);
             this.txt_Thanhtien.TabIndex = 3;
             this.txt_Thanhtien.Text = "Thành tiền:";
             // 
             // txt_Soluong
             // 
             this.txt_Soluong.AutoSize = true;
-            this.txt_Soluong.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Soluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Soluong.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Soluong.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Soluong.Location = new System.Drawing.Point(11, 86);
             this.txt_Soluong.Name = "txt_Soluong";
-            this.txt_Soluong.Size = new System.Drawing.Size(67, 15);
+            this.txt_Soluong.Size = new System.Drawing.Size(64, 16);
             this.txt_Soluong.TabIndex = 3;
             this.txt_Soluong.Text = "Số lượng:";
             // 
             // txt_Tensp
             // 
             this.txt_Tensp.AutoSize = true;
-            this.txt_Tensp.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tensp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Tensp.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Tensp.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Tensp.Location = new System.Drawing.Point(11, 56);
             this.txt_Tensp.Name = "txt_Tensp";
-            this.txt_Tensp.Size = new System.Drawing.Size(103, 15);
+            this.txt_Tensp.Size = new System.Drawing.Size(99, 16);
             this.txt_Tensp.TabIndex = 3;
             this.txt_Tensp.Text = "Tên sản phẩm:";
             // 
             // txt_Masp
             // 
             this.txt_Masp.AutoSize = true;
-            this.txt_Masp.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Masp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
+            this.txt_Masp.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Masp.ForeColor = System.Drawing.Color.IndianRed;
             this.txt_Masp.Location = new System.Drawing.Point(11, 27);
             this.txt_Masp.Name = "txt_Masp";
-            this.txt_Masp.Size = new System.Drawing.Size(98, 15);
+            this.txt_Masp.Size = new System.Drawing.Size(95, 16);
             this.txt_Masp.TabIndex = 3;
             this.txt_Masp.Text = "Mã sản phẩm:";
             // 
             // btn_Luu
             // 
-            this.btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Luu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.btn_Luu.BorderColor = System.Drawing.Color.White;
+            this.btn_Luu.BackColor = System.Drawing.Color.Tomato;
+            this.btn_Luu.BackgroundColor = System.Drawing.Color.Tomato;
+            this.btn_Luu.BorderColor = System.Drawing.Color.Black;
             this.btn_Luu.BorderRadius = 20;
-            this.btn_Luu.BorderSize = 2;
+            this.btn_Luu.BorderSize = 1;
             this.btn_Luu.FlatAppearance.BorderSize = 0;
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Luu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.btn_Luu.Location = new System.Drawing.Point(225, 597);
+            this.btn_Luu.Location = new System.Drawing.Point(643, 369);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(102, 40);
             this.btn_Luu.TabIndex = 8;
@@ -506,7 +536,7 @@ namespace qlbh.UI
             // txtBox_Tongtien
             // 
             this.txtBox_Tongtien.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Tongtien.Location = new System.Drawing.Point(623, 601);
+            this.txtBox_Tongtien.Location = new System.Drawing.Point(717, 480);
             this.txtBox_Tongtien.Name = "txtBox_Tongtien";
             this.txtBox_Tongtien.Size = new System.Drawing.Size(224, 25);
             this.txtBox_Tongtien.TabIndex = 11;
@@ -514,7 +544,7 @@ namespace qlbh.UI
             // txtBox_Ghichu
             // 
             this.txtBox_Ghichu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_Ghichu.Location = new System.Drawing.Point(174, 543);
+            this.txtBox_Ghichu.Location = new System.Drawing.Point(174, 512);
             this.txtBox_Ghichu.Name = "txtBox_Ghichu";
             this.txtBox_Ghichu.Size = new System.Drawing.Size(266, 25);
             this.txtBox_Ghichu.TabIndex = 8;
@@ -522,18 +552,18 @@ namespace qlbh.UI
             // txt_Ghichu
             // 
             this.txt_Ghichu.AutoSize = true;
-            this.txt_Ghichu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Ghichu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.txt_Ghichu.Location = new System.Drawing.Point(95, 546);
+            this.txt_Ghichu.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Ghichu.ForeColor = System.Drawing.Color.IndianRed;
+            this.txt_Ghichu.Location = new System.Drawing.Point(95, 515);
             this.txt_Ghichu.Name = "txt_Ghichu";
-            this.txt_Ghichu.Size = new System.Drawing.Size(73, 18);
+            this.txt_Ghichu.Size = new System.Drawing.Size(67, 18);
             this.txt_Ghichu.TabIndex = 3;
             this.txt_Ghichu.Text = "Ghi chú:";
             // 
             // txtBox_CK
             // 
             this.txtBox_CK.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_CK.Location = new System.Drawing.Point(623, 570);
+            this.txtBox_CK.Location = new System.Drawing.Point(717, 449);
             this.txtBox_CK.Name = "txtBox_CK";
             this.txtBox_CK.Size = new System.Drawing.Size(224, 25);
             this.txtBox_CK.TabIndex = 11;
@@ -541,7 +571,7 @@ namespace qlbh.UI
             // txtBox_congtienhang
             // 
             this.txtBox_congtienhang.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_congtienhang.Location = new System.Drawing.Point(623, 539);
+            this.txtBox_congtienhang.Location = new System.Drawing.Point(717, 418);
             this.txtBox_congtienhang.Name = "txtBox_congtienhang";
             this.txtBox_congtienhang.Size = new System.Drawing.Size(224, 25);
             this.txtBox_congtienhang.TabIndex = 11;
@@ -550,8 +580,8 @@ namespace qlbh.UI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(519, 573);
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(613, 452);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 18);
             this.label1.TabIndex = 3;
@@ -561,45 +591,41 @@ namespace qlbh.UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(489, 542);
+            this.label2.ForeColor = System.Drawing.Color.IndianRed;
+            this.label2.Location = new System.Drawing.Point(583, 421);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tổng tiền hàng:";
             // 
-            // ma_sp
+            // btnReset
             // 
-            this.ma_sp.HeaderText = "Mã sản phẩm";
-            this.ma_sp.Name = "ma_sp";
-            // 
-            // ten_sp
-            // 
-            this.ten_sp.HeaderText = "Tên sản phẩm";
-            this.ten_sp.Name = "ten_sp";
-            // 
-            // so_luong
-            // 
-            this.so_luong.HeaderText = "Số lượng";
-            this.so_luong.Name = "so_luong";
-            // 
-            // don_gia_ban
-            // 
-            this.don_gia_ban.HeaderText = "Đơn giá bán";
-            this.don_gia_ban.Name = "don_gia_ban";
-            // 
-            // thanh_tien
-            // 
-            this.thanh_tien.HeaderText = "Thành tiền";
-            this.thanh_tien.Name = "thanh_tien";
+            this.btnReset.BackColor = System.Drawing.Color.Orange;
+            this.btnReset.BackgroundColor = System.Drawing.Color.Orange;
+            this.btnReset.BorderColor = System.Drawing.Color.Black;
+            this.btnReset.BorderRadius = 20;
+            this.btnReset.BorderSize = 1;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(776, 372);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(102, 40);
+            this.btnReset.TabIndex = 12;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextColor = System.Drawing.Color.White;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // FrmPhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(890, 722);
+            this.BackColor = System.Drawing.Color.FloralWhite;
+            this.ClientSize = new System.Drawing.Size(959, 563);
             this.ControlBox = false;
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txtBox_congtienhang);
             this.Controls.Add(this.txtBox_CK);
             this.Controls.Add(this.txtBox_Tongtien);
@@ -682,5 +708,6 @@ namespace qlbh.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn so_luong;
         private System.Windows.Forms.DataGridViewTextBoxColumn don_gia_ban;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanh_tien;
+        private CustomControls.RJControls.RJButton btnReset;
     }
 }

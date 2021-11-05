@@ -49,7 +49,6 @@ namespace qlbh.UI
             this.txt_SanPham = new System.Windows.Forms.Label();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.cbo_dm = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet = new qlbh.qlbanhangDataSet1();
@@ -284,14 +283,6 @@ namespace qlbh.UI
             this.panel1.Size = new System.Drawing.Size(718, 3);
             this.panel1.TabIndex = 32;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(202)))), ((int)(((byte)(64)))));
-            this.panel2.Location = new System.Drawing.Point(123, 646);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(718, 3);
-            this.panel2.TabIndex = 33;
-            // 
             // cbo_dm
             // 
             this.cbo_dm.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -355,12 +346,11 @@ namespace qlbh.UI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(942, 593);
+            this.ClientSize = new System.Drawing.Size(942, 592);
             this.ControlBox = false;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtImagepath);
             this.Controls.Add(this.cbo_dm);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.txtBox_dvt);
@@ -411,7 +401,6 @@ namespace qlbh.UI
         private System.Windows.Forms.Label txt_SanPham;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cbo_dm;
         private System.Windows.Forms.BindingSource bindingSource1;
         private qlbanhangDataSet1 dataSet;

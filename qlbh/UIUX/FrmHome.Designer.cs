@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtDateTime = new System.Windows.Forms.TextBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -70,7 +70,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,9 +93,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -116,7 +114,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).BeginInit();
             this.panel8.SuspendLayout();
@@ -127,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hamburger)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -134,7 +132,6 @@
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.txtDateTime);
-            this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox6);
@@ -165,6 +162,16 @@
             this.panel2.Size = new System.Drawing.Size(972, 562);
             this.panel2.TabIndex = 2;
             // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label20.Location = new System.Drawing.Point(352, 514);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(156, 21);
+            this.label20.TabIndex = 45;
+            this.label20.Text = "Hotline: 0333.065.598";
+            // 
             // txtDateTime
             // 
             this.txtDateTime.BackColor = System.Drawing.Color.FloralWhite;
@@ -176,16 +183,6 @@
             this.txtDateTime.Name = "txtDateTime";
             this.txtDateTime.Size = new System.Drawing.Size(140, 16);
             this.txtDateTime.TabIndex = 44;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(699, 31);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(103, 44);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 43;
-            this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -632,16 +629,6 @@
             this.panel6.Size = new System.Drawing.Size(230, 2);
             this.panel6.TabIndex = 22;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(821, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 63);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Gold;
@@ -868,29 +855,30 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(672, 46);
+            this.label1.Location = new System.Drawing.Point(716, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 62);
+            this.label1.Size = new System.Drawing.Size(152, 40);
             this.label1.TabIndex = 12;
-            this.label1.Text = "\r\nFOOD WORLD \r\n";
+            this.label1.Text = "FOOD WORLD \r\n";
             // 
             // timer1
             // 
             this.timer1.Interval = 2300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label20
+            // pictureBox1
             // 
-            this.label20.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label20.Location = new System.Drawing.Point(352, 514);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(156, 21);
-            this.label20.TabIndex = 45;
-            this.label20.Text = "Hotline: 0333.065.598";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(702, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmHome
             // 
@@ -904,7 +892,6 @@
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -928,7 +915,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).EndInit();
@@ -944,6 +930,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -955,7 +942,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label7;
@@ -1012,8 +998,8 @@
         private CustomControls.RJControls.RJRadioButton opt2;
         private CustomControls.RJControls.RJRadioButton opt3;
         private CustomControls.RJControls.RJRadioButton opt1;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox txtDateTime;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

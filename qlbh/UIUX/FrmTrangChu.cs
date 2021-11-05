@@ -15,15 +15,38 @@ namespace qlbh.UI
     {
         private bool EsColapse;
         private bool EsColapse2;
+        private bool EsColapse3;
         public FrmTrangChu()
         {
             InitializeComponent();
             colapse.Start();
             colapse2.Start();
+            colapse3.Start();
             Form f = new FrmHome();
             AddForm(f);
         }
+        private void colapse3_Tick(object sender, EventArgs e)
+        {
+            if (EsColapse3)
+            {
+                panel4.Height += 10;
 
+                if (panel4.Size == panel4.MaximumSize)
+                {
+                    colapse3.Stop();
+                    EsColapse3 = false;
+                }
+            }
+            else
+            {
+                panel4.Height -= 10;
+                if (panel4.Size == panel4.MinimumSize)
+                {
+                    colapse3.Stop();
+                    EsColapse3 = true;
+                }
+            }
+        }
         private void colapse_Tick_1(object sender, EventArgs e)
         {
             if (EsColapse)
@@ -225,8 +248,7 @@ namespace qlbh.UI
 
         private void btnBaoCao_Click(object sender, EventArgs e)
         {
-            Form f = new FrmBaoCaoHoaDon();
-            AddForm(f);
+            colapse3.Start();
         }
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
@@ -239,5 +261,19 @@ namespace qlbh.UI
         {
             btnTrangChu.PerformClick();
         }
+
+        private void btnBaoCaoHoaDon_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmBaoCaoHoaDon();
+            AddForm(f);
+        }
+
+        private void btnBaoCaoPhieuNhap_Click(object sender, EventArgs e)
+        {
+            Form f = new FrmBaoCaoPhieuNhap();
+            AddForm(f);
+        }
+
+
     }
 }

@@ -82,97 +82,126 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>qlbanhangDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="rptBaoCaoHoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBaoCaoHoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptBaoCaoPhieuNhap.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBaoCaoPhieuNhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SQLConnection.cs" />
-    <Compile Include="UI\FrmBaoCaoHoaDon.cs">
+    <Compile Include="UIUX\FrmBaoCaoHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmBaoCaoHoaDon.Designer.cs">
+    <Compile Include="UIUX\FrmBaoCaoHoaDon.Designer.cs">
       <DependentUpon>FrmBaoCaoHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmGiaoHang.cs">
+    <Compile Include="UIUX\FrmBaoCaoPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmGiaoHang.designer.cs">
+    <Compile Include="UIUX\FrmBaoCaoPhieuNhap.Designer.cs">
+      <DependentUpon>FrmBaoCaoPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIUX\FrmGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIUX\FrmGiaoHang.designer.cs">
       <DependentUpon>FrmGiaoHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\FrmHoaDonBan.cs">
+    <Compile Include="UIUX\FrmHoaDonBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmHoaDonBan.designer.cs">
+    <Compile Include="UIUX\FrmHoaDonBan.designer.cs">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmHome.cs">
+    <Compile Include="UIUX\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmHome.Designer.cs">
+    <Compile Include="UIUX\FrmHome.Designer.cs">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmLogin.cs">
+    <Compile Include="UIUX\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmLogin.Designer.cs">
+    <Compile Include="UIUX\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmNhaCungCap.cs">
+    <Compile Include="UIUX\FrmNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmNhaCungCap.Designer.cs">
+    <Compile Include="UIUX\FrmNhaCungCap.Designer.cs">
       <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmNhanVien.cs">
+    <Compile Include="UIUX\FrmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmNhanVien.designer.cs">
+    <Compile Include="UIUX\FrmNhanVien.designer.cs">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmPhieuNhap.cs">
+    <Compile Include="UIUX\FrmPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmPhieuNhap.designer.cs">
+    <Compile Include="UIUX\FrmPhieuNhap.designer.cs">
       <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmSanPham.cs">
+    <Compile Include="UIUX\FrmSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmSanPham.Designer.cs">
+    <Compile Include="UIUX\FrmSanPham.Designer.cs">
       <DependentUpon>FrmSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmTaiKhoan.cs">
+    <Compile Include="UIUX\FrmTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTaiKhoan.Designer.cs">
+    <Compile Include="UIUX\FrmTaiKhoan.Designer.cs">
       <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmTimKiemHoaDon.cs">
+    <Compile Include="UIUX\FrmTimKiemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTimKiemHoaDon.designer.cs">
+    <Compile Include="UIUX\FrmTimKiemHoaDon.designer.cs">
       <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmTimKiemPhieuNhap.cs">
+    <Compile Include="UIUX\FrmTimKiemPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTimKiemPhieuNhap.Designer.cs">
+    <Compile Include="UIUX\FrmTimKiemPhieuNhap.Designer.cs">
       <DependentUpon>FrmTimKiemPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmTimKiemSanPham.cs">
+    <Compile Include="UIUX\FrmTimKiemSanPham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTimKiemSanPham.designer.cs">
+    <Compile Include="UIUX\FrmTimKiemSanPham.designer.cs">
       <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrmTrangChu.cs">
+    <Compile Include="UIUX\FrmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\FrmTrangChu.Designer.cs">
+    <Compile Include="UIUX\FrmTrangChu.Designer.cs">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UI\FrmBaoCaoHoaDon.resx">
+    <EmbeddedResource Include="rptBaoCaoHoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBaoCaoHoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBaoCaoPhieuNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBaoCaoPhieuNhap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIUX\FrmBaoCaoHoaDon.resx">
       <DependentUpon>FrmBaoCaoHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmGiaoHang.resx">
+    <EmbeddedResource Include="UIUX\FrmBaoCaoPhieuNhap.resx">
+      <DependentUpon>FrmBaoCaoPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIUX\FrmGiaoHang.resx">
       <DependentUpon>FrmGiaoHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -180,40 +209,40 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmHoaDonBan.resx">
+    <EmbeddedResource Include="UIUX\FrmHoaDonBan.resx">
       <DependentUpon>FrmHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmHome.resx">
+    <EmbeddedResource Include="UIUX\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmLogin.resx">
+    <EmbeddedResource Include="UIUX\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmNhaCungCap.resx">
+    <EmbeddedResource Include="UIUX\FrmNhaCungCap.resx">
       <DependentUpon>FrmNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmNhanVien.resx">
+    <EmbeddedResource Include="UIUX\FrmNhanVien.resx">
       <DependentUpon>FrmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmPhieuNhap.resx">
+    <EmbeddedResource Include="UIUX\FrmPhieuNhap.resx">
       <DependentUpon>FrmPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmSanPham.resx">
+    <EmbeddedResource Include="UIUX\FrmSanPham.resx">
       <DependentUpon>FrmSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmTaiKhoan.resx">
+    <EmbeddedResource Include="UIUX\FrmTaiKhoan.resx">
       <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmTimKiemHoaDon.resx">
+    <EmbeddedResource Include="UIUX\FrmTimKiemHoaDon.resx">
       <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmTimKiemPhieuNhap.resx">
+    <EmbeddedResource Include="UIUX\FrmTimKiemPhieuNhap.resx">
       <DependentUpon>FrmTimKiemPhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmTimKiemSanPham.resx">
+    <EmbeddedResource Include="UIUX\FrmTimKiemSanPham.resx">
       <DependentUpon>FrmTimKiemSanPham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\FrmTrangChu.resx">
+    <EmbeddedResource Include="UIUX\FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -380,8 +409,9 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Report\" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

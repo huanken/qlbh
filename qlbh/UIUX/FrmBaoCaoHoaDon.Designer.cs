@@ -30,36 +30,20 @@ namespace qlbh.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBaoCaoHoaDon));
-            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnThemmoi = new CustomControls.RJControls.RJButton();
+            this.btnXemBC = new CustomControls.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.CRVNhapXuat = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.dp_Time = new CustomControls.RJControls.RJDatePicker();
-            this.rjDatePicker1 = new CustomControls.RJControls.RJDatePicker();
+            this.CRVBCHD = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.date1 = new CustomControls.RJControls.RJDatePicker();
+            this.date2 = new CustomControls.RJControls.RJDatePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // rjCircularPictureBox1
-            // 
-            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.rjCircularPictureBox1.BorderSize = 5;
-            this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(32, 3);
-            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(107, 107);
-            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.rjCircularPictureBox1.TabIndex = 13;
-            this.rjCircularPictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -77,24 +61,25 @@ namespace qlbh.UI
             this.panel1.Size = new System.Drawing.Size(737, 3);
             this.panel1.TabIndex = 12;
             // 
-            // btnThemmoi
+            // btnXemBC
             // 
-            this.btnThemmoi.BackColor = System.Drawing.Color.Tomato;
-            this.btnThemmoi.BackgroundColor = System.Drawing.Color.Tomato;
-            this.btnThemmoi.BorderColor = System.Drawing.Color.Black;
-            this.btnThemmoi.BorderRadius = 20;
-            this.btnThemmoi.BorderSize = 1;
-            this.btnThemmoi.FlatAppearance.BorderSize = 0;
-            this.btnThemmoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemmoi.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemmoi.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnThemmoi.Location = new System.Drawing.Point(756, 76);
-            this.btnThemmoi.Name = "btnThemmoi";
-            this.btnThemmoi.Size = new System.Drawing.Size(139, 40);
-            this.btnThemmoi.TabIndex = 10;
-            this.btnThemmoi.Text = "Xuất Báo Cáo";
-            this.btnThemmoi.TextColor = System.Drawing.SystemColors.Control;
-            this.btnThemmoi.UseVisualStyleBackColor = false;
+            this.btnXemBC.BackColor = System.Drawing.Color.Tomato;
+            this.btnXemBC.BackgroundColor = System.Drawing.Color.Tomato;
+            this.btnXemBC.BorderColor = System.Drawing.Color.Black;
+            this.btnXemBC.BorderRadius = 20;
+            this.btnXemBC.BorderSize = 1;
+            this.btnXemBC.FlatAppearance.BorderSize = 0;
+            this.btnXemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemBC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemBC.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnXemBC.Location = new System.Drawing.Point(756, 76);
+            this.btnXemBC.Name = "btnXemBC";
+            this.btnXemBC.Size = new System.Drawing.Size(139, 40);
+            this.btnXemBC.TabIndex = 10;
+            this.btnXemBC.Text = "Xuất Báo Cáo";
+            this.btnXemBC.TextColor = System.Drawing.SystemColors.Control;
+            this.btnXemBC.UseVisualStyleBackColor = false;
+            this.btnXemBC.Click += new System.EventHandler(this.btnXemBC_Click);
             // 
             // label6
             // 
@@ -104,54 +89,54 @@ namespace qlbh.UI
             this.label6.ForeColor = System.Drawing.Color.IndianRed;
             this.label6.Location = new System.Drawing.Point(370, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(282, 31);
+            this.label6.Size = new System.Drawing.Size(256, 31);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Báo Cáo Nhập Xuất";
+            this.label6.Text = "Báo Cáo Hóa Đơn";
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.CRVNhapXuat);
+            this.panel3.Controls.Add(this.CRVBCHD);
             this.panel3.Location = new System.Drawing.Point(25, 122);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(898, 424);
             this.panel3.TabIndex = 14;
             // 
-            // CRVNhapXuat
+            // CRVBCHD
             // 
-            this.CRVNhapXuat.ActiveViewIndex = -1;
-            this.CRVNhapXuat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CRVNhapXuat.Cursor = System.Windows.Forms.Cursors.Default;
-            this.CRVNhapXuat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CRVNhapXuat.Location = new System.Drawing.Point(0, 0);
-            this.CRVNhapXuat.Name = "CRVNhapXuat";
-            this.CRVNhapXuat.Size = new System.Drawing.Size(898, 424);
-            this.CRVNhapXuat.TabIndex = 0;
+            this.CRVBCHD.ActiveViewIndex = -1;
+            this.CRVBCHD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRVBCHD.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRVBCHD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRVBCHD.Location = new System.Drawing.Point(0, 0);
+            this.CRVBCHD.Name = "CRVBCHD";
+            this.CRVBCHD.Size = new System.Drawing.Size(898, 424);
+            this.CRVBCHD.TabIndex = 0;
             // 
-            // dp_Time
+            // date1
             // 
-            this.dp_Time.BorderColor = System.Drawing.Color.MintCream;
-            this.dp_Time.BorderSize = 0;
-            this.dp_Time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dp_Time.Location = new System.Drawing.Point(235, 77);
-            this.dp_Time.MinimumSize = new System.Drawing.Size(4, 35);
-            this.dp_Time.Name = "dp_Time";
-            this.dp_Time.Size = new System.Drawing.Size(200, 35);
-            this.dp_Time.SkinColor = System.Drawing.Color.MediumAquamarine;
-            this.dp_Time.TabIndex = 19;
-            this.dp_Time.TextColor = System.Drawing.Color.White;
+            this.date1.BorderColor = System.Drawing.Color.MintCream;
+            this.date1.BorderSize = 0;
+            this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.date1.Location = new System.Drawing.Point(235, 77);
+            this.date1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.date1.Name = "date1";
+            this.date1.Size = new System.Drawing.Size(200, 35);
+            this.date1.SkinColor = System.Drawing.Color.MediumAquamarine;
+            this.date1.TabIndex = 19;
+            this.date1.TextColor = System.Drawing.Color.White;
             // 
-            // rjDatePicker1
+            // date2
             // 
-            this.rjDatePicker1.BorderColor = System.Drawing.Color.MintCream;
-            this.rjDatePicker1.BorderSize = 0;
-            this.rjDatePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.rjDatePicker1.Location = new System.Drawing.Point(546, 79);
-            this.rjDatePicker1.MinimumSize = new System.Drawing.Size(4, 35);
-            this.rjDatePicker1.Name = "rjDatePicker1";
-            this.rjDatePicker1.Size = new System.Drawing.Size(200, 35);
-            this.rjDatePicker1.SkinColor = System.Drawing.Color.MediumAquamarine;
-            this.rjDatePicker1.TabIndex = 20;
-            this.rjDatePicker1.TextColor = System.Drawing.Color.White;
+            this.date2.BorderColor = System.Drawing.Color.MintCream;
+            this.date2.BorderSize = 0;
+            this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.date2.Location = new System.Drawing.Point(546, 79);
+            this.date2.MinimumSize = new System.Drawing.Size(4, 35);
+            this.date2.Name = "date2";
+            this.date2.Size = new System.Drawing.Size(200, 35);
+            this.date2.SkinColor = System.Drawing.Color.MediumAquamarine;
+            this.date2.TabIndex = 20;
+            this.date2.TextColor = System.Drawing.Color.White;
             // 
             // label3
             // 
@@ -177,7 +162,23 @@ namespace qlbh.UI
             this.label1.TabIndex = 22;
             this.label1.Text = "Đến Ngày:";
             // 
-            // FrmBaoCaoNhapXuat
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.rjCircularPictureBox1.BorderSize = 5;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(32, 3);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(107, 107);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rjCircularPictureBox1.TabIndex = 13;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // FrmBaoCaoHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,20 +187,20 @@ namespace qlbh.UI
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.rjDatePicker1);
-            this.Controls.Add(this.dp_Time);
+            this.Controls.Add(this.date2);
+            this.Controls.Add(this.date1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnThemmoi);
+            this.Controls.Add(this.btnXemBC);
             this.Controls.Add(this.label6);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmBaoCaoNhapXuat";
+            this.Name = "FrmBaoCaoHoaDon";
             this.Text = "FrmBaoCaoNhapXuat";
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,13 +211,13 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private CustomControls.RJControls.RJButton btnThemmoi;
+        private CustomControls.RJControls.RJButton btnXemBC;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRVNhapXuat;
-        private CustomControls.RJControls.RJDatePicker dp_Time;
-        private CustomControls.RJControls.RJDatePicker rjDatePicker1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRVBCHD;
+        private CustomControls.RJControls.RJDatePicker date2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private CustomControls.RJControls.RJDatePicker date1;
     }
 }
