@@ -15,6 +15,21 @@ namespace qlbh.UI
         public FrmHome()
         {
             InitializeComponent();
+            StartTimer();
+        }
+
+        System.Windows.Forms.Timer tmr = null;
+        private void StartTimer()
+        {
+            tmr = new System.Windows.Forms.Timer();
+            tmr.Interval = 1000;
+            tmr.Tick += new EventHandler(tmr_Tick);
+            tmr.Enabled = true;
+        }
+
+        void tmr_Tick(object sender, EventArgs e)
+        {
+            txtDateTime.Text = DateTime.Now.ToString();
         }
 
         private void pictureBox_Dessert_Click(object sender, EventArgs e)
@@ -105,24 +120,21 @@ namespace qlbh.UI
             timer1.Start();
             try
             {
-                long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where ngay_ban='" + DateTime.Now.Date + "'"));
+                long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where CONVERT(VARCHAR(10), ngay_ban, 103)= '" + DateTime.Today.ToString("dd/MM/yyyy") + "' "));
                 label13.Text = String.Format("{0:n0}", doanhthu) + " VNĐ";
-             
             } catch (Exception ex)
             {
                 label13.Text = "0 VNĐ";
             }
             try
             {
-                long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where ngay_nhap='" + DateTime.Now.Date + "'"));
+                long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where CONVERT(VARCHAR(10), ngay_nhap, 103)= '" + DateTime.Today.ToString("dd/MM/yyyy") + "' "));
                 label15.Text = String.Format("{0:n0}", tongchi) + " VNĐ";
             }
             catch (Exception ex)
             {
                 label15.Text = "0 VNĐ";
             }
-
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)

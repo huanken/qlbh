@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -92,8 +93,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.txtDateTime = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -124,12 +126,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hamburger)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FloralWhite;
+            this.panel2.Controls.Add(this.txtDateTime);
             this.panel2.Controls.Add(this.pictureBox10);
             this.panel2.Controls.Add(this.pictureBox9);
             this.panel2.Controls.Add(this.pictureBox8);
@@ -160,6 +162,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(972, 562);
             this.panel2.TabIndex = 2;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(699, 31);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(103, 44);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 43;
+            this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -856,15 +868,17 @@
             this.timer1.Interval = 2300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox10
+            // txtDateTime
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(699, 31);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(103, 44);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 43;
-            this.pictureBox10.TabStop = false;
+            this.txtDateTime.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtDateTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDateTime.Enabled = false;
+            this.txtDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDateTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(41)))));
+            this.txtDateTime.Location = new System.Drawing.Point(21, 20);
+            this.txtDateTime.Name = "txtDateTime";
+            this.txtDateTime.Size = new System.Drawing.Size(140, 16);
+            this.txtDateTime.TabIndex = 44;
             // 
             // FrmHome
             // 
@@ -878,6 +892,7 @@
             this.Load += new System.EventHandler(this.FrmHome_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -917,7 +932,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -987,5 +1001,6 @@
         private CustomControls.RJControls.RJRadioButton opt3;
         private CustomControls.RJControls.RJRadioButton opt1;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.TextBox txtDateTime;
     }
 }
