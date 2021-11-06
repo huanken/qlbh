@@ -50,7 +50,7 @@ namespace qlbh.UI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label1.Location = new System.Drawing.Point(464, 94);
+            this.label1.Location = new System.Drawing.Point(464, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 31;
@@ -62,7 +62,7 @@ namespace qlbh.UI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label3.Location = new System.Drawing.Point(166, 92);
+            this.label3.Location = new System.Drawing.Point(166, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 30;
@@ -73,7 +73,7 @@ namespace qlbh.UI
             this.date2.BorderColor = System.Drawing.Color.MintCream;
             this.date2.BorderSize = 0;
             this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date2.Location = new System.Drawing.Point(550, 88);
+            this.date2.Location = new System.Drawing.Point(550, 63);
             this.date2.MinimumSize = new System.Drawing.Size(4, 35);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(200, 35);
@@ -86,7 +86,7 @@ namespace qlbh.UI
             this.date1.BorderColor = System.Drawing.Color.MintCream;
             this.date1.BorderSize = 0;
             this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date1.Location = new System.Drawing.Point(239, 86);
+            this.date1.Location = new System.Drawing.Point(239, 61);
             this.date1.MinimumSize = new System.Drawing.Size(4, 35);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(200, 35);
@@ -97,9 +97,9 @@ namespace qlbh.UI
             // panel3
             // 
             this.panel3.Controls.Add(this.CRVBCPhieuNhap);
-            this.panel3.Location = new System.Drawing.Point(29, 131);
+            this.panel3.Location = new System.Drawing.Point(12, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(898, 424);
+            this.panel3.Size = new System.Drawing.Size(933, 460);
             this.panel3.TabIndex = 27;
             // 
             // CRVBCPhieuNhap
@@ -110,13 +110,13 @@ namespace qlbh.UI
             this.CRVBCPhieuNhap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRVBCPhieuNhap.Location = new System.Drawing.Point(0, 0);
             this.CRVBCPhieuNhap.Name = "CRVBCPhieuNhap";
-            this.CRVBCPhieuNhap.Size = new System.Drawing.Size(898, 424);
+            this.CRVBCPhieuNhap.Size = new System.Drawing.Size(933, 460);
             this.CRVBCPhieuNhap.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Salmon;
-            this.panel1.Location = new System.Drawing.Point(162, 76);
+            this.panel1.Location = new System.Drawing.Point(162, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 3);
             this.panel1.TabIndex = 25;
@@ -132,7 +132,7 @@ namespace qlbh.UI
             this.btnXemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemBC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemBC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXemBC.Location = new System.Drawing.Point(760, 85);
+            this.btnXemBC.Location = new System.Drawing.Point(760, 60);
             this.btnXemBC.Name = "btnXemBC";
             this.btnXemBC.Size = new System.Drawing.Size(139, 40);
             this.btnXemBC.TabIndex = 24;
@@ -147,7 +147,7 @@ namespace qlbh.UI
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.IndianRed;
-            this.label6.Location = new System.Drawing.Point(374, 31);
+            this.label6.Location = new System.Drawing.Point(374, 17);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(291, 31);
             this.label6.TabIndex = 23;
@@ -162,7 +162,7 @@ namespace qlbh.UI
             this.rjCircularPictureBox1.BorderSize = 5;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(36, 12);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(36, -3);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(107, 107);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -72,7 +72,7 @@ namespace qlbh.UI
             this.btnXemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemBC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemBC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXemBC.Location = new System.Drawing.Point(756, 76);
+            this.btnXemBC.Location = new System.Drawing.Point(756, 69);
             this.btnXemBC.Name = "btnXemBC";
             this.btnXemBC.Size = new System.Drawing.Size(139, 40);
             this.btnXemBC.TabIndex = 10;
@@ -96,9 +96,9 @@ namespace qlbh.UI
             // panel3
             // 
             this.panel3.Controls.Add(this.CRVBCHD);
-            this.panel3.Location = new System.Drawing.Point(25, 122);
+            this.panel3.Location = new System.Drawing.Point(12, 111);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(898, 424);
+            this.panel3.Size = new System.Drawing.Size(921, 448);
             this.panel3.TabIndex = 14;
             // 
             // CRVBCHD
@@ -109,7 +109,7 @@ namespace qlbh.UI
             this.CRVBCHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CRVBCHD.Location = new System.Drawing.Point(0, 0);
             this.CRVBCHD.Name = "CRVBCHD";
-            this.CRVBCHD.Size = new System.Drawing.Size(898, 424);
+            this.CRVBCHD.Size = new System.Drawing.Size(921, 448);
             this.CRVBCHD.TabIndex = 0;
             // 
             // date1
@@ -117,7 +117,7 @@ namespace qlbh.UI
             this.date1.BorderColor = System.Drawing.Color.MintCream;
             this.date1.BorderSize = 0;
             this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date1.Location = new System.Drawing.Point(235, 77);
+            this.date1.Location = new System.Drawing.Point(235, 72);
             this.date1.MinimumSize = new System.Drawing.Size(4, 35);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(200, 35);
@@ -130,7 +130,7 @@ namespace qlbh.UI
             this.date2.BorderColor = System.Drawing.Color.MintCream;
             this.date2.BorderSize = 0;
             this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date2.Location = new System.Drawing.Point(546, 79);
+            this.date2.Location = new System.Drawing.Point(546, 72);
             this.date2.MinimumSize = new System.Drawing.Size(4, 35);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(200, 35);
@@ -144,7 +144,7 @@ namespace qlbh.UI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label3.Location = new System.Drawing.Point(162, 83);
+            this.label3.Location = new System.Drawing.Point(162, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 21;
@@ -156,7 +156,7 @@ namespace qlbh.UI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label1.Location = new System.Drawing.Point(460, 85);
+            this.label1.Location = new System.Drawing.Point(460, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 22;
@@ -171,7 +171,7 @@ namespace qlbh.UI
             this.rjCircularPictureBox1.BorderSize = 5;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(32, 3);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(32, -2);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(107, 107);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

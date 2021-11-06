@@ -153,7 +153,7 @@ namespace qlbh.UI
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult thongbao;
-            thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            thongbao = MessageBox.Show("Bạn có muốn đăng xuất không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (thongbao == DialogResult.Yes)
             {
                 Form form = new FrmLogin();
