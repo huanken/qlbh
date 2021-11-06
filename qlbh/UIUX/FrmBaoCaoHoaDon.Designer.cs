@@ -117,6 +117,7 @@ namespace qlbh.UI
             this.date1.BorderColor = System.Drawing.Color.MintCream;
             this.date1.BorderSize = 0;
             this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.date1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.date1.Location = new System.Drawing.Point(235, 72);
             this.date1.MinimumSize = new System.Drawing.Size(4, 35);
             this.date1.Name = "date1";
@@ -130,6 +131,7 @@ namespace qlbh.UI
             this.date2.BorderColor = System.Drawing.Color.MintCream;
             this.date2.BorderSize = 0;
             this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.date2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.date2.Location = new System.Drawing.Point(546, 72);
             this.date2.MinimumSize = new System.Drawing.Size(4, 35);
             this.date2.Name = "date2";

@@ -334,6 +334,7 @@ namespace qlbh.UI
             this.dp_Time.SkinColor = System.Drawing.Color.MediumAquamarine;
             this.dp_Time.TabIndex = 18;
             this.dp_Time.TextColor = System.Drawing.Color.White;
+            this.dp_Time.ValueChanged += new System.EventHandler(this.dp_Time_ValueChanged);
             // 
             // rjCircularPictureBox1
             // 

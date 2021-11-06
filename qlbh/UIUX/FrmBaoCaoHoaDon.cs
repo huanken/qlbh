@@ -21,9 +21,9 @@ namespace qlbh.UI
         {
             DataTable dta = new DataTable();
             dta = SQLConnection.ExecuteDataTable("Select * from hoadonban where ngay_ban between CONVERT(datetime,'" + date1.Value.Date.ToString("MM/dd/yyyy") + "')and CONVERT(datetime,'" + date2.Value.Date.ToString("MM/dd/yyyy") + "')");
-            rptBaoCaoHoaDon BC2 = new rptBaoCaoHoaDon();
-            BC2.SetDataSource(dta);
-            CRVBCHD.ReportSource = BC2;
+            rptBaoCaoHoaDon BC = new rptBaoCaoHoaDon();
+            BC.SetDataSource(dta);
+            CRVBCHD.ReportSource = BC;
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace qlbh.UI
 {
     public partial class FrmBaoCaoPhieuNhap : Form
@@ -19,10 +19,10 @@ namespace qlbh.UI
 
         private void btnXemBC_Click(object sender, EventArgs e)
         {
-            DataTable dta = new DataTable();
-            dta = SQLConnection.ExecuteDataTable("Select * from phieunhap where ngay_nhap between CONVERT(datetime,'" + date1.Value.Date.ToString("MM/dd/yyyy") + "')and CONVERT(datetime,'" + date2.Value.Date.ToString("MM/dd/yyyy") + "')");
+            DataTable dta2 = new DataTable();
+            dta2 = SQLConnection.ExecuteDataTable("Select ma_pn,ngay_nhap,trang_thai,tong_tien,ma_ncc from phieunhap where ngay_nhap between CONVERT(datetime,'" + date1.Value.Date.ToString("MM/dd/yyyy") + "')and CONVERT(datetime,'" + date2.Value.Date.ToString("MM/dd/yyyy") + "')");
             rptBaoCaoPhieuNhap BC2 = new rptBaoCaoPhieuNhap();
-            BC2.SetDataSource(dta);
+            BC2.SetDataSource(dta2);
             CRVBCPhieuNhap.ReportSource = BC2;
         }
     }

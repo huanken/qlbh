@@ -24,14 +24,14 @@ namespace qlbh.UI
         private void bang_giaohang()
         {
             GridView_GiaoHang.DataSource = SQLConnection.ExecuteDataTable(@"SELECT
-                                                                                ma_van_don AS [Mã vận đơn],
+                                                                                cast(ma_van_don as int) AS [Mã vận đơn],
                                                                                 thoi_gian AS [Thời gian],
                                                                                 dia_chi_kh AS [Địa chỉ KH],
                                                                                 so_dt_kh AS [SĐT KH],
                                                                                 ma_nv AS [Mã nhân viên],
                                                                                 ma_hd_ban AS [Mã HĐ],
                                                                                 trang_thai AS [Trạng thái]
-                                                                                    FROM giaohang");
+                                                                                    FROM giaohang order by [Mã vận đơn]  ");
         }
 
         private void Bang_Nhanvien()
@@ -167,7 +167,6 @@ namespace qlbh.UI
             Bang_Chitietdonban();
             bang_giaohang();
             HienThiDuLieu();
-            
             btn_Luu.Enabled = false;
         }
 
@@ -224,6 +223,11 @@ namespace qlbh.UI
             {
                 progressTT.Value = progressTT.Minimum;
             }
+        }
+
+        private void dp_Time_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
