@@ -70,6 +70,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -93,7 +94,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -114,6 +114,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).BeginInit();
             this.panel8.SuspendLayout();
@@ -124,7 +125,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Hamburger)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -346,9 +346,9 @@
             // 
             this.label17.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label17.Location = new System.Drawing.Point(207, 1);
+            this.label17.Location = new System.Drawing.Point(210, 8);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(190, 37);
+            this.label17.Size = new System.Drawing.Size(340, 37);
             this.label17.TabIndex = 34;
             this.label17.Text = "WELLCOME SIR";
             // 
@@ -629,6 +629,17 @@
             this.panel6.Size = new System.Drawing.Size(230, 2);
             this.panel6.TabIndex = 22;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(702, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Gold;
@@ -869,17 +880,6 @@
             this.timer1.Interval = 2300;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(702, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -915,6 +915,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_drink)).EndInit();
@@ -930,7 +931,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dessert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

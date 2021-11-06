@@ -18,7 +18,10 @@ namespace qlbh.UI
             InitializeComponent();
         }
 
-       // SQLConnection cnn = new SQLConnection();
+        public static string tk = "", mk = "";
+        public static int quyentruycap;
+
+        // SQLConnection cnn = new SQLConnection();
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -47,6 +50,9 @@ namespace qlbh.UI
             if (dataReader.Read() == true)
             {
                 MessageBox.Show("Đăng nhập thành công");
+                tk = DN.Trim();
+                mk = MK.Trim();
+                quyentruycap = Convert.ToInt32(SQLConnection.GetFieldValues("Select quyen_truy_cap from login where tai_khoan='" + DN + "'"));
                 Form main = new FrmTrangChu();
                 main.Show();
                 this.Hide();

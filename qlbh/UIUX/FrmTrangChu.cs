@@ -24,6 +24,13 @@ namespace qlbh.UI
             colapse3.Start();
             Form f = new FrmHome();
             AddForm(f);
+            if (FrmLogin.quyentruycap == 1)
+            {
+                btnTaiKhoan.Visible = true;
+            } else
+            {
+                btnTaiKhoan.Hide();
+            }
         }
         private void colapse3_Tick(object sender, EventArgs e)
         {
@@ -149,8 +156,10 @@ namespace qlbh.UI
             thongbao = MessageBox.Show("Bạn có muốn thoát không?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (thongbao == DialogResult.Yes)
             {
-                //  this.Close();
-                Application.Exit();
+                Form form = new FrmLogin();
+                this.Hide();
+                this.Close();
+                form.Show();
             }
         }
 

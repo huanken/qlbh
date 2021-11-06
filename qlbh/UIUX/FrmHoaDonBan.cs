@@ -152,11 +152,12 @@ namespace qlbh.UI
             dgvhoadonban.Rows.Add();
 
             dgvhoadonban.Rows[lastRow].Cells[0].Value = cbomasp.Text;
-            dgvhoadonban.Rows[lastRow].Cells[1].Value = txtsoluong.Text;
-            dgvhoadonban.Rows[lastRow].Cells[2].Value = txtgiaban.Text;
-            dgvhoadonban.Rows[lastRow].Cells[3].Value = txtgiamgia.Text;
-            dgvhoadonban.Rows[lastRow].Cells[4].Value = txtthanhtien.Text;
-            dgvhoadonban.Rows[lastRow].Cells[5].Value = txtghichu.Text;
+            dgvhoadonban.Rows[lastRow].Cells[1].Value = txttensp.Text;
+            dgvhoadonban.Rows[lastRow].Cells[2].Value = txtsoluong.Text;
+            dgvhoadonban.Rows[lastRow].Cells[3].Value = txtgiaban.Text;
+            dgvhoadonban.Rows[lastRow].Cells[4].Value = txtgiamgia.Text;
+            dgvhoadonban.Rows[lastRow].Cells[5].Value = txtthanhtien.Text;
+            dgvhoadonban.Rows[lastRow].Cells[6].Value = txtghichu.Text;
             calculatetongtien(txtcongtienhang, dgvhoadonban);
         }
 
@@ -213,10 +214,10 @@ namespace qlbh.UI
                         cmd.CommandText = @"INSERT INTO chitietdonban (ma_ctdb, so_luong, giam_gia, thanh_tien, ghi_chu, ma_hd_ban, ma_sp) 
                                             VALUES(@ma_ctdb, @so_luong, @giam_gia, @thanh_tien, @ghi_chu, @ma_hd_ban, @ma_sp)";
                         cmd.Parameters.AddWithValue("@ma_ctdb", "CTHDB" + i + txtmahdon.Text);
-                        cmd.Parameters.AddWithValue("@so_luong", Convert.ToInt32(dgvhoadonban.Rows[i].Cells[1].Value.ToString()));
-                        cmd.Parameters.AddWithValue("@giam_gia", Convert.ToDouble(dgvhoadonban.Rows[i].Cells[3].Value.ToString()));
-                        cmd.Parameters.AddWithValue("@thanh_tien", Convert.ToDouble(dgvhoadonban.Rows[i].Cells[4].Value.ToString()));
-                        cmd.Parameters.AddWithValue("@ghi_chu", Convert.ToString(dgvhoadonban.Rows[i].Cells[5].Value.ToString()));
+                        cmd.Parameters.AddWithValue("@so_luong", Convert.ToInt32(dgvhoadonban.Rows[i].Cells[2].Value.ToString()));
+                        cmd.Parameters.AddWithValue("@giam_gia", Convert.ToDouble(dgvhoadonban.Rows[i].Cells[4].Value.ToString()));
+                        cmd.Parameters.AddWithValue("@thanh_tien", Convert.ToDouble(dgvhoadonban.Rows[i].Cells[5].Value.ToString()));
+                        cmd.Parameters.AddWithValue("@ghi_chu", Convert.ToString(dgvhoadonban.Rows[i].Cells[6].Value.ToString()));
                         cmd.Parameters.AddWithValue("@ma_sp", dgvhoadonban.Rows[i].Cells[0].Value.ToString());
                         cmd.Parameters.AddWithValue("@ma_hd_ban", txtmahdon.Text);                
                         SQLConnection.ExecuteCommand(cmd);

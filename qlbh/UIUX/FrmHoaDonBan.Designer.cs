@@ -72,6 +72,7 @@ namespace qlbh.UI
             this.txttongtien = new System.Windows.Forms.TextBox();
             this.dgvhoadonban = new System.Windows.Forms.DataGridView();
             this.masp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tensp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giamgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -533,6 +534,7 @@ namespace qlbh.UI
             this.dgvhoadonban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvhoadonban.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.masp,
+            this.tensp,
             this.soluong,
             this.giaban,
             this.giamgia,
@@ -547,6 +549,11 @@ namespace qlbh.UI
             // 
             this.masp.HeaderText = "Mã sản phẩm";
             this.masp.Name = "masp";
+            // 
+            // tensp
+            // 
+            this.tensp.HeaderText = "Tên sản phẩm";
+            this.tensp.Name = "tensp";
             // 
             // soluong
             // 
@@ -663,6 +670,7 @@ namespace qlbh.UI
         private System.Windows.Forms.TextBox txttongtien;
         private System.Windows.Forms.DataGridView dgvhoadonban;
         private System.Windows.Forms.DataGridViewTextBoxColumn masp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tensp;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaban;
         private System.Windows.Forms.DataGridViewTextBoxColumn giamgia;

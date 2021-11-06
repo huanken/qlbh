@@ -118,6 +118,7 @@ namespace qlbh.UI
             picBannerChicken.Visible = false;
             picBannerGiaoHang.Visible = false;
             timer1.Start();
+            label17.Text = "Welcome " + FrmLogin.tk + " !";
             try
             {
                 long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where CONVERT(VARCHAR(10), ngay_ban, 103)= '" + DateTime.Today.ToString("dd/MM/yyyy") + "' "));
