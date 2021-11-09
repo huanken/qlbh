@@ -172,24 +172,24 @@ namespace qlbh.UI
             if (picBannerBurger.Visible)
             {
                 opt1.Checked = false;
-                opt2.Checked = false;
-                opt3.Checked = true;
+                opt2.Checked = true;
+                opt3.Checked = false;
                 picBannerBurger.Visible = false;
-                picBannerChicken.Visible = true;
+                picBannerGiaoHang.Visible = true;
             }
             else if (picBannerGiaoHang.Visible)
             {
-                opt1.Checked = false;
+                opt1.Checked = true;
                 opt2.Checked = false;
-                opt3.Checked = true;
+                opt3.Checked = false;
                 picBannerGiaoHang.Visible = false;
                 picBannerChicken.Visible = true;
             }
             else
             {
                 opt1.Checked = false;
-                opt2.Checked = true;
-                opt3.Checked = false;
+                opt2.Checked = false;
+                opt3.Checked = true;
                 picBannerChicken.Visible = false;
                 picBannerBurger.Visible = true;
             }

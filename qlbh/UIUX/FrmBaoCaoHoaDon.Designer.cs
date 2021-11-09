@@ -72,7 +72,7 @@ namespace qlbh.UI
             this.btnXemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemBC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemBC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXemBC.Location = new System.Drawing.Point(756, 69);
+            this.btnXemBC.Location = new System.Drawing.Point(756, 70);
             this.btnXemBC.Name = "btnXemBC";
             this.btnXemBC.Size = new System.Drawing.Size(139, 40);
             this.btnXemBC.TabIndex = 10;

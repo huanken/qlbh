@@ -196,9 +196,9 @@ namespace qlbh.UI
         WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
         public static int sttbaihat = 0;
         public static String strbaihat1 = "https://nhacpro.me/stream/wk7v.mp3";
-        public static String strbaihat2 = "https://mp3-s1-zmp3.zadn.vn/d50ff48b56cfbf91e6de/5669456849702829973?authen=exp=1636280636~acl=/d50ff48b56cfbf91e6de/*~hmac=3de3a4c5c50ac07bd1ad0395ffe4ab55&fs=MTYzNjEwNzgzNjmUsICxMXx3ZWJWNnwxMDIyMjUxNzmUsICwfDE0LjE2NC4yMjIdUngMjE3";
+        public static String strbaihat2 = "https://nhacpro.me/stream/1zhc.mp3";
         public static String strbaihat3 = "https://nhacpro.me/stream/atd.mp3";
-        public static String strbaihat4 = "https://nhacpro.me/stream/wi1w.mp3";
+        public static String strbaihat4 = "https://nhacpro.me/stream/1aef.mp3";
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
