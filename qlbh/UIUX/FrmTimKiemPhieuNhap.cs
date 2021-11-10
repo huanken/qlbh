@@ -44,7 +44,7 @@ namespace qlbh.UI
                     MessageBox.Show("Hãy nhập giá trị cần tìm kiếm!");
                     return;
                 }
-                sqltk = "Select * from PHIEUNHAP where ma_pn like '" + txtMaPN.Texts + "'";
+                sqltk = "Select * from PHIEUNHAP where ma_pn like '%" + txtMaPN.Texts + "%'";
                 dta = cnn.Lay_DulieuBang(sqltk);
             }
             if (optNgayNhap.Checked == true)

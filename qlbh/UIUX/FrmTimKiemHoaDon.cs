@@ -81,7 +81,7 @@ namespace qlbh.UI
                     MessageBox.Show("Hãy nhập giá trị cần tìm kiếm!");
                     return;
                 }
-                sqltk = "Select * from hoadonban where ma_hd_ban like '" + txtMahdban.Texts + "'";
+                sqltk = "Select * from hoadonban where ma_hd_ban like '%" + txtMahdban.Texts + "%'";
                 dta = cnn.Lay_DulieuBang(sqltk);
             }
             if (optNgayban.Checked == true)

@@ -284,7 +284,7 @@ namespace qlbh.UI
             this.grbsanpham.Size = new System.Drawing.Size(299, 215);
             this.grbsanpham.TabIndex = 8;
             this.grbsanpham.TabStop = false;
-            this.grbsanpham.Text = "Thông tin sản phẩm: ";
+            this.grbsanpham.Text = "Thông tin sản phẩm";
             // 
             // txtthanhtien
             // 

@@ -403,7 +403,7 @@ namespace qlbh.UI
             this.groupBox2.Controls.Add(this.txt_Soluong);
             this.groupBox2.Controls.Add(this.txt_Tensp);
             this.groupBox2.Controls.Add(this.txt_Masp);
-            this.groupBox2.Font = new System.Drawing.Font("Georgia", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.IndianRed;
             this.groupBox2.Location = new System.Drawing.Point(598, 126);
             this.groupBox2.Name = "groupBox2";

@@ -30,8 +30,6 @@ namespace qlbh.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTimKiemSanPham));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -39,15 +37,15 @@ namespace qlbh.UI
             this.btnReset = new CustomControls.RJControls.RJButton();
             this.btnTimKiem = new CustomControls.RJControls.RJButton();
             this.txtTimKiem = new CustomControls.RJControls.RJTextBox();
-            this.GridView_SP = new System.Windows.Forms.DataGridView();
             this.optMaSP = new CustomControls.RJControls.RJRadioButton();
             this.picSP = new System.Windows.Forms.PictureBox();
             this.optTenSP = new CustomControls.RJControls.RJRadioButton();
             this.optDanhMuc = new CustomControls.RJControls.RJRadioButton();
             this.cbbTimKiem = new CustomControls.RJControls.RJComboBox();
+            this.GridView_SP = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView_SP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView_SP)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,7 +102,7 @@ namespace qlbh.UI
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(683, 432);
+            this.btnReset.Location = new System.Drawing.Point(683, 442);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(128, 44);
             this.btnReset.TabIndex = 28;
@@ -124,7 +122,7 @@ namespace qlbh.UI
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(478, 432);
+            this.btnTimKiem.Location = new System.Drawing.Point(478, 442);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(127, 44);
             this.btnTimKiem.TabIndex = 27;
@@ -154,31 +152,6 @@ namespace qlbh.UI
             this.txtTimKiem.TabIndex = 19;
             this.txtTimKiem.Texts = "";
             this.txtTimKiem.UnderlinedStyle = false;
-            // 
-            // GridView_SP
-            // 
-            this.GridView_SP.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Tomato;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridView_SP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.GridView_SP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.IndianRed;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridView_SP.DefaultCellStyle = dataGridViewCellStyle2;
-            this.GridView_SP.Location = new System.Drawing.Point(389, 101);
-            this.GridView_SP.Name = "GridView_SP";
-            this.GridView_SP.Size = new System.Drawing.Size(496, 311);
-            this.GridView_SP.TabIndex = 12;
             // 
             // optMaSP
             // 
@@ -262,6 +235,15 @@ namespace qlbh.UI
             this.cbbTimKiem.TabIndex = 38;
             this.cbbTimKiem.Texts = "";
             // 
+            // GridView_SP
+            // 
+            this.GridView_SP.BackgroundColor = System.Drawing.Color.White;
+            this.GridView_SP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridView_SP.Location = new System.Drawing.Point(389, 98);
+            this.GridView_SP.Name = "GridView_SP";
+            this.GridView_SP.Size = new System.Drawing.Size(478, 328);
+            this.GridView_SP.TabIndex = 39;
+            // 
             // FrmTimKiemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +251,7 @@ namespace qlbh.UI
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(906, 548);
             this.ControlBox = false;
+            this.Controls.Add(this.GridView_SP);
             this.Controls.Add(this.cbbTimKiem);
             this.Controls.Add(this.optDanhMuc);
             this.Controls.Add(this.optTenSP);
@@ -281,15 +264,13 @@ namespace qlbh.UI
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
-            this.Controls.Add(this.GridView_SP);
-            this.ForeColor = System.Drawing.Color.IndianRed;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTimKiemSanPham";
             this.Text = "FrmTimKiemSanPham";
             this.Load += new System.EventHandler(this.FrmTimKiemSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GridView_SP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GridView_SP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,11 +285,11 @@ namespace qlbh.UI
         private CustomControls.RJControls.RJButton btnReset;
         private CustomControls.RJControls.RJButton btnTimKiem;
         private CustomControls.RJControls.RJTextBox txtTimKiem;
-        private System.Windows.Forms.DataGridView GridView_SP;
         private CustomControls.RJControls.RJRadioButton optMaSP;
         private System.Windows.Forms.PictureBox picSP;
         private CustomControls.RJControls.RJRadioButton optTenSP;
         private CustomControls.RJControls.RJRadioButton optDanhMuc;
         private CustomControls.RJControls.RJComboBox cbbTimKiem;
+        private System.Windows.Forms.DataGridView GridView_SP;
     }
 }
