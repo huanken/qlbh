@@ -39,7 +39,7 @@ namespace qlbh.UI
                                                                  hinhanh AS [Source],
                                                                  don_vi_tinh AS [Đơn vị tính],
                                                                  ma_dm_sp AS [Mã danh mục SP]
-                                                                 FROM sanpham order by cast( ma_sp as int) ");
+                                                                 FROM sanpham order by ma_sp ");
             HIENTHI_DULIEU();
         }
         public void HIENTHI_DULIEU()

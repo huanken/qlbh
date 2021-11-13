@@ -17,7 +17,7 @@ namespace qlbh.UI
         public FrmHoaDonBan()
         {
             InitializeComponent();
-            txtmahdon.Text = SQLConnection.CreateUniqueID("HDB", DateTime.Now);
+            txtmahdon.Text = SQLConnection.CreateUniqueID("HD", DateTime.Now);
             //dgvhoadonban.Rows.Add();
         }
         SQLConnection kn = new SQLConnection();
@@ -47,7 +47,7 @@ namespace qlbh.UI
 
         private void datengayban_ValueChanged(object sender, EventArgs e)
         {
-            txtmahdon.Text = SQLConnection.CreateUniqueID("HDB", datengayban.Value);
+            txtmahdon.Text = SQLConnection.CreateUniqueID("HD", datengayban.Value);
         }
 
         
@@ -72,7 +72,7 @@ namespace qlbh.UI
             cbomasp.ValueMember = "Sản phẩm";
             cbomasp.SelectedIndex = -1;
            // cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp FROM sanpham") ;
-            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT cast(ma_sp as int) as [Sản phẩm] FROM sanpham order by [Sản phẩm]");
+            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp as [Sản phẩm] FROM sanpham order by [Sản phẩm]");
             txtgiaban.Text = "";
          }
 

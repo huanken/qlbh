@@ -56,7 +56,7 @@ namespace qlbh.UI
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Salmon;
-            this.panel1.Location = new System.Drawing.Point(158, 67);
+            this.panel1.Location = new System.Drawing.Point(158, 60);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 3);
             this.panel1.TabIndex = 12;
@@ -72,7 +72,7 @@ namespace qlbh.UI
             this.btnXemBC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemBC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemBC.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnXemBC.Location = new System.Drawing.Point(756, 70);
+            this.btnXemBC.Location = new System.Drawing.Point(756, 68);
             this.btnXemBC.Name = "btnXemBC";
             this.btnXemBC.Size = new System.Drawing.Size(139, 40);
             this.btnXemBC.TabIndex = 10;
@@ -118,7 +118,7 @@ namespace qlbh.UI
             this.date1.BorderSize = 0;
             this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.date1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date1.Location = new System.Drawing.Point(235, 72);
+            this.date1.Location = new System.Drawing.Point(235, 70);
             this.date1.MinimumSize = new System.Drawing.Size(4, 35);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(200, 35);
@@ -132,7 +132,7 @@ namespace qlbh.UI
             this.date2.BorderSize = 0;
             this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
             this.date2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date2.Location = new System.Drawing.Point(546, 72);
+            this.date2.Location = new System.Drawing.Point(546, 70);
             this.date2.MinimumSize = new System.Drawing.Size(4, 35);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(200, 35);
@@ -146,7 +146,7 @@ namespace qlbh.UI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label3.Location = new System.Drawing.Point(162, 78);
+            this.label3.Location = new System.Drawing.Point(162, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 21;
@@ -158,7 +158,7 @@ namespace qlbh.UI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.label1.Location = new System.Drawing.Point(460, 80);
+            this.label1.Location = new System.Drawing.Point(460, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 22;
