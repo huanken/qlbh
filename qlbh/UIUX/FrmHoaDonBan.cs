@@ -72,7 +72,7 @@ namespace qlbh.UI
             cbomasp.ValueMember = "Sản phẩm";
             cbomasp.SelectedIndex = -1;
            // cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp FROM sanpham") ;
-            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp as [Sản phẩm] FROM sanpham order by [Sản phẩm]");
+            cbomasp.DataSource = SQLConnection.ExecuteDataTable("SELECT ma_sp as [Sản phẩm] FROM sanpham where ma_sp not like '%RAW%' order by cast(ma_sp as int)");
             txtgiaban.Text = "";
          }
 
