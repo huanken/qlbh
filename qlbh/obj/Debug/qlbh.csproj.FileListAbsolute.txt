@@ -419,3 +419,4 @@ C:\Users\LaptopK1\Desktop\QLCUAHANG NEW\qlbh\qlbh\obj\Debug\qlbh.csproj.CopyComp
 C:\Users\LaptopK1\Desktop\QLCUAHANG NEW\qlbh\qlbh\obj\Debug\qlbh.exe
 C:\Users\LaptopK1\Desktop\QLCUAHANG NEW\qlbh\qlbh\obj\Debug\qlbh.pdb
 C:\Users\LaptopK1\Desktop\QLCUAHANG NEW\qlbh\qlbh\obj\Debug\qlbh.UI.FrmBaoCaoPhieuNhap.resources
+C:\Users\LaptopK1\Desktop\QLCUAHANG NEW\qlbh\qlbh\obj\Debug\qlbh.UI.FrmLoading.resources

@@ -83,7 +83,7 @@ namespace qlbh.UI
                     this.picSP.DataBindings.Add(new System.Windows.Forms.Binding(
                         "ImageLocation", GridView_SP.DataSource, "hinhanh", true));
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                 }

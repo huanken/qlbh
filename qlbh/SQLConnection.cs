@@ -65,7 +65,6 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                MessageBox.Show(ex.StackTrace);
             }
            
             HuyKetNoi();
@@ -93,7 +92,6 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + " Fail to get datatable");
-                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
@@ -116,7 +114,6 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                MessageBox.Show(ex.StackTrace);
             }
             finally
             {
@@ -143,7 +140,6 @@ namespace qlbh
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + " Fail to get field value");
-                MessageBox.Show(ex.StackTrace);
             }
             finally
             {

@@ -53,7 +53,7 @@ namespace qlbh.UI
                 tk = DN.Trim();
                 mk = MK.Trim();
                 quyentruycap = Convert.ToInt32(SQLConnection.GetFieldValues("Select quyen_truy_cap from login where tai_khoan='" + DN + "'"));
-                Form main = new FrmTrangChu();
+                Form main = new FrmLoading();
                 main.Show();
                 this.Hide();
             }

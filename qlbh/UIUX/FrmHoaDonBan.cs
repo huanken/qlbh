@@ -113,7 +113,7 @@ namespace qlbh.UI
                 double thanhtien = (Convert.ToDouble(txtgiaban.Text) - Convert.ToDouble(txtgiaban.Text) * Convert.ToDouble(txtgiamgia.Text) / 100) * Convert.ToInt16(txtsoluong.Text);
                 txtthanhtien.Text = String.Format("{0:n}", thanhtien);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 txtthanhtien.Text = "0.00";
             }

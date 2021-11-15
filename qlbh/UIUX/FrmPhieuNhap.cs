@@ -106,7 +106,7 @@ namespace qlbh.UI
                 double thanhTien = Convert.ToDouble(txtBox_Gianhap.Text) * Convert.ToInt16(txtBox_Soluong.Text);
                 txtBox_Thanhtien.Text = String.Format("{0:n}", thanhTien);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 txtBox_Thanhtien.Text = "0.00";
             //    MessageBox.Show(ex.Message);

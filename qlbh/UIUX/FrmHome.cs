@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Timers;
+using System.Runtime.InteropServices;
+
 namespace qlbh.UI
 {
     public partial class FrmHome : Form
@@ -16,7 +18,23 @@ namespace qlbh.UI
         {
             InitializeComponent();
             StartTimer();
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRect(0, 0, Width, Height, 7, 7));
         }
+
+        int counter = 0;
+        int len = 0;
+        string text;
+
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRect
+            (
+                int leftRect,
+                int topRect,
+                int rightRect,
+                int bottomRect,
+                int widthEllipse,
+                int heightEllipse
+            );
 
         System.Windows.Forms.Timer tmr = null;
         private void StartTimer()
@@ -119,11 +137,15 @@ namespace qlbh.UI
             picBannerGiaoHang.Visible = false;
             timer1.Start();
             label17.Text = "Welcome " + FrmLogin.tk + " !";
+            text = label17.Text;
+            len = text.Length;
+            label17.Text = "";
+            timer2.Start();
             try
             {
                 long doanhthu = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from hoadonban where CONVERT(VARCHAR(10), ngay_ban, 103)= '" + DateTime.Today.ToString("dd/MM/yyyy") + "' "));
                 label13.Text = String.Format("{0:n0}", doanhthu) + " VNĐ";
-            } catch (Exception ex)
+            } catch (Exception)
             {
                 label13.Text = "0 VNĐ";
             }
@@ -132,7 +154,7 @@ namespace qlbh.UI
                 long tongchi = Convert.ToInt64(SQLConnection.GetFieldValues("select SUM(tong_tien) from phieunhap where CONVERT(VARCHAR(10), ngay_nhap, 103)= '" + DateTime.Today.ToString("dd/MM/yyyy") + "' "));
                 label15.Text = String.Format("{0:n0}", tongchi) + " VNĐ";
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 label15.Text = "0 VNĐ";
             }
@@ -259,5 +281,14 @@ namespace qlbh.UI
             System.Diagnostics.Process.Start("https://www.neu.edu.vn/");
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            label17.Text = text.Substring(0, counter);
+            ++counter;
+            if (counter > len)
+            {
+                timer2.Stop();
+            }
+        }
     }
 }
