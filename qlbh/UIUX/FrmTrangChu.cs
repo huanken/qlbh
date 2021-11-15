@@ -109,7 +109,7 @@ namespace qlbh.UI
             colapse2.Start();
         }
 
-        private void AddForm(Form f)
+        public void AddForm(Form f)
         {
             this.panel2.Controls.Clear();
             f.TopLevel = false;

@@ -290,5 +290,10 @@ namespace qlbh.UI
                 timer2.Stop();
             }
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Go to [Danh mục] => Click to [Hóa đơn] button !!");
+        }
     }
 }

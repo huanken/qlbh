@@ -61,6 +61,8 @@
             this.picBannerGiaoHang = new System.Windows.Forms.PictureBox();
             this.btnHide = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.Pbox_food = new System.Windows.Forms.PictureBox();
             this.pictureBox_food1 = new System.Windows.Forms.PictureBox();
@@ -111,6 +113,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBannerChicken)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBannerGiaoHang)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbox_food)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).BeginInit();
@@ -199,7 +202,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.White;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(619, 8);
             this.pictureBox8.Name = "pictureBox8";
@@ -211,9 +214,9 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(584, 8);
+            this.pictureBox6.Location = new System.Drawing.Point(583, 8);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(29, 28);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -223,9 +226,9 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(550, 8);
+            this.pictureBox7.Location = new System.Drawing.Point(548, 8);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(29, 28);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,9 +238,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(513, 8);
+            this.pictureBox5.Location = new System.Drawing.Point(512, 8);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(29, 28);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,9 +250,9 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(479, 8);
+            this.pictureBox4.Location = new System.Drawing.Point(478, 8);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(29, 28);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -534,16 +537,42 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FloralWhite;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.Pbox_food);
             this.panel1.Controls.Add(this.pictureBox_food1);
             this.panel1.Controls.Add(this.pictureBox_food3);
             this.panel1.Controls.Add(this.pictureBox_food2);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(74, 82);
+            this.panel1.Location = new System.Drawing.Point(46, 44);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(574, 421);
+            this.panel1.Size = new System.Drawing.Size(602, 459);
             this.panel1.TabIndex = 26;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(381, 28);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(82, 18);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Order Now";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(310, 20);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(221, 100);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 46;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // label12
             // 
@@ -878,7 +907,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 2300;
+            this.timer1.Interval = 2700;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
@@ -916,6 +945,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBannerGiaoHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbox_food)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_food3)).EndInit();
@@ -1007,5 +1037,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label21;
     }
 }
